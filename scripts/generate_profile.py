@@ -319,20 +319,20 @@ def fetch_github_data():
 
 # Shared color palette
 PALETTE = {
-    "bg_deep": "#080c16",
-    "bg_mid": "#0e1526",
-    "bg_dark": "#060910",
-    "bg_card": "#090d16",
-    "border": "#1e293b",
-    "border_light": "#334155",
-    "cyan": "#38bdf8",
-    "indigo": "#818cf8",
-    "purple": "#c084fc",
-    "emerald": "#34d399",
-    "green": "#10b981",
-    "yellow": "#fde047",
-    "amber": "#f59e0b",
-    "rose": "#f43f5e",
+    "bg_deep": "#000000",
+    "bg_mid": "#0a0a0a",
+    "bg_dark": "#050505",
+    "bg_card": "#111111",
+    "border": "#333333",
+    "border_light": "#555555",
+    "cyan": "#54B948",
+    "indigo": "#0072C6",
+    "purple": "#FF007F",
+    "emerald": "#39FF14",
+    "green": "#00FF00",
+    "yellow": "#F2A900",
+    "amber": "#FF8C00",
+    "rose": "#C00000",
     "text_white": "#f8fafc",
     "text_secondary": "#94a3b8",
     "text_muted": "#64748b",
@@ -370,6 +370,8 @@ SHARED_STYLES = """
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .gta-title { font-family: 'Impact', 'Arial Black', sans-serif; font-style: italic; text-transform: uppercase; stroke: #000; stroke-width: 0.8px; }
+    .gta-mission { font-family: 'Impact', 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
     .pulse { animation: pulse 2s ease-in-out infinite; }
   </style>
@@ -399,10 +401,10 @@ def generate_overview_svg(data):
     live_color = PALETTE["green"] if is_live else PALETTE["amber"]
 
     cards = [
-        ("PUBLIC REPOS", str(data.get("public_repos", 0)), PALETTE["cyan"], "INDEXED"),
-        ("CONTRIBUTIONS", f"{data.get('total_contributions', 0):,}", PALETTE["indigo"], "THIS YEAR"),
-        ("ACTIVE STREAK", f"{data.get('current_streak', 0)}", PALETTE["emerald"], f"BEST: {data.get('longest_streak', 0)}d"),
-        ("FOLLOWERS", str(data.get("followers", 0)), PALETTE["yellow"], "NETWORK"),
+        ("SAFEHOUSES", str(data.get("public_repos", 0)), PALETTE["cyan"], "PROPERTIES"),
+        ("RESPECT", f"{data.get('total_contributions', 0):,}", PALETTE["indigo"], "ALL TIME"),
+        ("WANTED LEVEL", f"{data.get('current_streak', 0)}", PALETTE["yellow"], f"MAX: {data.get('longest_streak', 0)}d"),
+        ("CREW MEMBERS", str(data.get("followers", 0)), PALETTE["amber"], "NETWORK"),
     ]
 
     card_svgs = []
@@ -426,7 +428,7 @@ def generate_overview_svg(data):
   <!-- Header -->
   <g transform="translate(28, 24)">
     {_status_dot(6, 7, live_color)}
-    <text x="20" y="11" fill="{PALETTE['text_white']}" class="sans" font-size="14" font-weight="800">GITHUB // COMMAND CENTER TELEMETRY</text>
+    <text x="20" y="11" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">PASHA DEV // LOS SANTOS ENGINEERING</text>
     {_badge(380, -2, live_label, live_color)}
     <text x="864" y="11" fill="{PALETTE['text_muted']}" class="mono" font-size="10" text-anchor="end">SYNC: {last_sync}</text>
   </g>
@@ -444,11 +446,11 @@ def generate_overview_svg(data):
 # ────────────────────────────────────────────
 def generate_stats_svg(data):
     rows_data = [
-        ("TOTAL CONTRIBUTIONS", "VERIFIED GIT HISTORY", f"{data.get('total_contributions', 0):,}", PALETTE["cyan"]),
-        ("PUBLIC REPOSITORIES", "OPEN SOURCE &amp; PRODUCTION", str(data.get("public_repos", 0)), PALETTE["indigo"]),
-        ("FOLLOWERS", "DEVELOPER NETWORK", str(data.get("followers", 0)), PALETTE["emerald"]),
-        ("STARS RECEIVED", "COMMUNITY RECOGNITION", str(data.get("stars_received", 0)), PALETTE["yellow"]),
-        ("CURRENT STREAK", "CONSECUTIVE ACTIVE DAYS", f"{data.get('current_streak', 0)} DAYS", PALETTE["rose"]),
+        ("TOTAL HEISTS", "VERIFIED MISSIONS PASSED", f"{data.get('total_contributions', 0):,}", PALETTE["cyan"]),
+        ("PROPERTIES OWNED", "SAFEHOUSES &amp; BUSINESSES", str(data.get("public_repos", 0)), PALETTE["indigo"]),
+        ("CREW MEMBERS", "GANG NETWORK", str(data.get("followers", 0)), PALETTE["emerald"]),
+        ("BOUNTY COLLECTED", "COMMUNITY RESPECT", str(data.get("stars_received", 0)), PALETTE["yellow"]),
+        ("SURVIVAL TIME", "CONSECUTIVE DAYS SURVIVED", f"{data.get('current_streak', 0)} DAYS", PALETTE["rose"]),
     ]
 
     rows = []
@@ -469,7 +471,7 @@ def generate_stats_svg(data):
   <rect width="450" height="340" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
   <g transform="translate(24, 22)">
-    <text x="0" y="14" fill="{PALETTE['text_white']}" class="sans" font-size="14" font-weight="800">SYSTEM METRICS // LIVE</text>
+    <text x="0" y="14" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">CRIMINAL RECORD // LIVE</text>
   </g>
   <line x1="24" y1="48" x2="426" y2="48" stroke="{PALETTE['border']}" stroke-width="1" />
 
@@ -517,8 +519,8 @@ def generate_languages_svg(data):
   <rect width="450" height="340" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
   <g transform="translate(24, 22)">
-    <text x="0" y="14" fill="{PALETTE['text_white']}" class="sans" font-size="14" font-weight="800">LANGUAGE TELEMETRY</text>
-    <text x="402" y="14" fill="{PALETTE['text_muted']}" class="mono" font-size="9" text-anchor="end">BYTE RATIOS</text>
+    <text x="0" y="14" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">WEAPON WHEEL // ARSENAL</text>
+    <text x="402" y="14" fill="{PALETTE['text_muted']}" class="mono" font-size="9" text-anchor="end">AMMO COUNT</text>
   </g>
   <line x1="24" y1="48" x2="426" y2="48" stroke="{PALETTE['border']}" stroke-width="1" />
 
@@ -593,7 +595,7 @@ def generate_contributions_svg(data):
 
   <g transform="translate(32, 18)">
     {_status_dot(6, 6, "#39d353")}
-    <text x="20" y="10" fill="{PALETTE['text_white']}" class="sans" font-size="13" font-weight="800">CONTRIBUTION MATRIX</text>
+    <text x="20" y="10" fill="{PALETTE['text_white']}" class="gta-title" font-size="13" font-weight="800">TERRITORY CONTROL // HEATMAP</text>
     <text x="220" y="10" fill="{PALETTE['text_muted']}" class="mono" font-size="10">// {data.get('total_contributions', 0):,} CONTRIBUTIONS</text>
 
     <g transform="translate(700, 0)" class="mono" font-size="9">
@@ -671,7 +673,7 @@ def generate_activity_svg(data):
   <rect width="920" height="{total_h}" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
   <g transform="translate(24, 22)">
-    <text x="0" y="14" fill="{PALETTE['text_white']}" class="sans" font-size="14" font-weight="800">ACTIVITY LOG // EVENT STREAM</text>
+    <text x="0" y="14" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">RECENT HEISTS // EVENT STREAM</text>
     {_badge(320, 0, "LIVE" if data.get("is_live") else "CACHED", PALETTE["green"] if data.get("is_live") else PALETTE["amber"])}
     <text x="872" y="14" fill="{PALETTE['cyan']}" class="mono" font-size="10" text-anchor="end">STREAM: ACTIVE</text>
   </g>
@@ -680,7 +682,7 @@ def generate_activity_svg(data):
   {''.join(ev_rows)}
 
   <g transform="translate(24, {total_h - 18})">
-    <text x="0" y="0" fill="{PALETTE['green']}" class="mono" font-size="9">&gt; listening to github event stream</text>
+    <text x="0" y="0" fill="{PALETTE['green']}" class="mono" font-size="9">&gt; listening to LSPD scanner...</text>
   </g>
 </svg>'''
 
@@ -696,9 +698,9 @@ def generate_monthly_svg(data):
     cadence = round(month_contribs / max(month_active, 1), 1)
 
     cards = [
-        ("MONTH CONTRIBUTIONS", str(month_contribs), PALETTE["cyan"], "THIS MONTH"),
-        ("ACTIVE DAYS", str(month_active), PALETTE["indigo"], "DAYS WITH COMMITS"),
-        ("REPOSITORIES ACTIVE", str(min(data.get("public_repos", 0), 15)), PALETTE["purple"], "ECOSYSTEM"),
+        ("MONTHLY PAYOUT", str(month_contribs), PALETTE["cyan"], "THIS MONTH"),
+        ("DAYS SURVIVED", str(month_active), PALETTE["indigo"], "DAYS ACTIVE"),
+        ("FRONTS ACTIVE", str(min(data.get("public_repos", 0), 15)), PALETTE["purple"], "BUSINESSES"),
         ("CADENCE RATIO", str(cadence), PALETTE["yellow"], "COMMITS / ACTIVE DAY"),
     ]
 
@@ -721,7 +723,7 @@ def generate_monthly_svg(data):
 
   <g transform="translate(28, 22)">
     <rect width="6" height="16" fill="{PALETTE['cyan']}" rx="2" />
-    <text x="16" y="13" fill="{PALETTE['text_white']}" class="sans" font-size="14" font-weight="800">THIS MONTH // {month_name}</text>
+    <text x="16" y="13" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">THIS MONTH // PAYOUTS</text>
     <text x="864" y="13" fill="{PALETTE['text_muted']}" class="mono" font-size="10" text-anchor="end">DYNAMIC TELEMETRY</text>
   </g>
   <line x1="28" y1="44" x2="892" y2="44" stroke="{PALETTE['border']}" stroke-width="1" />
@@ -737,10 +739,10 @@ def generate_monthly_svg(data):
 # ────────────────────────────────────────────
 def generate_metrics_svg(data):
     cards = [
-        ("PUBLIC REPOS", str(data.get("public_repos", 0)), PALETTE["cyan"], "FULL-STACK &amp; AI"),
-        ("CONTRIBUTIONS", f"{data.get('total_contributions', 0):,}", PALETTE["indigo"], "VERIFIED GIT ACTIVITY"),
-        ("FOLLOWERS", str(data.get("followers", 0)), PALETTE["purple"], "DEVELOPER NETWORK"),
-        ("STARS", str(data.get("stars_received", 0)), PALETTE["emerald"], "COMMUNITY"),
+        ("SAFEHOUSES", str(data.get("public_repos", 0)), PALETTE["cyan"], "PROPERTIES"),
+        ("RESPECT", f"{data.get('total_contributions', 0):,}", PALETTE["indigo"], "ALL TIME"),
+        ("CREW", str(data.get("followers", 0)), PALETTE["purple"], "NETWORK"),
+        ("BOUNTY", str(data.get("stars_received", 0)), PALETTE["yellow"], "RESPECT"),
     ]
 
     card_svgs = []
@@ -770,10 +772,14 @@ def generate_metrics_svg(data):
 # 8. STREAK.SVG
 # ────────────────────────────────────────────
 def generate_streak_svg(data):
+    streak = data.get("current_streak", 0)
+    stars = "★" * min(5, (streak // 2) + 1)
+    if streak == 0: stars = "☆☆☆☆☆"
+    
     cols = [
-        ("CURRENT STREAK", str(data.get("current_streak", 0)), "DAYS ACTIVE", "CONSECUTIVE SPRINT", PALETTE["rose"]),
-        ("TOTAL CONTRIBUTIONS", f"{data.get('total_contributions', 0):,}", "EVENTS", "PAST 12 MONTHS", PALETTE["cyan"]),
-        ("LONGEST STREAK", str(data.get("longest_streak", 0)), "DAYS PEAK", "MAX VELOCITY", PALETTE["yellow"]),
+        ("WANTED LEVEL", stars, f"{streak} DAYS", "SURVIVAL TIME", PALETTE["rose"]),
+        ("TOTAL HEISTS", f"{data.get('total_contributions', 0):,}", "MISSIONS PASSED", "PAST 12 MONTHS", PALETTE["cyan"]),
+        ("LONGEST SURVIVAL", str(data.get("longest_streak", 0)), "DAYS PEAK", "MAX VELOCITY", PALETTE["yellow"]),
     ]
 
     col_svgs = []
@@ -785,9 +791,8 @@ def generate_streak_svg(data):
       <rect width="{w}" height="94" rx="6" fill="{PALETTE['bg_card']}" stroke="{PALETTE['border']}" stroke-width="1" />
       <rect width="{w}" height="3" rx="1.5" fill="{color}" />
       <text x="16" y="28" fill="{PALETTE['text_muted']}" class="mono" font-size="9" font-weight="700">{label}</text>
-      <text x="16" y="64" fill="{color}" class="mono" font-size="32" font-weight="900">{value}</text>
-      <text x="{16 + len(value) * 20}" y="60" fill="{PALETTE['text_secondary']}" class="mono" font-size="11">{unit}</text>
-      <text x="16" y="82" fill="{PALETTE['text_muted']}" class="mono" font-size="9">{sub}</text>
+      <text x="16" y="64" fill="{color}" class="gta-mission" font-size="32" font-weight="900">{value}</text>
+      <text x="16" y="82" fill="{PALETTE['text_secondary']}" class="mono" font-size="10">{unit} • {sub}</text>
     </g>''')
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 130" width="100%" height="100%">

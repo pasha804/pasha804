@@ -1,7 +1,7 @@
 <!--
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                    PASHA DEV // COMMAND CENTER v3.0                        ║
-║                    AI FULL-STACK SYSTEMS ARCHITECT                         ║
+║                    GRAND THEFT AUTO: PASHA DEV // LOS SANTOS ENGINEERING                        ║
+║                    CHIEF HECKER &amp; GANG LEADER                         ║
 ║                 Muhammad Mubashar • Lahore, Pakistan                       ║
 ║                                                                            ║
 ║  Stats: LIVE via GitHub API  •  Auto-refresh: Every 6h via Actions CI/CD   ║
@@ -11,7 +11,7 @@
 <div align="center">
 
 <!-- ═══════════════════════ HERO BANNER ═══════════════════════ -->
-<img src="./assets/hero-3d-motion.gif" width="100%" alt="Pasha Dev — AI Full-Stack Developer Command Center"/>
+<img src="./assets/hero-3d-motion.gif" width="100%" alt="Pasha Dev — Los Santos Command Center"/>
 
 <br/>
 
@@ -51,7 +51,7 @@
 
 ---
 
-## 🧬 01 // IDENTITY & LIVE TELEMETRY
+## 🧬 01 // CHARACTER SELECT & LIVE TELEMETRY
 
 <table>
 <tr>
@@ -60,21 +60,21 @@
 ### Muhammad Mubashar — Pasha Dev
 **AI Full-Stack Developer • Systems Architect • Product Engineer**
 
-I build software systems at the convergence of **production-grade backend architecture**, **type-safe frontend engineering**, **autonomous AI tool calling**, and **cinematic user interfaces**.
+I execute digital heists at the convergence of **production-grade backend architecture**, **type-safe frontend engineering**, **autonomous AI tool calling**, and **cinematic user interfaces**.
 
-> *"Architecture before abstraction. Systems before shortcuts. UX before decoration. AI as an engineering multiplier."*
+> *"Survival before abstraction. Respect before shortcuts. UX before decoration. AI as an engineering multiplier."*
 
 **Core Engineering Disciplines:**
 
-🤖 **AI-Native Systems & Autonomous Agents** — Autonomous workflows, tool calling, long-term contextual memory, and low-latency voice integration.
+🤖 **Autonomous Crew Members** — Autonomous workflows, tool calling, long-term contextual memory, and low-latency voice integration.
 
-🌐 **Distributed Full-Stack Architectures** — Resilient microservice products built on React, Next.js, TypeScript, FastAPI, PostgreSQL, and Redis.
+🌐 **Distributed Safehouse Architectures** — Resilient microservice products built on React, Next.js, TypeScript, FastAPI, PostgreSQL, and Redis.
 
-🖥️ **Native Desktop Systems & AI HUDs** — High-performance desktop companions engineered with Tauri (Rust), React, and local Python runtime cores.
+🖥️ **Native Surveillance & AI HUDs** — High-performance desktop companions engineered with Tauri (Rust), React, and local Python runtime cores.
 
-🛡️ **Stealth Vision & Developer Tooling** — Real-time canvas OCR, undetectable transparent HUD overlays, and multi-model LLM reasoning engines.
+🛡️ **Stealth Vision & Infiltration Tooling** — Real-time canvas OCR, undetectable transparent HUD overlays, and multi-model LLM reasoning engines.
 
-⚡ **Production Shipping** — Rapid validation from idea through architecture, strict automated testing, containerized deployment, and live telemetry observability.
+⚡ **Mission Passed (Prod Shipping)** — Rapid validation from idea through architecture, strict automated testing, containerized deployment, and live telemetry observability.
 
 </td>
 <td width="32%" align="center" valign="middle">
@@ -97,7 +97,7 @@ I build software systems at the convergence of **production-grade backend archit
 
 ---
 
-## ⚡ 02 // ENGINEERING DNA & PIPELINE
+## ⚡ 02 // HEIST BLUEPRINTS & EXECUTION
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -120,7 +120,7 @@ I build software systems at the convergence of **production-grade backend archit
 
 ---
 
-## 🛠️ 03 // TECHNOLOGY UNIVERSE
+## 🛠️ 03 // WEAPON WHEEL & ARSENAL
 
 <div align="center">
   <img src="./assets/tech-universe.svg" width="100%" alt="Pasha Dev Technology Universe"/>
@@ -128,7 +128,7 @@ I build software systems at the convergence of **production-grade backend archit
 
 ---
 
-## 🟣 04 // CURRENT SPRINT: NEXORA (FLAGSHIP)
+## 🟣 04 // ACTIVE MISSION: NEXORA (FLAGSHIP)
 
 <div align="center">
 
@@ -177,7 +177,7 @@ Nexora is an AI-powered skill social platform merging professional developer ide
 
 ---
 
-## 🧪 05 // PRODUCT LAB — PRODUCTION SYSTEMS
+## 🧪 05 // PROPERTIES & SAFEHOUSES
 
 <br/>
 
@@ -326,7 +326,7 @@ An open-source stealth AI overlay for live technical interviews, DSA, and OAs:
 
 ---
 
-## 🏛️ 06 // SYSTEM ARCHITECTURE BLUEPRINT
+## 🏛️ 06 // HEIST ARCHITECTURE BLUEPRINT
 
 How software systems are designed from user touchpoint to distributed storage:
 
@@ -336,7 +336,7 @@ How software systems are designed from user touchpoint to distributed storage:
 
 ---
 
-## 📊 07 // GITHUB COMMAND CENTER — LIVE TELEMETRY
+## 📊 07 // LSPD CRIMINAL RECORD — LIVE TELEMETRY
 
 > **All stats below are real-time data** sourced directly from the GitHub API and auto-refreshed every 6 hours via GitHub Actions CI/CD. No static fakes, no third-party services.
 
@@ -383,7 +383,7 @@ How software systems are designed from user touchpoint to distributed storage:
 
 ---
 
-## ⚙️ 08 // AI × ENGINEERING WORKFLOW
+## ⚙️ 08 // CREW EXPANSION WORKFLOW
 
 I do not treat AI as a replacement for engineering fundamentals. AI is an **exponential multiplier** for research velocity, syntax generation, and exploration, while architectural boundaries, security, type safety, testing, and production deployments remain strictly under developer command.
 

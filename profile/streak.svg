@@ -2,23 +2,23 @@
   
   <defs>
     <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080c16" />
-      <stop offset="50%" stop-color="#0e1526" />
-      <stop offset="100%" stop-color="#060910" />
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="50%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#050505" />
     </linearGradient>
     <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="0%" stop-color="#54B948" />
       <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
+      <stop offset="0%" stop-color="#54B948" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#555555" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0072C6" stop-opacity="0.5" />
     </linearGradient>
     <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#818cf8" />
-      <stop offset="100%" stop-color="#c084fc" />
+      <stop offset="0%" stop-color="#54B948" />
+      <stop offset="50%" stop-color="#0072C6" />
+      <stop offset="100%" stop-color="#FF007F" />
     </linearGradient>
     <filter id="glow-sm" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="2" result="blur" />
@@ -30,38 +30,37 @@
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .gta-title { font-family: 'Impact', 'Arial Black', sans-serif; font-style: italic; text-transform: uppercase; stroke: #000; stroke-width: 0.8px; }
+    .gta-mission { font-family: 'Impact', 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
     .pulse { animation: pulse 2s ease-in-out infinite; }
   </style>
 
 
-  <rect width="920" height="130" rx="10" fill="#080c16" stroke="#1e293b" stroke-width="1.5" />
+  <rect width="920" height="130" rx="10" fill="#000000" stroke="#333333" stroke-width="1.5" />
 
   <g transform="translate(24, 18)">
     
     <g transform="translate(0, 0)">
-      <rect width="272" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <rect width="272" height="3" rx="1.5" fill="#f43f5e" />
-      <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">CURRENT STREAK</text>
-      <text x="16" y="64" fill="#f43f5e" class="mono" font-size="32" font-weight="900">1</text>
-      <text x="36" y="60" fill="#94a3b8" class="mono" font-size="11">DAYS ACTIVE</text>
-      <text x="16" y="82" fill="#64748b" class="mono" font-size="9">CONSECUTIVE SPRINT</text>
+      <rect width="272" height="94" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />
+      <rect width="272" height="3" rx="1.5" fill="#C00000" />
+      <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">WANTED LEVEL</text>
+      <text x="16" y="64" fill="#C00000" class="gta-mission" font-size="32" font-weight="900">★</text>
+      <text x="16" y="82" fill="#94a3b8" class="mono" font-size="10">1 DAYS • SURVIVAL TIME</text>
     </g>
     <g transform="translate(300, 0)">
-      <rect width="272" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <rect width="272" height="3" rx="1.5" fill="#38bdf8" />
-      <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">TOTAL CONTRIBUTIONS</text>
-      <text x="16" y="64" fill="#38bdf8" class="mono" font-size="32" font-weight="900">229</text>
-      <text x="76" y="60" fill="#94a3b8" class="mono" font-size="11">EVENTS</text>
-      <text x="16" y="82" fill="#64748b" class="mono" font-size="9">PAST 12 MONTHS</text>
+      <rect width="272" height="94" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />
+      <rect width="272" height="3" rx="1.5" fill="#54B948" />
+      <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">TOTAL HEISTS</text>
+      <text x="16" y="64" fill="#54B948" class="gta-mission" font-size="32" font-weight="900">229</text>
+      <text x="16" y="82" fill="#94a3b8" class="mono" font-size="10">MISSIONS PASSED • PAST 12 MONTHS</text>
     </g>
     <g transform="translate(600, 0)">
-      <rect width="272" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <rect width="272" height="3" rx="1.5" fill="#fde047" />
-      <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">LONGEST STREAK</text>
-      <text x="16" y="64" fill="#fde047" class="mono" font-size="32" font-weight="900">4</text>
-      <text x="36" y="60" fill="#94a3b8" class="mono" font-size="11">DAYS PEAK</text>
-      <text x="16" y="82" fill="#64748b" class="mono" font-size="9">MAX VELOCITY</text>
+      <rect width="272" height="94" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />
+      <rect width="272" height="3" rx="1.5" fill="#F2A900" />
+      <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">LONGEST SURVIVAL</text>
+      <text x="16" y="64" fill="#F2A900" class="gta-mission" font-size="32" font-weight="900">4</text>
+      <text x="16" y="82" fill="#94a3b8" class="mono" font-size="10">DAYS PEAK • MAX VELOCITY</text>
     </g>
   </g>
 </svg>
