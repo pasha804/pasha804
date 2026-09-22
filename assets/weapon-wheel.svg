@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wheel-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a120a" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#000000" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#050505" />
+    </radialGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5AF00" />
+      <stop offset="100%" stop-color="#FFD700" />
+    </linearGradient>
+    <filter id="reticle-glow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+    .gta-title { font-family: 'Impact', 'Arial Black', sans-serif; font-style: italic; text-transform: uppercase; }
+    .weapon-title { font-family: 'Impact', 'Arial Black', sans-serif; letter-spacing: 1px; font-size: 13px; }
+  </style>
+
+  <!-- Container -->
+  <rect width="940" height="480" rx="12" fill="#040608" stroke="#1f2937" stroke-width="1.5" />
+
+  <!-- Top HUD Bar -->
+  <g transform="translate(30, 28)">
+    <text x="0" y="12" fill="#F5AF00" class="gta-title" font-size="16" font-weight="900">WEAPON WHEEL // FULL-STACK ARSENAL</text>
+    <text x="880" y="12" fill="#54B948" class="mono" font-size="12" font-weight="800" text-anchor="end">AMMO: ∞ UNLIMITED</text>
+    <line x1="0" y1="24" x2="880" y2="24" stroke="#222" stroke-width="1" />
+  </g>
+
+  <!-- Left Stats Panel -->
+  <g transform="translate(36, 120)" class="mono">
+    <rect width="210" height="270" rx="8" fill="#0c1017" stroke="#222" stroke-width="1" />
+    <rect width="210" height="4" rx="2" fill="#F5AF00" />
+    <text x="16" y="28" fill="#F5AF00" font-size="12" font-weight="800">EQUIPPED WEAPON</text>
+    <text x="16" y="48" fill="#ffffff" font-size="14" font-weight="900">PYTHON 3.12</text>
+    <text x="16" y="64" fill="#94a3b8" font-size="9">CALIBER: AI / SYSTEMS CORE</text>
+
+    <!-- Attribute Bars -->
+    <g transform="translate(16, 90)">
+      <text x="0" y="0" fill="#94a3b8" font-size="9">SYSTEM VELOCITY</text>
+      <rect x="0" y="6" width="178" height="8" rx="4" fill="#1e293b" />
+      <rect x="0" y="6" width="170" height="8" rx="4" fill="#54B948" />
+      
+      <text x="0" y="32" fill="#94a3b8" font-size="9">MEMORY OPTIMIZATION</text>
+      <rect x="0" y="38" width="178" height="8" rx="4" fill="#1e293b" />
+      <rect x="0" y="38" width="162" height="8" rx="4" fill="#54B948" />
+
+      <text x="0" y="64" fill="#94a3b8" font-size="9">TOOL CALLING ACCURACY</text>
+      <rect x="0" y="70" width="178" height="8" rx="4" fill="#1e293b" />
+      <rect x="0" y="70" width="174" height="8" rx="4" fill="#54B948" />
+
+      <text x="0" y="96" fill="#94a3b8" font-size="9">PRODUCTION DURABILITY</text>
+      <rect x="0" y="102" width="178" height="8" rx="4" fill="#1e293b" />
+      <rect x="0" y="102" width="168" height="8" rx="4" fill="#54B948" />
+    </g>
+
+    <text x="16" y="248" fill="#64748b" font-size="9">MODS: ASYNCIO • FASTAPI • TORCH</text>
+  </g>
+
+  <!-- Center Circular Weapon Wheel -->
+  <g transform="translate(470, 260)">
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="165" fill="none" stroke="#222" stroke-width="2" />
+    <circle cx="0" cy="0" r="145" fill="url(#wheel-glow)" stroke="#333" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="70" fill="#05080c" stroke="#444" stroke-width="1.5" />
+
+    <!-- 8 Dividing Spokes -->
+    <line x1="0" y1="-145" x2="0" y2="-70" stroke="#333" stroke-width="2" />
+    <line x1="102" y1="-102" x2="49" y2="-49" stroke="#333" stroke-width="2" />
+    <line x1="145" y1="0" x2="70" y2="0" stroke="#333" stroke-width="2" />
+    <line x1="102" y1="102" x2="49" y2="49" stroke="#333" stroke-width="2" />
+    <line x1="0" y1="145" x2="0" y2="70" stroke="#333" stroke-width="2" />
+    <line x1="-102" y1="102" x2="-49" y2="49" stroke="#333" stroke-width="2" />
+    <line x1="-145" y1="0" x2="-70" y2="0" stroke="#333" stroke-width="2" />
+    <line x1="-102" y1="-102" x2="-49" y2="-49" stroke="#333" stroke-width="2" />
+
+    <!-- Highlighted Active Sector (Top: Python) -->
+    <path d="M -49 -49 A 70 70 0 0 1 49 -49 L 102 -102 A 145 145 0 0 0 -102 -102 Z" fill="#F5AF00" fill-opacity="0.25" stroke="#F5AF00" stroke-width="2" />
+
+    <!-- Slot 1 (Top): PYTHON -->
+    <g transform="translate(0, -108)" text-anchor="middle">
+      <text x="0" y="-4" fill="#F5AF00" class="weapon-title">PYTHON</text>
+      <text x="0" y="8" fill="#ffffff" class="mono" font-size="8">HEAVY SNIPER</text>
+    </g>
+
+    <!-- Slot 2 (Top-Right): TYPESCRIPT -->
+    <g transform="translate(85, -70)" text-anchor="middle">
+      <text x="0" y="-2" fill="#60a5fa" class="weapon-title">TYPESCRIPT</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">COMBAT MG</text>
+    </g>
+
+    <!-- Slot 3 (Right): REACT / NEXT.JS -->
+    <g transform="translate(108, 0)" text-anchor="middle">
+      <text x="0" y="-2" fill="#38bdf8" class="weapon-title">NEXT.JS</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">ASSAULT RIFLE</text>
+    </g>
+
+    <!-- Slot 4 (Bottom-Right): POSTGRESQL -->
+    <g transform="translate(85, 75)" text-anchor="middle">
+      <text x="0" y="-2" fill="#a78bfa" class="weapon-title">POSTGRES</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">STICKY BOMBS</text>
+    </g>
+
+    <!-- Slot 5 (Bottom): DOCKER -->
+    <g transform="translate(0, 110)" text-anchor="middle">
+      <text x="0" y="-2" fill="#38bdf8" class="weapon-title">DOCKER</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">BODY ARMOR</text>
+    </g>
+
+    <!-- Slot 6 (Bottom-Left): TAURI / RUST -->
+    <g transform="translate(-85, 75)" text-anchor="middle">
+      <text x="0" y="-2" fill="#f97316" class="weapon-title">TAURI / RUST</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">AP PISTOL</text>
+    </g>
+
+    <!-- Slot 7 (Left): THREE.JS / WEBGL -->
+    <g transform="translate(-108, 0)" text-anchor="middle">
+      <text x="0" y="-2" fill="#34d399" class="weapon-title">THREE.JS</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">RAYGUN</text>
+    </g>
+
+    <!-- Slot 8 (Top-Left): AI TOOLING -->
+    <g transform="translate(-85, -70)" text-anchor="middle">
+      <text x="0" y="-2" fill="#ec4899" class="weapon-title">AI AGENTS</text>
+      <text x="0" y="10" fill="#cbd5e1" class="mono" font-size="8">HOMING RPG</text>
+    </g>
+
+    <!-- Center Reticle / Crosshair -->
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#F5AF00" stroke-width="1.5" />
+    <line x1="-24" y1="0" x2="-18" y2="0" stroke="#F5AF00" stroke-width="2" />
+    <line x1="18" y1="0" x2="24" y2="0" stroke="#F5AF00" stroke-width="2" />
+    <line x1="0" y1="-24" x2="0" y2="-18" stroke="#F5AF00" stroke-width="2" />
+    <line x1="0" y1="18" x2="0" y2="24" stroke="#F5AF00" stroke-width="2" />
+    <circle cx="0" cy="0" r="3" fill="#F5AF00" />
+    <text x="0" y="40" fill="#94a3b8" class="mono" font-size="8" text-anchor="middle">SLOT 01/08</text>
+  </g>
+
+  <!-- Right Tactical Overview Panel -->
+  <g transform="translate(694, 120)" class="mono">
+    <rect width="210" height="270" rx="8" fill="#0c1017" stroke="#222" stroke-width="1" />
+    <rect width="210" height="4" rx="2" fill="#54B948" />
+    <text x="16" y="28" fill="#54B948" font-size="12" font-weight="800">AMMO &amp; LOADOUT</text>
+    
+    <g transform="translate(16, 52)">
+      <text x="0" y="0" fill="#94a3b8" font-size="9">FRONTEND</text>
+      <text x="0" y="16" fill="#ffffff" font-size="11" font-weight="700">React • Next.js 15</text>
+      <text x="0" y="30" fill="#64748b" font-size="8">Tailwind • Framer Motion</text>
+
+      <text x="0" y="56" fill="#94a3b8" font-size="9">BACKEND &amp; APIS</text>
+      <text x="0" y="72" fill="#ffffff" font-size="11" font-weight="700">FastAPI • Python • Node</text>
+      <text x="0" y="86" fill="#64748b" font-size="8">AsyncIO • WebSockets</text>
+
+      <text x="0" y="112" fill="#94a3b8" font-size="9">DATABASES &amp; CACHE</text>
+      <text x="0" y="128" fill="#ffffff" font-size="11" font-weight="700">PostgreSQL • Redis</text>
+      <text x="0" y="142" fill="#64748b" font-size="8">Prisma • SQLAlchemy</text>
+
+      <text x="0" y="168" fill="#94a3b8" font-size="9">DEVOPS &amp; RUNTIME</text>
+      <text x="0" y="184" fill="#ffffff" font-size="11" font-weight="700">Docker • GitHub CI/CD</text>
+      <text x="0" y="198" fill="#64748b" font-size="8">Railway • Vercel • Linux</text>
+    </g>
+  </g>
+
+  <!-- Bottom Ticker -->
+  <g transform="translate(36, 452)" class="mono" font-size="9" fill="#64748b">
+    <text x="0" y="0">&gt; AMMU-NATION CERTIFIED LOADOUT // PRESS [TAB] TO SWITCH WEAPON</text>
+    <text x="868" y="0" text-anchor="end" fill="#54B948">STATUS: LOADED &amp; OPERATIONAL</text>
+  </g>
+</svg>

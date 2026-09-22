@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mp-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#0a0a0a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </linearGradient>
+    <filter id="mp-shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.9" />
+    </filter>
+  </defs>
+  <style>
+    .gta-passed { font-family: 'Impact', 'Arial Black', sans-serif; font-size: 52px; font-style: italic; text-transform: uppercase; fill: #F5AF00; letter-spacing: 2px; }
+    .gta-respect { font-family: 'Impact', 'Arial Black', sans-serif; font-size: 26px; text-transform: uppercase; fill: #39D353; letter-spacing: 4px; }
+    .mono { font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+  </style>
+
+  <rect width="940" height="130" rx="8" fill="url(#mp-bg)" stroke="#333333" stroke-width="1.5" />
+  
+  <!-- Subtle Top and Bottom Accent Lines -->
+  <line x1="20" y1="8" x2="920" y2="8" stroke="#F5AF00" stroke-width="1.5" stroke-opacity="0.7" />
+  <line x1="20" y1="122" x2="920" y2="122" stroke="#F5AF00" stroke-width="1.5" stroke-opacity="0.7" />
+
+  <!-- Center Mission Passed -->
+  <g transform="translate(470, 56)" text-anchor="middle">
+    <text x="0" y="0" class="gta-passed" filter="url(#mp-shadow)">MISSION PASSED!</text>
+  </g>
+
+  <!-- Respect + Banner -->
+  <g transform="translate(470, 92)" text-anchor="middle">
+    <text x="0" y="0" class="gta-respect" filter="url(#mp-shadow)">RESPECT +</text>
+  </g>
+
+  <!-- Side Mission Stats -->
+  <g transform="translate(36, 68)" class="mono" font-size="9" fill="#94a3b8">
+    <text x="0" y="0">OBJECTIVE: BUILD &amp; SHIP</text>
+    <text x="0" y="16">RATING: ★★★★★ GOLD</text>
+  </g>
+
+  <g transform="translate(904, 68)" class="mono" font-size="9" fill="#94a3b8" text-anchor="end">
+    <text x="0" y="0">PAYOUT: $24,850,900</text>
+    <text x="0" y="16">STATUS: ALL SYSTEMS GREEN</text>
+  </g>
+</svg>

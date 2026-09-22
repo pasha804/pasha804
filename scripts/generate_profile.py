@@ -773,40 +773,59 @@ def generate_metrics_svg(data):
 # ────────────────────────────────────────────
 def generate_streak_svg(data):
     streak = data.get("current_streak", 0)
-    stars = "★" * min(5, (streak // 2) + 1)
-    if streak == 0: stars = "☆☆☆☆☆"
+    # Determine star count (1 to 5 stars)
+    star_count = min(5, max(1, (streak // 3) + 1))
     
+    stars_svg = []
+    for s in range(5):
+        is_active = s < star_count
+        color = "#F5AF00" if is_active else "#22252a"
+        stroke_col = "#F5AF00" if is_active else "#374151"
+        pulse_class = ' class="pulse"' if is_active and s == (star_count - 1) else ''
+        stars_svg.append(f'''
+        <g transform="translate({s * 32}, 0)"{pulse_class}>
+          <polygon points="12,1 15,9 24,9 17,14 20,23 12,17 4,23 7,14 0,9 9,9" 
+                   fill="{color}" stroke="{stroke_col}" stroke-width="1.2" />
+        </g>''')
+
     cols = [
-        ("WANTED LEVEL", stars, f"{streak} DAYS", "SURVIVAL TIME", PALETTE["rose"]),
-        ("TOTAL HEISTS", f"{data.get('total_contributions', 0):,}", "MISSIONS PASSED", "PAST 12 MONTHS", PALETTE["cyan"]),
-        ("LONGEST SURVIVAL", str(data.get("longest_streak", 0)), "DAYS PEAK", "MAX VELOCITY", PALETTE["yellow"]),
+        ("WANTED LEVEL", f"{star_count}-STAR PRIORITY", f"{streak} DAYS CONSECUTIVE", PALETTE["rose"]),
+        ("TOTAL MISSIONS", f"{data.get('total_contributions', 0):,}", "VERIFIED PASSED", PALETTE["cyan"]),
+        ("MAX EVASION", f"{data.get('longest_streak', 0)} DAYS", "LONGEST STREAK", PALETTE["yellow"]),
     ]
 
     col_svgs = []
-    for i, (label, value, unit, sub, color) in enumerate(cols):
-        tx = i * 300
-        w = 272 if i < 2 else 272
+    for i, (label, val, sub, color) in enumerate(cols):
+        tx = i * 296
         col_svgs.append(f'''
     <g transform="translate({tx}, 0)">
-      <rect width="{w}" height="94" rx="6" fill="{PALETTE['bg_card']}" stroke="{PALETTE['border']}" stroke-width="1" />
-      <rect width="{w}" height="3" rx="1.5" fill="{color}" />
-      <text x="16" y="28" fill="{PALETTE['text_muted']}" class="mono" font-size="9" font-weight="700">{label}</text>
-      <text x="16" y="64" fill="{color}" class="gta-mission" font-size="32" font-weight="900">{value}</text>
-      <text x="16" y="82" fill="{PALETTE['text_secondary']}" class="mono" font-size="10">{unit} • {sub}</text>
+      <rect width="272" height="96" rx="8" fill="{PALETTE['bg_card']}" stroke="{PALETTE['border']}" stroke-width="1" />
+      <rect width="272" height="3" rx="1.5" fill="{color}" />
+      <text x="16" y="24" fill="{PALETTE['text_muted']}" class="mono" font-size="9" font-weight="700">{label}</text>
+      <text x="16" y="58" fill="{color}" class="gta-mission" font-size="24" font-weight="900">{val}</text>
+      <text x="16" y="80" fill="{PALETTE['text_secondary']}" class="mono" font-size="10">{sub}</text>
     </g>''')
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 130" width="100%" height="100%">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 150" width="100%" height="100%">
   {SHARED_SVG_HEAD}
   {SHARED_STYLES}
 
-  <rect width="920" height="130" rx="10" fill="{PALETTE['bg_deep']}" stroke="{PALETTE['border']}" stroke-width="1.5" />
+  <rect width="920" height="150" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
+  <!-- Top bar with Wanted Stars -->
   <g transform="translate(24, 18)">
+    <rect width="6" height="18" fill="{PALETTE['rose']}" rx="2" />
+    <text x="16" y="14" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">LSPD WANTED STATUS // ACTIVE HEIST STREAK</text>
+    <g transform="translate(710, -3)">
+      {''.join(stars_svg)}
+    </g>
+  </g>
+  <line x1="24" y1="42" x2="896" y2="42" stroke="{PALETTE['border']}" stroke-width="1" />
+
+  <g transform="translate(24, 52)">
     {''.join(col_svgs)}
   </g>
 </svg>'''
-
-
 # ==========================================
 # MAIN
 # ==========================================

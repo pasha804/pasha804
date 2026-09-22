@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasha Dev — Digital Engineering Command Center Preview</title>
+  <title>Grand Theft Auto: Pasha Dev — Los Santos Command Center</title>
   <style>
     :root {
-      --bg: #070a13;
-      --card-bg: #0d1322;
-      --border: #1e293b;
+      --bg: #040608;
+      --card-bg: #0a0e14;
+      --border: #22272e;
       --text: #94a3b8;
       --text-bright: #f8fafc;
-      --link: #38bdf8;
+      --link: #F5AF00;
+      --gta-yellow: #F5AF00;
+      --gta-green: #54B948;
     }
     [data-theme="light"] {
-      --bg: #f8fafc;
+      --bg: #f3f4f6;
       --card-bg: #ffffff;
       --border: #e2e8f0;
       --text: #475569;
       --text-bright: #0f172a;
-      --link: #0284c7;
+      --link: #d97706;
+      --gta-yellow: #d97706;
+      --gta-green: #16a34a;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -52,22 +56,23 @@
       backdrop-filter: blur(20px);
     }
     .badge {
-      background: linear-gradient(135deg, #0284c7, #6366f1);
-      color: #fff;
+      background: linear-gradient(135deg, #F5AF00, #EA4335);
+      color: #000;
       padding: 4px 12px;
       border-radius: 9999px;
       font-size: 11px;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
     .btn {
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
-      color: #fff;
+      background: linear-gradient(135deg, #F5AF00, #d97706);
+      color: #000;
       border: none;
       padding: 8px 18px;
       border-radius: 8px;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 13px;
       transition: transform 0.2s;
     }
@@ -93,7 +98,7 @@
     }
     .product-card:hover {
       transform: translateY(-2px);
-      border-color: var(--link);
+      border-color: var(--gta-yellow);
     }
     .product-card img { margin-bottom: 12px; }
     .product-card h3 {
@@ -112,6 +117,9 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
       margin-top: 36px;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-style: italic;
+      letter-spacing: 1px;
     }
     hr {
       border: 0;
@@ -121,8 +129,8 @@
     blockquote {
       margin: 16px 0;
       padding: 12px 20px;
-      border-left: 3px solid #38bdf8;
-      background: rgba(56, 189, 248, 0.05);
+      border-left: 3px solid #F5AF00;
+      background: rgba(245, 175, 0, 0.06);
       border-radius: 0 8px 8px 0;
       color: var(--text-bright);
       font-style: italic;
@@ -145,15 +153,17 @@
   <div class="preview-container">
     <div class="top-bar">
       <div>
-        <span class="badge">SYSTEM PREVIEW</span>
-        <strong style="margin-left: 8px; color: var(--text-bright);">Pasha Dev // Command Center</strong>
+        <span class="badge">GTA V // OPERATION LOS SANTOS</span>
+        <strong style="margin-left: 8px; color: var(--text-bright);">Pasha Dev // Los Santos Engineering</strong>
       </div>
       <button class="btn" onclick="toggleTheme()">Toggle Dark / Light Mode</button>
     </div>
 
     <!-- Hero Section -->
     <div style="text-align: center;">
-      <img src="./assets/hero-3d-motion.gif" alt="Pasha Dev 3D Hero Motion Banner">
+      <img src="./assets/gta-hero-banner.jpg" alt="GTA Pasha Dev Hero Loading Screen">
+      <div class="section-spacer"></div>
+      <img src="./assets/mission-passed.svg" alt="Mission Passed // Respect +">
       <div class="section-spacer"></div>
       <img src="./assets/typing.svg" alt="Terminal Prompt Session">
       <div class="section-spacer"></div>
@@ -164,19 +174,19 @@
 
     <hr>
 
-    <!-- Identity & 3D Neural Core -->
-    <h2>01 // IDENTITY &amp; LIVE TELEMETRY</h2>
+    <!-- Character Select & LSPD Dossier -->
+    <h2>01 // CHARACTER SELECT &amp; LSPD DOSSIER</h2>
     <table style="width: 100%; border-collapse: collapse;">
       <tr>
-        <td style="width: 68%; vertical-align: top; padding-right: 24px;">
-          <h3 style="border: none; margin: 0;">Muhammad Mubashar — Pasha Dev</h3>
-          <p><strong>AI Full-Stack Developer • Systems Architect • Product Engineer</strong></p>
-          <blockquote>"Architecture before abstraction. Systems before shortcuts. UX before decoration. AI as an engineering multiplier."</blockquote>
-          <p>Building at the intersection of production-grade backend architecture, type-safe frontend engineering, autonomous AI tool calling, and cinematic 3D WebGL interfaces.</p>
+        <td style="width: 65%; vertical-align: top; padding-right: 24px;">
+          <h3 style="border: none; margin: 0; font-family: -apple-system, sans-serif; font-style: normal;">Muhammad Mubashar — Pasha Dev</h3>
+          <p><strong>The Mastermind // AI Full-Stack Developer • Systems Architect • Product Engineer</strong></p>
+          <blockquote>"Survival before abstraction. Respect before shortcuts. Zero-friction execution. AI as the ultimate crew multiplier."</blockquote>
+          <p>Operating from the underground digital underbelly of Los Santos, executing full-scale software heists at the convergence of resilient backends, type-safe frontends, autonomous AI agents, and cinematic WebGL interfaces.</p>
         </td>
-        <td style="width: 32%; text-align: center; vertical-align: middle;">
-          <img src="./assets/hologram-cube.gif" style="width: 200px; margin: 0 auto;" alt="3D Hologram Cube">
-          <div style="font-size: 11px; margin-top: 8px; font-weight: 700; color: #38bdf8;">3D SYSTEM CORE</div>
+        <td style="width: 35%; text-align: center; vertical-align: middle;">
+          <img src="./assets/gta-mugshot.jpg" style="width: 100%; max-width: 240px; margin: 0 auto;" alt="LSPD Booking Mugshot: Pasha Dev">
+          <div style="font-size: 11px; margin-top: 8px; font-weight: 700; color: #F5AF00;">LSPD FILE #804 // ACTIVE</div>
         </td>
       </tr>
     </table>
@@ -186,128 +196,138 @@
 
     <hr>
 
-    <!-- Engineering DNA -->
-    <h2>02 // ENGINEERING DNA &amp; PIPELINE</h2>
+    <!-- The Heist Blueprint -->
+    <h2>02 // THE HEIST BLUEPRINT (METHODOLOGY)</h2>
     <pre>
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ 01 / SPEC &amp; FRICTION ANALYSIS   ──► Deconstruct user pain &amp; latency bounds  │
-│ 02 / SYSTEM &amp; SCHEMA ARCHITECTURE ──► PostgreSQL DDL, API contracts &amp; types  │
-│ 03 / AI-ACCELERATED SYNTHESIS   ──► High-velocity builds with tool calling   │
+│ 01 / RECON &amp; FRICTION ANALYSIS  ──► Deconstruct user pain &amp; latency bounds  │
+│ 02 / BLUEPRINT &amp; SCHEMA DDL     ──► PostgreSQL DDL, API contracts &amp; types  │
+│ 03 / TACTICAL AI-TOOL BUILD     ──► High-velocity builds with tool calling   │
 │ 04 / RIGOROUS TYPE &amp; LATENCY QA ──► Strict tests, memory profiles &amp; edges   │
-│ 05 / CONTAINERIZED PROD SHIP    ──► Multi-cloud CI/CD (Docker, Vercel, Rail) │
-│ 06 / TELEMETRY &amp; OBSERVABILITY  ──► Live event streams, metrics &amp; iteration │
+│ 05 / CONTAINERIZED HEIST SHIP   ──► Multi-cloud CI/CD (Docker, Vercel, Rail) │
+│ 06 / LIVE TELEMETRY OBSERVATION ──► Live event streams, metrics &amp; iteration │
 └─────────────────────────────────────────────────────────────────────────────┘
     </pre>
 
     <hr>
 
-    <!-- Technology Universe -->
-    <h2>03 // TECHNOLOGY UNIVERSE</h2>
-    <img src="./assets/tech-universe.svg" alt="Tech Universe">
+    <!-- Weapon Wheel -->
+    <h2>03 // WEAPON WHEEL // FULL-STACK ARSENAL</h2>
+    <img src="./assets/weapon-wheel.svg" alt="GTA V Weapon Wheel Full-Stack Arsenal">
 
     <hr>
 
-    <!-- Currently Building: Nexora -->
-    <h2>04 // CURRENT SPRINT: NEXORA (FLAGSHIP)</h2>
+    <!-- The Big Score: Operation Nexora -->
+    <h2>04 // THE BIG SCORE: OPERATION NEXORA (FLAGSHIP HEIST)</h2>
     <div style="text-align: center;">
-      <img src="./assets/nexora-3d-motion.gif" alt="Nexora 3D Motion">
+      <img src="./assets/gta-nexora-heist.jpg" alt="The Big Score: Operation Nexora Heist Planning Board">
       <div class="section-spacer"></div>
       <img src="./assets/nexora.svg" alt="Nexora Architecture Diagram">
     </div>
 
     <hr>
 
-    <!-- Product Lab -->
-    <h2>05 // PRODUCT LAB (PRODUCTION SYSTEMS)</h2>
+    <!-- Properties & Safehouses -->
+    <h2>05 // PROPERTIES &amp; SAFEHOUSES (DYNASTY 8 EXECUTIVE &amp; WARSTOCK)</h2>
     <div class="grid-2">
       <div class="product-card">
-        <img src="./assets/pasha-tools-3d-motion.gif" alt="Pasha Tools 3D Motion">
+        <img src="./assets/gta-pasha-tools.jpg" alt="Pasha Tools Underground Utility Workshop">
         <img src="./assets/pasha-tools.svg" alt="Pasha Tools Architecture">
         <h3>🔵 Pasha Tools</h3>
-        <p>Free Multi-Tool Web Platform • FFmpeg, audio streams, in-memory PDF engine, Railway + Vercel multi-cloud architecture.</p>
+        <p>Ammu-Nation Style Utility Arsenal • FFmpeg media pipelines, in-memory PDF engine, Railway + Vercel multi-cloud architecture.</p>
       </div>
       <div class="product-card">
-        <img src="./assets/wishora-3d-motion.gif" alt="Wishora 3D Motion">
+        <img src="./assets/gta-wishora-vice.jpg" alt="Wishora Vice City Neon Digital Card Studio">
         <img src="./assets/wishora.svg" alt="Wishora Architecture">
         <h3>💜 Wishora</h3>
-        <p>Personalized Digital Greeting Platform • Next.js, Framer Motion, instant canvas PNG export, zero friction viral product.</p>
+        <p>Vice City Neon Digital Greeting Studio • Next.js, Framer Motion, instant canvas PNG export, frictionless viral adoption.</p>
       </div>
     </div>
 
     <div class="grid-2">
       <div class="product-card">
-        <img src="./assets/zoro-3d-motion.gif" alt="Zoro 2.0 3D Motion">
+        <img src="./assets/gta-zoro-warstock.jpg" alt="Zoro 2.0 Warstock Tactical AI Companion">
         <img src="./assets/zoro.svg" alt="Zoro Architecture">
         <h3>🤖 Zoro 2.0</h3>
-        <p>Native Windows AI Assistant • Tauri (Rust) + React UI + Python AI Core, local speech synthesis, hotkey HUD.</p>
+        <p>Warstock Cache &amp; Carry Tactical AI • Tauri (Rust) + React HUD UI + Python Core, local speech synthesis, hotkey console.</p>
       </div>
       <div class="product-card">
-        <img src="./assets/opencluely-3d-motion.gif" alt="OpenCluely 3D Motion">
+        <img src="./assets/gta-opencluely-stealth.jpg" alt="OpenCluely Stealth AI Infiltration Interface">
         <img src="./assets/opencluely.svg" alt="OpenCluely Architecture">
         <h3>🛡️ OpenCluely</h3>
-        <p>Stealth AI Interview &amp; DSA Companion • Real-time optical canvas OCR, undetectable HUD overlay, optimal O(N) complexity proofs.</p>
+        <p>Stealth AI Infiltration Companion • Real-time optical canvas OCR, undetectable transparent HUD, optimal O(N) algorithmic proofs.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="product-card">
+        <img src="./assets/gta-bmw-showroom.jpg" alt="BMW 7-Series Legendary Motorsport Showroom">
+        <h3>🏎️ BMW 7-Series 3D Experience</h3>
+        <p>Legendary Motorsport Showroom • Interactive WebGL automotive studio, custom raymarched GLSL paint shaders, 60 FPS orbit director.</p>
+      </div>
+      <div class="product-card">
+        <img src="./assets/creative-lab.svg" alt="Creative Web Lab Architecture">
+        <h3>🧪 Creative Web Lab</h3>
+        <p>Cinematic WebGL &amp; Motion Experiments • Three.js particle simulations, experiential storytelling landing pages, micro-interactions.</p>
       </div>
     </div>
 
     <hr>
 
-    <!-- System Architecture Blueprint -->
-    <h2>06 // SYSTEM ARCHITECTURE BLUEPRINT</h2>
+    <!-- Architecture Blueprint -->
+    <h2>06 // HEIST ARCHITECTURE BLUEPRINT</h2>
     <img src="./assets/architecture.svg" alt="System Architecture Blueprint">
 
     <hr>
 
-    <!-- GitHub Command Center -->
-    <h2>07 // GITHUB COMMAND CENTER (LIVE TELEMETRY)</h2>
-    <img src="./profile/overview.svg" alt="Command Center Overview">
-    
-    <div class="grid-2" style="margin-top: 20px;">
+    <!-- LSPD Criminal Record & Live Telemetry -->
+    <h2>07 // LSPD CRIMINAL RECORD — LIVE TELEMETRY</h2>
+    <img src="./profile/overview.svg" alt="Overview Telemetry">
+    <div class="section-spacer"></div>
+
+    <div class="grid-2">
       <img src="./profile/github-stats.svg" alt="GitHub Stats">
-      <img src="./profile/languages.svg" alt="Language Telemetry">
+      <img src="./profile/languages.svg" alt="Languages Ammo Count">
     </div>
+    <div class="section-spacer"></div>
 
-    <div style="margin-top: 20px;">
-      <img src="./profile/streak.svg" alt="Streak Tracker">
-    </div>
+    <img src="./profile/streak.svg" alt="LSPD Wanted Status &amp; Active Streak">
+    <div class="section-spacer"></div>
 
-    <div style="margin-top: 20px;">
-      <img src="./profile/monthly.svg" alt="This Month Telemetry">
-    </div>
+    <img src="./profile/monthly.svg" alt="Monthly Payouts">
+    <div class="section-spacer"></div>
 
-    <div style="margin-top: 20px;">
-      <img src="./profile/contributions.svg" alt="52-Week Contributions">
-    </div>
+    <img src="./profile/contributions.svg" alt="Territory Heatmap">
+    <div class="section-spacer"></div>
 
-    <div style="margin-top: 20px;">
-      <img src="./profile/activity.svg" alt="Activity Stream">
-    </div>
+    <img src="./profile/activity.svg" alt="Recent Heists Log">
 
     <hr>
 
-    <!-- AI Engineering Workflow -->
-    <h2>08 // AI × ENGINEERING WORKFLOW</h2>
-    <img src="./assets/ai-workflow.svg" alt="AI Workflow">
+    <!-- Crew Expansion Workflow -->
+    <h2>08 // CREW EXPANSION WORKFLOW</h2>
+    <img src="./assets/ai-workflow.svg" alt="AI Workflow Pipeline">
 
     <hr>
 
-    <!-- From Pakistan to Global Internet -->
-    <h2>09 // FROM PAKISTAN TO GLOBAL INTERNET</h2>
-    <img src="./assets/pakistan-global.svg" alt="Pakistan to Global Telemetry Routing">
+    <!-- Territory Map -->
+    <h2>09 // FROM PAKISTAN TO THE WORLD (TERRITORY MAP)</h2>
+    <img src="./assets/pakistan-global.svg" alt="Pakistan to Global Map">
 
     <hr>
 
     <!-- Footer -->
-    <div style="text-align: center; margin-top: 40px;">
-      <img src="./assets/footer.svg" alt="Build. Ship. Iterate.">
+    <div style="text-align: center; margin-top: 36px;">
+      <img src="./assets/footer.svg" alt="Build Ship Iterate Footer">
     </div>
+
   </div>
 
   <script>
     function toggleTheme() {
       const html = document.documentElement;
-      const current = html.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
+      const current = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
     }
   </script>
 </body>
