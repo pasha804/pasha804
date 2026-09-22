@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="100%" height="100%">
+  
+  <defs>
+    <!-- Backgrounds -->
+    <linearGradient id="bg-obsidian" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="50%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#05070d" />
+    </linearGradient>
+
+    <linearGradient id="bg-panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Technical Accents -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="accent-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="border-subtle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
+    </linearGradient>
+
+    <!-- Patterns -->
+    <pattern id="tech-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.45" />
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.9; }
+    }
+    .pulse { animation: pulse-subtle 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Canvas -->
+  <rect width="1100" height="420" rx="14" fill="url(#bg-obsidian)" stroke="url(#border-subtle)" stroke-width="1.5" filter="url(#card-shadow)" />
+  <rect width="1100" height="420" rx="14" fill="url(#tech-grid)" opacity="0.6" />
+
+  <!-- Top System Header Bar -->
+  <g transform="translate(36, 28)">
+    <circle cx="6" cy="6" r="4" fill="#10b981" filter="url(#soft-glow)" />
+    <circle cx="6" cy="6" r="7" fill="none" stroke="#10b981" stroke-width="1" class="pulse" />
+    <text x="22" y="10" fill="#38bdf8" class="mono" font-size="10" font-weight="700" letter-spacing="2">SYS::PASHA.DEV // DIGITAL ENGINEERING COMMAND CENTER</text>
+    <text x="780" y="10" fill="#64748b" class="mono" font-size="10" letter-spacing="1">LOCATION::LAHORE, PK [31.52° N, 74.35° E]</text>
+  </g>
+
+  <line x1="36" y1="52" x2="1064" y2="52" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Left Main Editorial Title -->
+  <g transform="translate(48, 90)">
+    <!-- Small Category Label -->
+    <rect width="160" height="22" rx="4" fill="#0c1929" stroke="#0284c7" stroke-width="1" />
+    <text x="10" y="15" fill="#38bdf8" class="mono" font-size="10" font-weight="700" letter-spacing="1.5">SYSTEM ARCHITECT</text>
+
+    <!-- Main Name Title -->
+    <text x="0" y="72" fill="#f8fafc" class="sans" font-size="54" font-weight="900" letter-spacing="-1">PASHA DEV</text>
+    
+    <!-- Designation -->
+    <text x="2" y="106" fill="#38bdf8" class="mono" font-size="18" font-weight="700" letter-spacing="3">AI FULL-STACK DEVELOPER</text>
+
+    <!-- Mission / Vision statement -->
+    <g transform="translate(2, 138)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0284c7" stroke-width="2" />
+      <text x="14" y="16" fill="#cbd5e1" class="sans" font-size="15" font-weight="500">Building intelligent software systems where</text>
+      <text x="14" y="38" fill="#cbd5e1" class="sans" font-size="15" font-weight="500">
+        <tspan fill="#38bdf8" font-weight="700">AI capabilities</tspan>, <tspan fill="#818cf8" font-weight="700">full-stack engineering</tspan>, and <tspan fill="#c084fc" font-weight="700">cinematic design</tspan> meet.
+      </text>
+    </g>
+
+    <!-- Quick Status Tags -->
+    <g transform="translate(2, 215)">
+      <g>
+        <rect width="125" height="28" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#94a3b8" class="mono" font-size="10">FOCUS // </text>
+        <text x="65" y="18" fill="#f8fafc" class="mono" font-size="10" font-weight="700">AI+SYSTEMS</text>
+      </g>
+      <g transform="translate(135, 0)">
+        <rect width="130" height="28" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#94a3b8" class="mono" font-size="10">BUILD // </text>
+        <text x="65" y="18" fill="#c084fc" class="mono" font-size="10" font-weight="700">NEXORA</text>
+      </g>
+      <g transform="translate(275, 0)">
+        <rect width="120" height="28" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#94a3b8" class="mono" font-size="10">MODE // </text>
+        <text x="65" y="18" fill="#10b981" class="mono" font-size="10" font-weight="700">ACTIVE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Technical HUD & Perspective Geometry -->
+  <g transform="translate(680, 80)">
+    <!-- Architectural HUD Framing Box -->
+    <rect width="370" height="280" rx="10" fill="#080d1a" stroke="#1e293b" stroke-width="1.5" />
+    <path d="M 0 0 L 370 0" stroke="url(#accent-cyan)" stroke-width="2" />
+
+    <!-- Corner Accents -->
+    <line x1="12" y1="12" x2="24" y2="12" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="12" y1="12" x2="12" y2="24" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="358" y1="12" x2="346" y2="12" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="358" y1="12" x2="358" y2="24" stroke="#38bdf8" stroke-width="1.5" />
+
+    <text x="24" y="32" fill="#38bdf8" class="mono" font-size="10" font-weight="700">SYSTEM TELEMETRY OVERLAY</text>
+    <text x="346" y="32" fill="#64748b" class="mono" font-size="9" text-anchor="end">SYS_ID::804</text>
+    <line x1="24" y1="42" x2="346" y2="42" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Telemetry Metrics Grid -->
+    <g transform="translate(24, 60)">
+      <!-- Item 1 -->
+      <text x="0" y="16" fill="#64748b" class="mono" font-size="10">CORE ARCHITECTURE</text>
+      <text x="322" y="16" fill="#f8fafc" class="mono" font-size="11" font-weight="700" text-anchor="end">FASTAPI + REACT + TS</text>
+      <line x1="0" y1="26" x2="322" y2="26" stroke="#131c2e" stroke-width="1" />
+
+      <!-- Item 2 -->
+      <text x="0" y="48" fill="#64748b" class="mono" font-size="10">AI INTEGRATION</text>
+      <text x="322" y="48" fill="#c084fc" class="mono" font-size="11" font-weight="700" text-anchor="end">LLM AGENTS • TOOL CALLING</text>
+      <line x1="0" y1="58" x2="322" y2="58" stroke="#131c2e" stroke-width="1" />
+
+      <!-- Item 3 -->
+      <text x="0" y="80" fill="#64748b" class="mono" font-size="10">DATA &amp; STATE</text>
+      <text x="322" y="80" fill="#34d399" class="mono" font-size="11" font-weight="700" text-anchor="end">POSTGRESQL • REDIS</text>
+      <line x1="0" y1="90" x2="322" y2="90" stroke="#131c2e" stroke-width="1" />
+
+      <!-- Item 4 -->
+      <text x="0" y="112" fill="#64748b" class="mono" font-size="10">DESKTOP SYSTEM</text>
+      <text x="322" y="112" fill="#38bdf8" class="mono" font-size="11" font-weight="700" text-anchor="end">ZORO 2.0 (TAURI + WIN)</text>
+      <line x1="0" y1="122" x2="322" y2="122" stroke="#131c2e" stroke-width="1" />
+
+      <!-- Item 5 -->
+      <text x="0" y="144" fill="#64748b" class="mono" font-size="10">SYSTEM STATUS</text>
+      <text x="322" y="144" fill="#10b981" class="mono" font-size="11" font-weight="800" text-anchor="end">● PRODUCTION ACTIVE</text>
+    </g>
+
+    <!-- Radar / Coordinate Node in corner -->
+    <g transform="translate(185, 238)">
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#1e293b" stroke-width="1" />
+      <circle cx="0" cy="0" r="9" fill="none" stroke="#0284c7" stroke-width="1" stroke-dasharray="3 3" />
+      <circle cx="0" cy="0" r="3" fill="#38bdf8" />
+      <text x="30" y="4" fill="#64748b" class="mono" font-size="9">PORTFOLIO v6 // NETLIFY ACTIVE</text>
+    </g>
+  </g>
+
+  <!-- Bottom Command Line Ticker -->
+  <g transform="translate(36, 380)">
+    <rect width="1028" height="24" rx="4" fill="#060911" stroke="#1e293b" stroke-width="1" />
+    <text x="14" y="16" fill="#10b981" class="mono" font-size="10" font-weight="700">&gt; pasha@core:~$</text>
+    <text x="130" y="16" fill="#94a3b8" class="mono" font-size="10">sys.init --profile pasha804 --mode fullstack --ai-native --latency 14ms --status nominal</text>
+    <text x="1014" y="16" fill="#38bdf8" class="mono" font-size="10" font-weight="700" text-anchor="end">SYNC: VERIFIED</text>
+  </g>
+</svg>

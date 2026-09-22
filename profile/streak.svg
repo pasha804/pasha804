@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 130" width="100%" height="100%">
+  
+  <defs>
+    <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0e1526" />
+      <stop offset="100%" stop-color="#060910" />
+    </linearGradient>
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+  </style>
+
+  <rect width="920" height="130" rx="10" fill="#080c16" stroke="#1e293b" stroke-width="1.5" />
+
+  <g transform="translate(24, 18)">
+    <!-- Col 1 -->
+    <g>
+      <rect width="270" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 270 0" stroke="#f43f5e" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">CURRENT STREAK</text>
+      <text x="16" y="64" fill="#f43f5e" class="mono" font-size="32" font-weight="900">68</text>
+      <text x="75" y="60" fill="#94a3b8" class="mono" font-size="11">DAYS ACTIVE</text>
+      <text x="16" y="82" fill="#64748b" class="mono" font-size="9">CONSECUTIVE PRODUCTION SPRINT</text>
+    </g>
+
+    <!-- Col 2 -->
+    <g transform="translate(300, 0)">
+      <rect width="270" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 270 0" stroke="#38bdf8" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">TOTAL VERIFIED CONTRIBUTIONS</text>
+      <text x="16" y="64" fill="#38bdf8" class="mono" font-size="32" font-weight="900">3,842</text>
+      <text x="145" y="60" fill="#94a3b8" class="mono" font-size="11">EVENTS</text>
+      <text x="16" y="82" fill="#64748b" class="mono" font-size="9">PAST 12 MONTH CYCLE</text>
+    </g>
+
+    <!-- Col 3 -->
+    <g transform="translate(600, 0)">
+      <rect width="272" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 272 0" stroke="#fde047" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">LONGEST STREAK</text>
+      <text x="16" y="64" fill="#fde047" class="mono" font-size="32" font-weight="900">245</text>
+      <text x="95" y="60" fill="#94a3b8" class="mono" font-size="11">DAYS PEAK</text>
+      <text x="16" y="82" fill="#64748b" class="mono" font-size="9">MAX VELOCITY WINDOW</text>
+    </g>
+  </g>
+</svg>

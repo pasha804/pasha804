@@ -1,0 +1,49 @@
+name: Update Profile Telemetry & Dashboard
+
+on:
+  schedule:
+    # Run every 6 hours automatically
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh-dashboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate Dynamic 3D Profile Dashboards
+        env:
+          # Uses built-in token automatically; if GH_PAT secret is set by user, it uses that for private data
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_profile.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          if git diff --staged --quiet; then
+            echo "No changes detected in profile dashboards. Working tree clean."
+          else
+            git commit -m "chore(profile): refresh 3D telemetry dashboards [skip ci]"
+            git push origin main
+          fi

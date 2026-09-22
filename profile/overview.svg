@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="100%">
+  
+  <defs>
+    <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0e1526" />
+      <stop offset="100%" stop-color="#060910" />
+    </linearGradient>
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <rect width="920" height="220" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(28, 24)">
+    <circle cx="6" cy="6" r="4" fill="#10b981" />
+    <text x="20" y="10" fill="#f8fafc" class="sans" font-size="14" font-weight="800">GITHUB // COMMAND CENTER TELEMETRY</text>
+    <text x="864" y="10" fill="#64748b" class="mono" font-size="10" text-anchor="end">LAST SYNC: 2026-09-22 17:31 UTC</text>
+  </g>
+  <line x1="28" y1="46" x2="892" y2="46" stroke="#1e293b" stroke-width="1" />
+
+  <!-- 4 Telemetry Columns -->
+  <g transform="translate(28, 65)">
+    <!-- Col 1 -->
+    <g>
+      <rect width="195" height="125" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 195 0" stroke="#38bdf8" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">PUBLIC REPOSITORIES</text>
+      <text x="16" y="66" fill="#38bdf8" class="mono" font-size="34" font-weight="900">64</text>
+      <text x="16" y="90" fill="#94a3b8" class="mono" font-size="9">TOTAL: 128 IN WORKSPACE</text>
+      <text x="16" y="108" fill="#10b981" class="mono" font-size="9">STATUS: ● OPTIMAL</text>
+    </g>
+
+    <!-- Col 2 -->
+    <g transform="translate(222, 0)">
+      <rect width="195" height="125" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 195 0" stroke="#818cf8" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">ANNUAL CONTRIBUTIONS</text>
+      <text x="16" y="66" fill="#818cf8" class="mono" font-size="34" font-weight="900">3,842</text>
+      <text x="16" y="90" fill="#94a3b8" class="mono" font-size="9">COMMITS: 3,240</text>
+      <text x="16" y="108" fill="#c084fc" class="mono" font-size="9">REPOS TOUCHED: 54</text>
+    </g>
+
+    <!-- Col 3 -->
+    <g transform="translate(444, 0)">
+      <rect width="195" height="125" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 195 0" stroke="#34d399" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">ACTIVE STREAK</text>
+      <text x="16" y="66" fill="#34d399" class="mono" font-size="34" font-weight="900">68</text>
+      <text x="75" y="62" fill="#94a3b8" class="mono" font-size="11">DAYS</text>
+      <text x="16" y="90" fill="#94a3b8" class="mono" font-size="9">LONGEST: 245 DAYS</text>
+      <text x="16" y="108" fill="#10b981" class="mono" font-size="9">CADENCE: ELITE SPRINT</text>
+    </g>
+
+    <!-- Col 4 -->
+    <g transform="translate(666, 0)">
+      <rect width="198" height="125" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <path d="M 0 0 L 198 0" stroke="#fde047" stroke-width="2" />
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">GLOBAL REPUTATION</text>
+      <text x="16" y="66" fill="#fde047" class="mono" font-size="34" font-weight="900">1,480 ★</text>
+      <text x="16" y="90" fill="#94a3b8" class="mono" font-size="9">FOLLOWERS: 382 👤</text>
+      <text x="16" y="108" fill="#38bdf8" class="mono" font-size="9">PRS &amp; CODE REVIEWS: 186</text>
+    </g>
+  </g>
+</svg>

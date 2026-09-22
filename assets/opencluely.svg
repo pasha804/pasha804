@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="oc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a18" />
+      <stop offset="50%" stop-color="#0f1128" />
+      <stop offset="100%" stop-color="#060710" />
+    </linearGradient>
+    <linearGradient id="oc-violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+    <linearGradient id="oc-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="glow-oc" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    @keyframes pulse-stealth {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    .pulsing-stealth { animation: pulse-stealth 2s infinite ease-in-out; }
+  </style>
+
+  <!-- Frame -->
+  <rect width="540" height="380" rx="14" fill="url(#oc-bg)" stroke="#6366f1" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(28, 26)">
+    <rect width="34" height="34" rx="8" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5" />
+    <!-- Shield / Stealth AI Brain Icon -->
+    <path d="M 17 6 L 27 10 L 27 20 Q 27 26 17 30 Q 7 26 7 20 L 7 10 Z" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="17" cy="18" r="3" fill="#c084fc" />
+
+    <text x="46" y="16" fill="#f8fafc" class="sans" font-size="18" font-weight="900">OPENCLUELY</text>
+    <text x="46" y="30" fill="#c084fc" class="mono" font-size="10" font-weight="700">STEALTH AI INTERVIEW &amp; DSA COMPANION</text>
+
+    <!-- Star Tag -->
+    <rect x="340" y="4" width="144" height="24" rx="5" fill="#4338ca" fill-opacity="0.35" stroke="#818cf8" stroke-width="1" />
+    <circle cx="352" cy="16" r="4" fill="#34d399" class="pulsing-stealth" />
+    <text x="362" y="20" fill="#e0e7ff" class="mono" font-size="9" font-weight="800">993 ★ OPEN SOURCE</text>
+  </g>
+
+  <line x1="28" y1="74" x2="512" y2="74" stroke="#1e1b4b" stroke-width="1" />
+
+  <!-- Architecture Flow -->
+  <g transform="translate(28, 88)">
+    <!-- Sub-header -->
+    <rect width="484" height="26" rx="5" fill="#0f172a" stroke="#4f46e5" stroke-width="1" />
+    <text x="14" y="17" fill="#818cf8" class="mono" font-size="9" font-weight="700">STEALTH PIPELINE // OPTICAL CAPTURE &amp; MULTI-MODEL INFERENCE</text>
+
+    <!-- 4 Pipeline Stages -->
+    <g transform="translate(0, 36)">
+      <!-- Tier 1: Optical Screen Capture -->
+      <g>
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#4f46e5" stroke-width="1.2" />
+        <text x="56" y="22" fill="#818cf8" class="mono" font-size="9" font-weight="800" text-anchor="middle">OPTICAL OCR</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">Screen Canvas</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Frame Diff Engine</text>
+      </g>
+
+      <path d="M 116 36 L 123 36" stroke="#818cf8" stroke-width="1.5" />
+
+      <!-- Tier 2: AST Parser -->
+      <g transform="translate(124, 0)">
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#38bdf8" stroke-width="1.2" />
+        <text x="56" y="22" fill="#38bdf8" class="mono" font-size="9" font-weight="800" text-anchor="middle">DSA PARSER</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">AST Parsing</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Constraints Matrix</text>
+      </g>
+
+      <path d="M 240 36 L 247 36" stroke="#38bdf8" stroke-width="1.5" />
+
+      <!-- Tier 3: LLM Reasoning Core -->
+      <g transform="translate(248, 0)">
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#c084fc" stroke-width="1.2" />
+        <text x="56" y="22" fill="#c084fc" class="mono" font-size="9" font-weight="800" text-anchor="middle">AI REASONING</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">Multi-Model LLM</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">O(N) Proof Solver</text>
+      </g>
+
+      <path d="M 364 36 L 371 36" stroke="#c084fc" stroke-width="1.5" />
+
+      <!-- Tier 4: Stealth Overlay HUD -->
+      <g transform="translate(372, 0)">
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#10b981" stroke-width="1.2" />
+        <text x="56" y="22" fill="#34d399" class="mono" font-size="9" font-weight="800" text-anchor="middle">STEALTH HUD</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">Transparent UI</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Zero-Detection Hook</text>
+      </g>
+    </g>
+
+    <!-- Specs Metrics Deck -->
+    <g transform="translate(0, 122)">
+      <rect width="484" height="52" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      
+      <!-- Metric 1 -->
+      <g transform="translate(16, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">INFERENCE LATENCY</text>
+        <text x="0" y="28" fill="#34d399" class="mono" font-size="12" font-weight="900">&lt; 350ms</text>
+      </g>
+      <line x1="115" y1="10" x2="115" y2="42" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 2 -->
+      <g transform="translate(130, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">COMMUNITY STARS</text>
+        <text x="0" y="28" fill="#fde047" class="mono" font-size="12" font-weight="900">993+ STARS</text>
+      </g>
+      <line x1="230" y1="10" x2="230" y2="42" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 3 -->
+      <g transform="translate(245, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">FORKS &amp; REACH</text>
+        <text x="0" y="28" fill="#38bdf8" class="mono" font-size="12" font-weight="900">232 FORKS</text>
+      </g>
+      <line x1="360" y1="10" x2="360" y2="42" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 4 -->
+      <g transform="translate(375, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">STEALTH PROFILE</text>
+        <text x="0" y="28" fill="#c084fc" class="mono" font-size="12" font-weight="900">UNDETECTED</text>
+      </g>
+    </g>
+
+    <!-- Key Bullet Points -->
+    <g transform="translate(0, 186)">
+      <text x="4" y="14" fill="#94a3b8" class="mono" font-size="9">• Frameless transparent HUD overlay running undetectable during live coding sessions</text>
+      <text x="4" y="32" fill="#94a3b8" class="mono" font-size="9">• Smart optical canvas parser extracting DSA problem statements and constraints in real-time</text>
+      <text x="4" y="50" fill="#94a3b8" class="mono" font-size="9">• Multi-model LLM pipeline delivering optimal time/space complexity solutions with proofs</text>
+    </g>
+  </g>
+</svg>

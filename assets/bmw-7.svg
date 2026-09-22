@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bmw-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080f20" />
+      <stop offset="50%" stop-color="#0c1630" />
+      <stop offset="100%" stop-color="#040710" />
+    </linearGradient>
+    <linearGradient id="bmw-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="bmw-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    @keyframes pulse-ring {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    .pulsing-ring { animation: pulse-ring 3s infinite ease-in-out; }
+  </style>
+
+  <!-- Outer Card Frame -->
+  <rect width="540" height="380" rx="14" fill="url(#bmw-bg)" stroke="#1e3a8a" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(28, 26)">
+    <rect width="34" height="34" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <!-- 3D Car Wireframe Icon -->
+    <path d="M 6 22 L 11 14 L 23 14 L 28 22 Z" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="11" cy="23" r="3" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="23" cy="23" r="3" fill="#0284c7" stroke="#38bdf8" stroke-width="1" />
+    <line x1="11" y1="18" x2="23" y2="18" stroke="#818cf8" stroke-width="1" />
+
+    <text x="46" y="16" fill="#f8fafc" class="sans" font-size="18" font-weight="900">BMW 7-SERIES 3D</text>
+    <text x="46" y="30" fill="#38bdf8" class="mono" font-size="10" font-weight="700">INTERACTIVE WEBGL &amp; THREE.JS EXPERIENCE</text>
+
+    <!-- Tag -->
+    <rect x="350" y="4" width="134" height="24" rx="5" fill="#0369a1" fill-opacity="0.35" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="362" cy="16" r="4" fill="#34d399" />
+    <text x="372" y="20" fill="#e0f2fe" class="mono" font-size="9" font-weight="800">60 FPS WEBGL 2.0</text>
+  </g>
+
+  <line x1="28" y1="74" x2="512" y2="74" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Architecture Flow -->
+  <g transform="translate(28, 88)">
+    <!-- Sub-header -->
+    <rect width="484" height="26" rx="5" fill="#0f172a" stroke="#2563eb" stroke-width="1" />
+    <text x="14" y="17" fill="#60a5fa" class="mono" font-size="9" font-weight="700">RENDER PIPELINE // THREE.JS + CUSTOM GLSL PBR SHADERS</text>
+
+    <!-- 4 Pipeline Stages -->
+    <g transform="translate(0, 36)">
+      <!-- Tier 1: Scene Graph -->
+      <g>
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#1e3a8a" stroke-width="1.2" />
+        <text x="56" y="22" fill="#38bdf8" class="mono" font-size="9" font-weight="800" text-anchor="middle">THREE.JS</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">Scene Graph</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Draco Mesh Load</text>
+      </g>
+
+      <path d="M 116 36 L 123 36" stroke="#38bdf8" stroke-width="1.5" />
+
+      <!-- Tier 2: GLSL Shaders -->
+      <g transform="translate(124, 0)">
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#3b82f6" stroke-width="1.2" />
+        <text x="56" y="22" fill="#60a5fa" class="mono" font-size="9" font-weight="800" text-anchor="middle">GLSL SHADERS</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">Raymarch Vert/Frag</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Clearcoat Physics</text>
+      </g>
+
+      <path d="M 240 36 L 247 36" stroke="#38bdf8" stroke-width="1.5" />
+
+      <!-- Tier 3: Lighting & PBR -->
+      <g transform="translate(248, 0)">
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#8b5cf6" stroke-width="1.2" />
+        <text x="56" y="22" fill="#c084fc" class="mono" font-size="9" font-weight="800" text-anchor="middle">PBR LIGHTING</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">HDR Cubemaps</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Metallic Roughness</text>
+      </g>
+
+      <path d="M 364 36 L 371 36" stroke="#38bdf8" stroke-width="1.5" />
+
+      <!-- Tier 4: Post Processing -->
+      <g transform="translate(372, 0)">
+        <rect width="112" height="72" rx="6" fill="#090d16" stroke="#10b981" stroke-width="1.2" />
+        <text x="56" y="22" fill="#34d399" class="mono" font-size="9" font-weight="800" text-anchor="middle">POST-PROCESS</text>
+        <text x="56" y="40" fill="#f8fafc" class="sans" font-size="11" font-weight="700" text-anchor="middle">Bloom &amp; SSAO</text>
+        <text x="56" y="56" fill="#64748b" class="mono" font-size="8" text-anchor="middle">Tone Mapping</text>
+      </g>
+    </g>
+
+    <!-- Specs Metrics Deck -->
+    <g transform="translate(0, 122)">
+      <rect width="484" height="52" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      
+      <!-- Metric 1 -->
+      <g transform="translate(16, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">TARGET FPS</text>
+        <text x="0" y="28" fill="#34d399" class="mono" font-size="12" font-weight="900">60.0 FPS</text>
+      </g>
+      <line x1="115" y1="10" x2="115" y2="42" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 2 -->
+      <g transform="translate(130, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">DRAW CALLS</text>
+        <text x="0" y="28" fill="#38bdf8" class="mono" font-size="12" font-weight="900">&lt; 40 CALLS</text>
+      </g>
+      <line x1="230" y1="10" x2="230" y2="42" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 3 -->
+      <g transform="translate(245, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">SHADING ENGINE</text>
+        <text x="0" y="28" fill="#c084fc" class="mono" font-size="12" font-weight="900">CUSTOM GLSL</text>
+      </g>
+      <line x1="360" y1="10" x2="360" y2="42" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Metric 4 -->
+      <g transform="translate(375, 12)">
+        <text x="0" y="12" fill="#64748b" class="mono" font-size="8" font-weight="700">ORBIT DIRECTOR</text>
+        <text x="0" y="28" fill="#60a5fa" class="mono" font-size="12" font-weight="900">SPLINE 360°</text>
+      </g>
+    </g>
+
+    <!-- Key Bullet Points -->
+    <g transform="translate(0, 186)">
+      <text x="4" y="14" fill="#94a3b8" class="mono" font-size="9">• Raymarched metallic paint reflections &amp; real-time shadow casting</text>
+      <text x="4" y="32" fill="#94a3b8" class="mono" font-size="9">• Spline camera choreography with interactive touch orbit &amp; interior HUD</text>
+      <text x="4" y="50" fill="#94a3b8" class="mono" font-size="9">• Draco geometry compression delivering sub-second WebGL load latency</text>
+    </g>
+  </g>
+</svg>

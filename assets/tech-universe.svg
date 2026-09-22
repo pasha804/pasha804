@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="100%" height="100%">
+  
+  <defs>
+    <!-- Backgrounds -->
+    <linearGradient id="bg-obsidian" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12" />
+      <stop offset="50%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#05070d" />
+    </linearGradient>
+
+    <linearGradient id="bg-panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Technical Accents -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <linearGradient id="accent-emerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="border-subtle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
+    </linearGradient>
+
+    <!-- Patterns -->
+    <pattern id="tech-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.45" />
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <rect width="940" height="440" rx="14" fill="#070a13" stroke="#1e293b" stroke-width="1.5" />
+  <rect width="940" height="440" rx="14" fill="url(#tech-grid)" opacity="0.4" />
+
+  <!-- Top Title -->
+  <g transform="translate(36, 28)">
+    <text x="0" y="16" fill="#f8fafc" class="sans" font-size="18" font-weight="900">TECHNOLOGY UNIVERSE</text>
+    <text x="250" y="16" fill="#64748b" class="mono" font-size="11">// VISUAL ECOSYSTEM (NO GENERIC BADGE WALLS)</text>
+  </g>
+  <line x1="36" y1="56" x2="904" y2="56" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Center Core Node -->
+  <g transform="translate(470, 240)">
+    <circle cx="0" cy="0" r="48" fill="#0b1426" stroke="#38bdf8" stroke-width="1.5" filter="url(#soft-glow)" />
+    <circle cx="0" cy="0" r="38" fill="#0f1f38" stroke="#0284c7" stroke-width="1" />
+    <text x="0" y="-6" fill="#38bdf8" class="mono" font-size="10" font-weight="800" text-anchor="middle">PASHA DEV</text>
+    <text x="0" y="10" fill="#f8fafc" class="sans" font-size="11" font-weight="800" text-anchor="middle">CORE ENGINE</text>
+  </g>
+
+  <!-- 6 Orbiting Sectors -->
+  <!-- 1. Frontend (Top Left) -->
+  <g transform="translate(36, 75)">
+    <rect width="265" height="145" rx="8" fill="#080e1a" stroke="#1e293b" stroke-width="1.2" />
+    <path d="M 0 0 L 265 0" stroke="#38bdf8" stroke-width="2" />
+    <text x="14" y="22" fill="#38bdf8" class="mono" font-size="10" font-weight="800">01 // FRONTEND</text>
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect width="65" height="22" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1" /><text x="32" y="15" fill="#f8fafc" text-anchor="middle">React</text>
+      <rect x="73" width="75" height="22" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1" /><text x="110" y="15" fill="#f8fafc" text-anchor="middle">Next.js</text>
+      <rect x="156" width="90" height="22" rx="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1" /><text x="201" y="15" fill="#f8fafc" text-anchor="middle">TypeScript</text>
+      <g transform="translate(0, 30)">
+        <rect width="75" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="37" y="15" fill="#94a3b8" text-anchor="middle">Tailwind</text>
+        <rect x="83" width="60" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="113" y="15" fill="#94a3b8" text-anchor="middle">Vite</text>
+        <rect x="151" width="95" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="198" y="15" fill="#94a3b8" text-anchor="middle">shadcn/ui</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <rect width="115" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="57" y="15" fill="#94a3b8" text-anchor="middle">Framer Motion</text>
+        <rect x="123" width="123" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="184" y="15" fill="#94a3b8" text-anchor="middle">TanStack Query</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. Backend (Top Center/Right) -->
+  <g transform="translate(337, 75)">
+    <rect width="265" height="145" rx="8" fill="#080e1a" stroke="#1e293b" stroke-width="1.2" />
+    <path d="M 0 0 L 265 0" stroke="#818cf8" stroke-width="2" />
+    <text x="14" y="22" fill="#818cf8" class="mono" font-size="10" font-weight="800">02 // BACKEND</text>
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect width="70" height="22" rx="3" fill="#0f172a" stroke="#818cf8" stroke-width="1" /><text x="35" y="15" fill="#f8fafc" text-anchor="middle">Python</text>
+      <rect x="78" width="75" height="22" rx="3" fill="#0f172a" stroke="#818cf8" stroke-width="1" /><text x="115" y="15" fill="#f8fafc" text-anchor="middle">FastAPI</text>
+      <rect x="161" width="85" height="22" rx="3" fill="#0f172a" stroke="#818cf8" stroke-width="1" /><text x="203" y="15" fill="#f8fafc" text-anchor="middle">Node.js</text>
+      <g transform="translate(0, 30)">
+        <rect width="75" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="37" y="15" fill="#94a3b8" text-anchor="middle">Express</text>
+        <rect x="83" width="75" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="120" y="15" fill="#94a3b8" text-anchor="middle">Pydantic</text>
+        <rect x="166" width="80" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="206" y="15" fill="#94a3b8" text-anchor="middle">AsyncIO</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <rect width="115" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="57" y="15" fill="#94a3b8" text-anchor="middle">WebSockets</text>
+        <rect x="123" width="123" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="184" y="15" fill="#94a3b8" text-anchor="middle">REST Services</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. AI & Multipliers (Top Right) -->
+  <g transform="translate(638, 75)">
+    <rect width="265" height="145" rx="8" fill="#080e1a" stroke="#1e293b" stroke-width="1.2" />
+    <path d="M 0 0 L 265 0" stroke="#c084fc" stroke-width="2" />
+    <text x="14" y="22" fill="#c084fc" class="mono" font-size="10" font-weight="800">03 // AI SUBSYSTEMS</text>
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect width="65" height="22" rx="3" fill="#0f172a" stroke="#c084fc" stroke-width="1" /><text x="32" y="15" fill="#f8fafc" text-anchor="middle">LLMs</text>
+      <rect x="73" width="85" height="22" rx="3" fill="#0f172a" stroke="#c084fc" stroke-width="1" /><text x="115" y="15" fill="#f8fafc" text-anchor="middle">AI Agents</text>
+      <rect x="166" width="80" height="22" rx="3" fill="#0f172a" stroke="#c084fc" stroke-width="1" /><text x="206" y="15" fill="#f8fafc" text-anchor="middle">AI APIs</text>
+      <g transform="translate(0, 30)">
+        <rect width="115" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="57" y="15" fill="#94a3b8" text-anchor="middle">Tool Calling</text>
+        <rect x="123" width="123" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="184" y="15" fill="#94a3b8" text-anchor="middle">Prompt Eng</text>
+      </g>
+      <g transform="translate(0, 60)">
+        <rect width="115" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="57" y="15" fill="#94a3b8" text-anchor="middle">Voice Pipelines</text>
+        <rect x="123" width="123" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="184" y="15" fill="#94a3b8" text-anchor="middle">Automation</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. Data (Bottom Left) -->
+  <g transform="translate(36, 245)">
+    <rect width="265" height="155" rx="8" fill="#080e1a" stroke="#1e293b" stroke-width="1.2" />
+    <path d="M 0 0 L 265 0" stroke="#34d399" stroke-width="2" />
+    <text x="14" y="22" fill="#34d399" class="mono" font-size="10" font-weight="800">04 // DATA &amp; STORAGE</text>
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect width="90" height="22" rx="3" fill="#0f172a" stroke="#34d399" stroke-width="1" /><text x="45" y="15" fill="#f8fafc" text-anchor="middle">PostgreSQL</text>
+      <rect x="98" width="65" height="22" rx="3" fill="#0f172a" stroke="#34d399" stroke-width="1" /><text x="130" y="15" fill="#f8fafc" text-anchor="middle">Redis</text>
+      <rect x="171" width="75" height="22" rx="3" fill="#0f172a" stroke="#34d399" stroke-width="1" /><text x="208" y="15" fill="#f8fafc" text-anchor="middle">SQLite</text>
+      <g transform="translate(0, 30)">
+        <rect width="85" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="42" y="15" fill="#94a3b8" text-anchor="middle">Supabase</text>
+        <rect x="93" width="90" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="138" y="15" fill="#94a3b8" text-anchor="middle">SQLAlchemy</text>
+        <rect x="191" width="55" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="218" y="15" fill="#94a3b8" text-anchor="middle">Alembic</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 5. Infra (Bottom Center) -->
+  <g transform="translate(337, 245)">
+    <rect width="265" height="155" rx="8" fill="#080e1a" stroke="#1e293b" stroke-width="1.2" />
+    <path d="M 0 0 L 265 0" stroke="#f59e0b" stroke-width="2" />
+    <text x="14" y="22" fill="#f59e0b" class="mono" font-size="10" font-weight="800">05 // INFRASTRUCTURE</text>
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect width="70" height="22" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1" /><text x="35" y="15" fill="#f8fafc" text-anchor="middle">Docker</text>
+      <rect x="78" width="80" height="22" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1" /><text x="118" y="15" fill="#f8fafc" text-anchor="middle">Railway</text>
+      <rect x="166" width="80" height="22" rx="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1" /><text x="206" y="15" fill="#f8fafc" text-anchor="middle">Vercel</text>
+      <g transform="translate(0, 30)">
+        <rect width="55" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="27" y="15" fill="#94a3b8" text-anchor="middle">Git</text>
+        <rect x="63" width="110" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="118" y="15" fill="#94a3b8" text-anchor="middle">GitHub Actions</text>
+        <rect x="181" width="65" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="213" y="15" fill="#94a3b8" text-anchor="middle">CI/CD</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 6. Creative (Bottom Right) -->
+  <g transform="translate(638, 245)">
+    <rect width="265" height="155" rx="8" fill="#080e1a" stroke="#1e293b" stroke-width="1.2" />
+    <path d="M 0 0 L 265 0" stroke="#ec4899" stroke-width="2" />
+    <text x="14" y="22" fill="#ec4899" class="mono" font-size="10" font-weight="800">06 // CREATIVE &amp; MOTION</text>
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect width="65" height="22" rx="3" fill="#0f172a" stroke="#ec4899" stroke-width="1" /><text x="32" y="15" fill="#f8fafc" text-anchor="middle">Figma</text>
+      <rect x="73" width="80" height="22" rx="3" fill="#0f172a" stroke="#ec4899" stroke-width="1" /><text x="113" y="15" fill="#f8fafc" text-anchor="middle">Three.js</text>
+      <rect x="161" width="85" height="22" rx="3" fill="#0f172a" stroke="#ec4899" stroke-width="1" /><text x="203" y="15" fill="#f8fafc" text-anchor="middle">Blender</text>
+      <g transform="translate(0, 30)">
+        <rect width="70" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="35" y="15" fill="#94a3b8" text-anchor="middle">WebGL</text>
+        <rect x="78" width="70" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="113" y="15" fill="#94a3b8" text-anchor="middle">Framer</text>
+        <rect x="156" width="90" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1" /><text x="201" y="15" fill="#94a3b8" text-anchor="middle">Motion UX</text>
+      </g>
+    </g>
+  </g>
+</svg>

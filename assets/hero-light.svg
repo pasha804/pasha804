@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <pattern id="light-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#e2e8f0" stroke-width="0.75" />
+    </pattern>
+  </defs>
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <rect width="1100" height="420" rx="14" fill="url(#bg-light)" stroke="#cbd5e1" stroke-width="1.5" />
+  <rect width="1100" height="420" rx="14" fill="url(#light-grid)" opacity="0.8" />
+
+  <g transform="translate(36, 28)">
+    <circle cx="6" cy="6" r="4" fill="#059669" />
+    <text x="22" y="10" fill="#0284c7" class="mono" font-size="10" font-weight="700" letter-spacing="2">SYS::PASHA.DEV // DIGITAL ENGINEERING COMMAND CENTER</text>
+    <text x="780" y="10" fill="#64748b" class="mono" font-size="10">LOCATION::LAHORE, PK [31.52° N, 74.35° E]</text>
+  </g>
+
+  <line x1="36" y1="52" x2="1064" y2="52" stroke="#e2e8f0" stroke-width="1.5" />
+
+  <g transform="translate(48, 90)">
+    <rect width="160" height="22" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="1" />
+    <text x="10" y="15" fill="#0284c7" class="mono" font-size="10" font-weight="700" letter-spacing="1.5">SYSTEM ARCHITECT</text>
+
+    <text x="0" y="72" fill="#0f172a" class="sans" font-size="54" font-weight="900" letter-spacing="-1">PASHA DEV</text>
+    <text x="2" y="106" fill="#0284c7" class="mono" font-size="18" font-weight="700" letter-spacing="3">AI FULL-STACK DEVELOPER</text>
+
+    <g transform="translate(2, 138)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0284c7" stroke-width="2" />
+      <text x="14" y="16" fill="#334155" class="sans" font-size="15" font-weight="500">Building intelligent software systems where</text>
+      <text x="14" y="38" fill="#334155" class="sans" font-size="15" font-weight="500">
+        <tspan fill="#0284c7" font-weight="700">AI capabilities</tspan>, <tspan fill="#4f46e5" font-weight="700">full-stack engineering</tspan>, and <tspan fill="#7c3aed" font-weight="700">cinematic design</tspan> meet.
+      </text>
+    </g>
+
+    <g transform="translate(2, 215)">
+      <rect width="125" height="28" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
+      <text x="12" y="18" fill="#64748b" class="mono" font-size="10">FOCUS // </text>
+      <text x="65" y="18" fill="#0f172a" class="mono" font-size="10" font-weight="700">AI+SYSTEMS</text>
+
+      <g transform="translate(135, 0)">
+        <rect width="130" height="28" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" />
+        <text x="12" y="18" fill="#64748b" class="mono" font-size="10">BUILD // </text>
+        <text x="65" y="18" fill="#7c3aed" class="mono" font-size="10" font-weight="700">NEXORA</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(680, 80)">
+    <rect width="370" height="280" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <path d="M 0 0 L 370 0" stroke="#0284c7" stroke-width="2" />
+    <text x="24" y="32" fill="#0284c7" class="mono" font-size="10" font-weight="700">SYSTEM TELEMETRY OVERLAY</text>
+    <text x="346" y="32" fill="#64748b" class="mono" font-size="9" text-anchor="end">SYS_ID::804</text>
+    <line x1="24" y1="42" x2="346" y2="42" stroke="#e2e8f0" stroke-width="1" />
+
+    <g transform="translate(24, 60)">
+      <text x="0" y="16" fill="#64748b" class="mono" font-size="10">CORE ARCHITECTURE</text>
+      <text x="322" y="16" fill="#0f172a" class="mono" font-size="11" font-weight="700" text-anchor="end">FASTAPI + REACT + TS</text>
+      <line x1="0" y1="26" x2="322" y2="26" stroke="#f1f5f9" stroke-width="1" />
+
+      <text x="0" y="48" fill="#64748b" class="mono" font-size="10">AI INTEGRATION</text>
+      <text x="322" y="48" fill="#7c3aed" class="mono" font-size="11" font-weight="700" text-anchor="end">LLM AGENTS • TOOL CALLING</text>
+      <line x1="0" y1="58" x2="322" y2="58" stroke="#f1f5f9" stroke-width="1" />
+
+      <text x="0" y="80" fill="#64748b" class="mono" font-size="10">DATA &amp; STATE</text>
+      <text x="322" y="80" fill="#059669" class="mono" font-size="11" font-weight="700" text-anchor="end">POSTGRESQL • REDIS</text>
+      <line x1="0" y1="90" x2="322" y2="90" stroke="#f1f5f9" stroke-width="1" />
+
+      <text x="0" y="112" fill="#64748b" class="mono" font-size="10">DESKTOP SYSTEM</text>
+      <text x="322" y="112" fill="#0284c7" class="mono" font-size="11" font-weight="700" text-anchor="end">ZORO 2.0 (TAURI + WIN)</text>
+      <line x1="0" y1="122" x2="322" y2="122" stroke="#f1f5f9" stroke-width="1" />
+
+      <text x="0" y="144" fill="#64748b" class="mono" font-size="10">SYSTEM STATUS</text>
+      <text x="322" y="144" fill="#059669" class="mono" font-size="11" font-weight="800" text-anchor="end">● PRODUCTION ACTIVE</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasha Dev — Digital Engineering Command Center Preview</title>
+  <style>
+    :root {
+      --bg: #070a13;
+      --card-bg: #0d1322;
+      --border: #1e293b;
+      --text: #94a3b8;
+      --text-bright: #f8fafc;
+      --link: #38bdf8;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #475569;
+      --text-bright: #0f172a;
+      --link: #0284c7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .preview-container {
+      max-width: 980px;
+      width: 100%;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 14px 24px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      position: sticky;
+      top: 20px;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+    }
+    .badge {
+      background: linear-gradient(135deg, #0284c7, #6366f1);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .btn {
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 20px 0;
+    }
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--link);
+    }
+    .product-card img { margin-bottom: 12px; }
+    .product-card h3 {
+      font-size: 18px;
+      margin: 8px 0 4px;
+      border: none;
+      color: var(--text-bright);
+    }
+    .product-card p {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+    h1, h2, h3 {
+      color: var(--text-bright);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 36px;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+    blockquote {
+      margin: 16px 0;
+      padding: 12px 20px;
+      border-left: 3px solid #38bdf8;
+      background: rgba(56, 189, 248, 0.05);
+      border-radius: 0 8px 8px 0;
+      color: var(--text-bright);
+      font-style: italic;
+    }
+    pre {
+      background: #080c16;
+      border: 1px solid #1e293b;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', Consolas, monospace;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    .section-spacer { height: 16px; }
+  </style>
+</head>
+<body>
+
+  <div class="preview-container">
+    <div class="top-bar">
+      <div>
+        <span class="badge">SYSTEM PREVIEW</span>
+        <strong style="margin-left: 8px; color: var(--text-bright);">Pasha Dev // Command Center</strong>
+      </div>
+      <button class="btn" onclick="toggleTheme()">Toggle Dark / Light Mode</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div style="text-align: center;">
+      <img src="./assets/hero-3d-motion.gif" alt="Pasha Dev 3D Hero Motion Banner">
+      <div class="section-spacer"></div>
+      <img src="./assets/typing.svg" alt="Terminal Prompt Session">
+      <div class="section-spacer"></div>
+      <img src="./assets/boot-sequence.svg" alt="Boot Sequence">
+      <div class="section-spacer"></div>
+      <img src="./assets/cli-terminal.svg" alt="CLI Terminal">
+    </div>
+
+    <hr>
+
+    <!-- Identity & 3D Neural Core -->
+    <h2>01 // IDENTITY &amp; LIVE TELEMETRY</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="width: 68%; vertical-align: top; padding-right: 24px;">
+          <h3 style="border: none; margin: 0;">Muhammad Mubashar — Pasha Dev</h3>
+          <p><strong>AI Full-Stack Developer • Systems Architect • Product Engineer</strong></p>
+          <blockquote>"Architecture before abstraction. Systems before shortcuts. UX before decoration. AI as an engineering multiplier."</blockquote>
+          <p>Building at the intersection of production-grade backend architecture, type-safe frontend engineering, autonomous AI tool calling, and cinematic 3D WebGL interfaces.</p>
+        </td>
+        <td style="width: 32%; text-align: center; vertical-align: middle;">
+          <img src="./assets/hologram-cube.gif" style="width: 200px; margin: 0 auto;" alt="3D Hologram Cube">
+          <div style="font-size: 11px; margin-top: 8px; font-weight: 700; color: #38bdf8;">3D SYSTEM CORE</div>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <img src="./profile/metrics.svg" alt="Pasha Dev Telemetry Metrics">
+
+    <hr>
+
+    <!-- Engineering DNA -->
+    <h2>02 // ENGINEERING DNA &amp; PIPELINE</h2>
+    <pre>
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 01 / SPEC &amp; FRICTION ANALYSIS   ──► Deconstruct user pain &amp; latency bounds  │
+│ 02 / SYSTEM &amp; SCHEMA ARCHITECTURE ──► PostgreSQL DDL, API contracts &amp; types  │
+│ 03 / AI-ACCELERATED SYNTHESIS   ──► High-velocity builds with tool calling   │
+│ 04 / RIGOROUS TYPE &amp; LATENCY QA ──► Strict tests, memory profiles &amp; edges   │
+│ 05 / CONTAINERIZED PROD SHIP    ──► Multi-cloud CI/CD (Docker, Vercel, Rail) │
+│ 06 / TELEMETRY &amp; OBSERVABILITY  ──► Live event streams, metrics &amp; iteration │
+└─────────────────────────────────────────────────────────────────────────────┘
+    </pre>
+
+    <hr>
+
+    <!-- Technology Universe -->
+    <h2>03 // TECHNOLOGY UNIVERSE</h2>
+    <img src="./assets/tech-universe.svg" alt="Tech Universe">
+
+    <hr>
+
+    <!-- Currently Building: Nexora -->
+    <h2>04 // CURRENT SPRINT: NEXORA (FLAGSHIP)</h2>
+    <div style="text-align: center;">
+      <img src="./assets/nexora-3d-motion.gif" alt="Nexora 3D Motion">
+      <div class="section-spacer"></div>
+      <img src="./assets/nexora.svg" alt="Nexora Architecture Diagram">
+    </div>
+
+    <hr>
+
+    <!-- Product Lab -->
+    <h2>05 // PRODUCT LAB (PRODUCTION SYSTEMS)</h2>
+    <div class="grid-2">
+      <div class="product-card">
+        <img src="./assets/pasha-tools-3d-motion.gif" alt="Pasha Tools 3D Motion">
+        <img src="./assets/pasha-tools.svg" alt="Pasha Tools Architecture">
+        <h3>🔵 Pasha Tools</h3>
+        <p>Free Multi-Tool Web Platform • FFmpeg, audio streams, in-memory PDF engine, Railway + Vercel multi-cloud architecture.</p>
+      </div>
+      <div class="product-card">
+        <img src="./assets/wishora-3d-motion.gif" alt="Wishora 3D Motion">
+        <img src="./assets/wishora.svg" alt="Wishora Architecture">
+        <h3>💜 Wishora</h3>
+        <p>Personalized Digital Greeting Platform • Next.js, Framer Motion, instant canvas PNG export, zero friction viral product.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="product-card">
+        <img src="./assets/zoro-3d-motion.gif" alt="Zoro 2.0 3D Motion">
+        <img src="./assets/zoro.svg" alt="Zoro Architecture">
+        <h3>🤖 Zoro 2.0</h3>
+        <p>Native Windows AI Assistant • Tauri (Rust) + React UI + Python AI Core, local speech synthesis, hotkey HUD.</p>
+      </div>
+      <div class="product-card">
+        <img src="./assets/opencluely-3d-motion.gif" alt="OpenCluely 3D Motion">
+        <img src="./assets/opencluely.svg" alt="OpenCluely Architecture">
+        <h3>🛡️ OpenCluely</h3>
+        <p>Stealth AI Interview &amp; DSA Companion • 993+ Stars, real-time optical canvas OCR, undetectable HUD overlay, optimal O(N) complexity proofs.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- System Architecture Blueprint -->
+    <h2>06 // SYSTEM ARCHITECTURE BLUEPRINT</h2>
+    <img src="./assets/architecture.svg" alt="System Architecture Blueprint">
+
+    <hr>
+
+    <!-- GitHub Command Center -->
+    <h2>07 // GITHUB COMMAND CENTER (LIVE TELEMETRY)</h2>
+    <img src="./profile/overview.svg" alt="Command Center Overview">
+    
+    <div class="grid-2" style="margin-top: 20px;">
+      <img src="./profile/github-stats.svg" alt="GitHub Stats">
+      <img src="./profile/languages.svg" alt="Language Telemetry">
+    </div>
+
+    <div style="margin-top: 20px;">
+      <img src="./profile/streak.svg" alt="Streak Tracker">
+    </div>
+
+    <div style="margin-top: 20px;">
+      <img src="./profile/monthly.svg" alt="This Month Telemetry">
+    </div>
+
+    <div style="margin-top: 20px;">
+      <img src="./profile/contributions.svg" alt="52-Week Contributions">
+    </div>
+
+    <div style="margin-top: 20px;">
+      <img src="./profile/activity.svg" alt="Activity Stream">
+    </div>
+
+    <hr>
+
+    <!-- AI Engineering Workflow -->
+    <h2>08 // AI × ENGINEERING WORKFLOW</h2>
+    <img src="./assets/ai-workflow.svg" alt="AI Workflow">
+
+    <hr>
+
+    <!-- From Pakistan to Global Internet -->
+    <h2>09 // FROM PAKISTAN TO GLOBAL INTERNET</h2>
+    <img src="./assets/pakistan-global.svg" alt="Pakistan to Global Telemetry Routing">
+
+    <hr>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 40px;">
+      <img src="./assets/footer.svg" alt="Build. Ship. Iterate.">
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+    }
+  </script>
+</body>
+</html>

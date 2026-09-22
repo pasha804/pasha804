@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#050810" />
+    </linearGradient>
+
+    <linearGradient id="beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <filter id="wf-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    @keyframes packet-flow {
+      0% { stroke-dashoffset: 80; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .flow-packet { stroke-dasharray: 8 8; animation: packet-flow 2.5s linear infinite; }
+  </style>
+
+  <rect width="940" height="320" rx="16" fill="url(#wf-bg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(36, 30)">
+    <rect width="8" height="20" fill="#c084fc" rx="2" />
+    <text x="20" y="16" fill="#f8fafc" class="sans" font-size="18" font-weight="900">AI × ENGINEERING PIPELINE</text>
+    <text x="320" y="16" fill="#64748b" class="mono" font-size="11">AI IS AN ENGINEERING MULTIPLIER • HUMAN RETAINS ARCHITECTURAL COMMAND</text>
+  </g>
+
+  <line x1="36" y1="64" x2="904" y2="64" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Pipeline Flow Nodes: Row 1 -->
+  <g transform="translate(36, 85)">
+    <!-- Node 1: IDEA -->
+    <g>
+      <rect width="150" height="60" rx="8" fill="#0b1220" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="14" y="24" fill="#38bdf8" class="mono" font-size="9" font-weight="800">PHASE 01</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="800">IDEA &amp; VISION</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <line x1="150" y1="30" x2="180" y2="30" stroke="#38bdf8" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 2: RESEARCH -->
+    <g transform="translate(180, 0)">
+      <rect width="150" height="60" rx="8" fill="#0b1220" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="14" y="24" fill="#38bdf8" class="mono" font-size="9" font-weight="800">PHASE 02</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="800">RESEARCH</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <line x1="330" y1="30" x2="360" y2="30" stroke="#818cf8" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 3: ARCHITECTURE (Highlight) -->
+    <g transform="translate(360, 0)">
+      <rect width="170" height="60" rx="8" fill="#151b34" stroke="#818cf8" stroke-width="2" filter="url(#wf-glow)" />
+      <text x="14" y="24" fill="#818cf8" class="mono" font-size="9" font-weight="800">PHASE 03 // CORE</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="900">ARCHITECTURE</text>
+    </g>
+
+    <!-- Arrow 3 -->
+    <line x1="530" y1="30" x2="560" y2="30" stroke="#c084fc" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 4: AI IMPLEMENTATION (Highlight) -->
+    <g transform="translate(560, 0)">
+      <rect width="180" height="60" rx="8" fill="#1e1236" stroke="#c084fc" stroke-width="2" filter="url(#wf-glow)" />
+      <text x="14" y="24" fill="#c084fc" class="mono" font-size="9" font-weight="800">PHASE 04 // MULTIPLY</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="900">AI IMPLEMENT</text>
+    </g>
+
+    <!-- Arrow 4 -->
+    <line x1="740" y1="30" x2="770" y2="30" stroke="#f43f5e" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 5: TESTING -->
+    <g transform="translate(770, 0)">
+      <rect width="100" height="60" rx="8" fill="#0b1220" stroke="#f43f5e" stroke-width="1.5" />
+      <text x="12" y="24" fill="#f43f5e" class="mono" font-size="9" font-weight="800">PHASE 05</text>
+      <text x="12" y="44" fill="#f8fafc" class="sans" font-size="14" font-weight="800">TESTING</text>
+    </g>
+  </g>
+
+  <!-- Connective Flow Down to Row 2 -->
+  <path d="M 820 145 L 820 175 L 790 175" fill="none" stroke="#f43f5e" stroke-width="2" class="flow-packet" />
+
+  <!-- Pipeline Flow Nodes: Row 2 (Return Path) -->
+  <g transform="translate(36, 175)">
+    <!-- Node 6: REVIEW & AUDIT -->
+    <g transform="translate(640, 0)">
+      <rect width="150" height="60" rx="8" fill="#0b1220" stroke="#34d399" stroke-width="1.5" />
+      <text x="14" y="24" fill="#34d399" class="mono" font-size="9" font-weight="800">PHASE 06</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="800">CODE REVIEW</text>
+    </g>
+
+    <line x1="640" y1="30" x2="610" y2="30" stroke="#34d399" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 7: OPTIMIZATION -->
+    <g transform="translate(430, 0)">
+      <rect width="180" height="60" rx="8" fill="#0b1220" stroke="#34d399" stroke-width="1.5" />
+      <text x="14" y="24" fill="#34d399" class="mono" font-size="9" font-weight="800">PHASE 07</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="800">OPTIMIZATION</text>
+    </g>
+
+    <line x1="430" y1="30" x2="400" y2="30" stroke="#38bdf8" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 8: DEPLOYMENT -->
+    <g transform="translate(220, 0)">
+      <rect width="180" height="60" rx="8" fill="#0b1220" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="14" y="24" fill="#38bdf8" class="mono" font-size="9" font-weight="800">PHASE 08</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="800">DEPLOYMENT</text>
+    </g>
+
+    <line x1="220" y1="30" x2="190" y2="30" stroke="#38bdf8" stroke-width="2" class="flow-packet" />
+
+    <!-- Node 9: OBSERVABILITY -->
+    <g transform="translate(0, 0)">
+      <rect width="190" height="60" rx="8" fill="#082338" stroke="#38bdf8" stroke-width="2" filter="url(#wf-glow)" />
+      <text x="14" y="24" fill="#38bdf8" class="mono" font-size="9" font-weight="800">PHASE 09 // PRODUCTION</text>
+      <text x="14" y="44" fill="#f8fafc" class="sans" font-size="15" font-weight="900">OBSERVABILITY</text>
+    </g>
+  </g>
+
+  <!-- Bottom Principle Callout -->
+  <g transform="translate(36, 275)">
+    <rect width="868" height="30" rx="6" fill="#070c14" stroke="#1e293b" stroke-width="1" />
+    <text x="16" y="19" fill="#10b981" class="mono" font-size="10" font-weight="700">&gt; PRINCIPLE:</text>
+    <text x="110" y="19" fill="#94a3b8" class="mono" font-size="10">AI accelerates syntax and exploratory velocity. Engineering determines architecture, security, and durability.</text>
+  </g>
+</svg>

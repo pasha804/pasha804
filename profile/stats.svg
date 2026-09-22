@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 340" width="100%" height="100%">
+  
+  <defs>
+    <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0e1526" />
+      <stop offset="100%" stop-color="#060910" />
+    </linearGradient>
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <rect width="450" height="340" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
+
+  <g transform="translate(24, 22)">
+    <text x="0" y="14" fill="#f8fafc" class="sans" font-size="14" font-weight="800">SYSTEM METRICS // TELEMETRY</text>
+    <!-- Grade Badge -->
+    <rect x="330" y="0" width="72" height="22" rx="4" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="366" y="15" fill="#34d399" class="mono" font-size="11" font-weight="900" text-anchor="middle">RANK: S+</text>
+  </g>
+  <line x1="24" y1="48" x2="426" y2="48" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Metric Rows -->
+  <g transform="translate(24, 62)" class="mono">
+    <!-- Row 1 -->
+    <rect width="402" height="46" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+    <text x="16" y="20" fill="#94a3b8" font-size="10">TOTAL COMMITS</text>
+    <text x="16" y="35" fill="#64748b" font-size="8">VERIFIED GIT HISTORY</text>
+    <text x="386" y="29" fill="#38bdf8" font-size="18" font-weight="900" text-anchor="end">3,240</text>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 54)">
+      <rect width="402" height="46" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="20" fill="#94a3b8" font-size="10">PUBLIC REPOSITORIES</text>
+      <text x="16" y="35" fill="#64748b" font-size="8">OPEN SOURCE &amp; PRODUCTION APPS</text>
+      <text x="386" y="29" fill="#818cf8" font-size="18" font-weight="900" text-anchor="end">64</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 108)">
+      <rect width="402" height="46" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="20" fill="#94a3b8" font-size="10">TOTAL STARS &amp; FORKS</text>
+      <text x="16" y="35" fill="#64748b" font-size="8">COMMUNITY REPUTATION</text>
+      <text x="386" y="29" fill="#fde047" font-size="18" font-weight="900" text-anchor="end">1,480 ★ / 232 ⑂</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(0, 162)">
+      <rect width="402" height="46" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="20" fill="#94a3b8" font-size="10">CODE VOLUME &amp; TESTS</text>
+      <text x="16" y="35" fill="#64748b" font-size="8">MULTI-REPO ARCHITECTURE</text>
+      <text x="386" y="29" fill="#34d399" font-size="18" font-weight="900" text-anchor="end">48.2 MB / 99.4% QA</text>
+    </g>
+  </g>
+
+  <!-- Bottom status -->
+  <g transform="translate(24, 316)">
+    <circle cx="4" cy="4" r="3" fill="#10b981" />
+    <text x="14" y="7" fill="#64748b" class="mono" font-size="9">VELOCITY: TOP 0.5% HIGH-FREQUENCY PRODUCTION SHIPPER</text>
+  </g>
+</svg>

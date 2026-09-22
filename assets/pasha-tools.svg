@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pt-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101e" />
+      <stop offset="100%" stop-color="#040810" />
+    </linearGradient>
+    <linearGradient id="pt-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <filter id="pt-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .pulsing-dot { animation: pulse-dot 2s infinite; }
+  </style>
+
+  <rect width="540" height="380" rx="14" fill="url(#pt-bg)" stroke="#1e3a5f" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(28, 28)">
+    <rect width="32" height="32" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <!-- Wrench / Tool 3D Icon -->
+    <path d="M 12 10 L 22 20 M 18 10 C 22 10 24 12 24 16 L 20 18 L 18 16 L 12 22 L 10 20 L 16 14 L 14 12 Z" fill="#38bdf8" />
+    
+    <text x="44" y="16" fill="#f8fafc" class="sans" font-size="18" font-weight="900">PASHA TOOLS</text>
+    <text x="44" y="30" fill="#38bdf8" class="mono" font-size="10" font-weight="700">pashatools.com // MULTI-TOOL SUITE</text>
+
+    <rect x="360" y="4" width="115" height="22" rx="4" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="372" cy="15" r="4" fill="#10b981" class="pulsing-dot" />
+    <text x="382" y="19" fill="#38bdf8" class="mono" font-size="9" font-weight="700">PRODUCTION LIVE</text>
+  </g>
+
+  <line x1="28" y1="74" x2="512" y2="74" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Content & Feature Modules -->
+  <g transform="translate(28, 92)">
+    <text x="0" y="16" fill="#94a3b8" class="sans" font-size="13">High-speed web utilities engine built for automated media &amp; document transformations.</text>
+
+    <!-- 3D Pipeline Stack Cards -->
+    <g transform="translate(0, 36)">
+      <!-- Card 1 -->
+      <g>
+        <rect width="235" height="75" rx="8" fill="#0a1224" stroke="#1e293b" stroke-width="1" />
+        <rect x="0" y="0" width="4" height="75" rx="2" fill="#38bdf8" />
+        <text x="16" y="24" fill="#38bdf8" class="mono" font-size="10" font-weight="700">ENGINEERING</text>
+        <text x="16" y="44" fill="#f8fafc" class="sans" font-size="14" font-weight="700">React + FastAPI</text>
+        <text x="16" y="62" fill="#64748b" class="mono" font-size="9">Railway Backend • Vercel Frontend</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(250, 0)">
+        <rect width="235" height="75" rx="8" fill="#0a1224" stroke="#1e293b" stroke-width="1" />
+        <rect x="0" y="0" width="4" height="75" rx="2" fill="#818cf8" />
+        <text x="16" y="24" fill="#818cf8" class="mono" font-size="10" font-weight="700">CORE PIPELINE</text>
+        <text x="16" y="44" fill="#f8fafc" class="sans" font-size="14" font-weight="700">FFmpeg &amp; yt-dlp</text>
+        <text x="16" y="62" fill="#64748b" class="mono" font-size="9">Lossless Conversion &amp; Streams</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(0, 88)">
+        <rect width="235" height="75" rx="8" fill="#0a1224" stroke="#1e293b" stroke-width="1" />
+        <rect x="0" y="0" width="4" height="75" rx="2" fill="#c084fc" />
+        <text x="16" y="24" fill="#c084fc" class="mono" font-size="10" font-weight="700">PROCESSING</text>
+        <text x="16" y="44" fill="#f8fafc" class="sans" font-size="14" font-weight="700">PDF &amp; File Engine</text>
+        <text x="16" y="62" fill="#64748b" class="mono" font-size="9">Fast In-Memory Byte Stream</text>
+      </g>
+
+      <!-- Card 4 -->
+      <g transform="translate(250, 88)">
+        <rect width="235" height="75" rx="8" fill="#0a1224" stroke="#1e293b" stroke-width="1" />
+        <rect x="0" y="0" width="4" height="75" rx="2" fill="#34d399" />
+        <text x="16" y="24" fill="#34d399" class="mono" font-size="10" font-weight="700">GROWTH ARCHITECTURE</text>
+        <text x="16" y="44" fill="#f8fafc" class="sans" font-size="14" font-weight="700">SEO &amp; AdSense Ready</text>
+        <text x="16" y="62" fill="#64748b" class="mono" font-size="9">Automated Canonical Routing</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Terminal Tag -->
+  <g transform="translate(28, 335)">
+    <rect width="484" height="26" rx="4" fill="#050a12" stroke="#1e293b" stroke-width="1" />
+    <text x="12" y="17" fill="#64748b" class="mono" font-size="9">&gt; pashatools.com --status 200 --latency 42ms</text>
+    <text x="472" y="17" fill="#38bdf8" class="mono" font-size="9" text-anchor="end">PRODUCTION READY</text>
+  </g>
+</svg>

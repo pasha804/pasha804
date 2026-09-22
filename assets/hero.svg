@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0a1022" />
+      <stop offset="100%" stop-color="#04060b" />
+    </linearGradient>
+
+    <!-- Neon Gradients -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#38bdf8" />
+      <stop offset="80%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyber-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="cyber-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+
+    <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Glow & 3D Shadow Filters -->
+    <filter id="bloom-high" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur1" />
+      <feGaussianBlur stdDeviation="4" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity="0.9" />
+    </filter>
+
+    <filter id="hologram-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
+    
+    @keyframes float-polyhedron {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-16px) rotate(5deg); }
+    }
+    @keyframes pulse-ring {
+      0%, 100% { opacity: 0.3; transform: scale(0.98); }
+      50% { opacity: 0.8; transform: scale(1.02); }
+    }
+    @keyframes sweep-beam {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes star-twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.9; }
+    }
+    
+    .floating-3d { animation: float-polyhedron 7s ease-in-out infinite; transform-origin: 980px 240px; }
+    .pulsing-ring { animation: pulse-ring 4s ease-in-out infinite; transform-origin: 980px 240px; }
+    .star-1 { animation: star-twinkle 2s infinite; }
+    .star-2 { animation: star-twinkle 3s infinite 1s; }
+  </style>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="480" rx="20" fill="url(#hero-bg)" stroke="url(#border-glow)" stroke-width="2" filter="url(#card-shadow)" />
+
+  <!-- 3D Perspective Grid Flooring -->
+  <g opacity="0.22">
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="0" y1="390" x2="1200" y2="390" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="0" y1="425" x2="1200" y2="425" stroke="#38bdf8" stroke-width="2" />
+    <line x1="0" y1="465" x2="1200" y2="465" stroke="#38bdf8" stroke-width="2.5" />
+    
+    <!-- Vanishing Perspective Lines -->
+    <line x1="600" y1="280" x2="0" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="150" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="350" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="550" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="650" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="850" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="1050" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="600" y1="280" x2="1200" y2="480" stroke="#38bdf8" stroke-width="1.2" />
+  </g>
+
+  <!-- Ambient Micro Particles -->
+  <circle cx="120" cy="80" r="1.5" fill="#38bdf8" class="star-1" />
+  <circle cx="280" cy="140" r="2" fill="#c084fc" class="star-2" />
+  <circle cx="540" cy="60" r="1" fill="#38bdf8" class="star-1" />
+  <circle cx="720" cy="110" r="2" fill="#ffffff" class="star-2" />
+  <circle cx="860" cy="70" r="1.5" fill="#818cf8" class="star-1" />
+
+  <!-- Top System Ribbon -->
+  <g transform="translate(60, 48)">
+    <rect width="180" height="28" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="16" cy="14" r="5" fill="#10b981" />
+    <text x="32" y="18" fill="#38bdf8" class="mono" font-size="10" font-weight="800" letter-spacing="2">SYSTEM ONLINE</text>
+
+    <text x="760" y="18" fill="#64748b" class="mono" font-size="11" letter-spacing="1">ARCH // NEURAL FULL-STACK</text>
+    <text x="960" y="18" fill="#94a3b8" class="mono" font-size="11">VER // 2026.4</text>
+  </g>
+
+  <line x1="60" y1="92" x2="1140" y2="92" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Main Hero Brand Typography -->
+  <g transform="translate(60, 150)">
+    <!-- Subtitle Flag -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="24" rx="4" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+      <text x="12" y="16" fill="#38bdf8" class="mono" font-size="11" font-weight="800" letter-spacing="2.5">STUDIO COMMAND CENTER</text>
+    </g>
+
+    <!-- Master Name Title -->
+    <text x="0" y="80" fill="url(#title-grad)" class="sans" font-size="68" font-weight="900" letter-spacing="-1.5" filter="url(#hologram-glow)">PASHA DEV</text>
+    
+    <!-- Primary Designation -->
+    <text x="2" y="125" fill="#f8fafc" class="sans" font-size="28" font-weight="800" letter-spacing="3">AI FULL-STACK DEVELOPER</text>
+
+    <!-- Mission Statement Copy -->
+    <text x="4" y="170" fill="#94a3b8" class="sans" font-size="17" font-weight="400">
+      Building intelligent products where <tspan fill="#38bdf8" font-weight="600">AI</tspan>, <tspan fill="#818cf8" font-weight="600">systems engineering</tspan>, and <tspan fill="#c084fc" font-weight="600">cinematic design</tspan> meet.
+    </text>
+
+    <!-- Interactive Badges / Stack Anchors -->
+    <g transform="translate(4, 215)">
+      <g>
+        <rect width="110" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="17" r="4" fill="#38bdf8" />
+        <text x="30" y="22" fill="#f8fafc" class="mono" font-size="12" font-weight="700">FASTAPI</text>
+      </g>
+      <g transform="translate(125, 0)">
+        <rect width="110" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="17" r="4" fill="#818cf8" />
+        <text x="30" y="22" fill="#f8fafc" class="mono" font-size="12" font-weight="700">REACT / TS</text>
+      </g>
+      <g transform="translate(250, 0)">
+        <rect width="125" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="17" r="4" fill="#c084fc" />
+        <text x="30" y="22" fill="#f8fafc" class="mono" font-size="12" font-weight="700">AI AGENTS</text>
+      </g>
+      <g transform="translate(390, 0)">
+        <rect width="125" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+        <circle cx="16" cy="17" r="4" fill="#34d399" />
+        <text x="30" y="22" fill="#f8fafc" class="mono" font-size="12" font-weight="700">POSTGRES</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side 3D Isometric Hologram System -->
+  <g transform="translate(960, 230)">
+    <!-- Concentric Orbital Circles -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="8 6" opacity="0.4" class="pulsing-ring" />
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.3" />
+
+    <!-- 3D Floating Isometric Polyhedron Structure -->
+    <g class="floating-3d">
+      <!-- Outer Isometric Cube Shell -->
+      <!-- Top Face -->
+      <polygon points="0,-70 65,-32 0,6 -65,-32" fill="url(#cyber-cyan)" fill-opacity="0.85" filter="url(#bloom-high)" />
+      <!-- Left Face -->
+      <polygon points="-65,-32 0,6 0,82 -65,44" fill="#0284c7" fill-opacity="0.9" />
+      <!-- Right Face -->
+      <polygon points="0,6 65,-32 65,44 0,82" fill="#0369a1" fill-opacity="0.95" />
+
+      <!-- Inner Holographic Energy Cube -->
+      <polygon points="0,-35 32,-16 0,3 -32,-16" fill="#ffffff" fill-opacity="0.9" />
+      <polygon points="-32,-16 0,3 0,41 -32,22" fill="#c084fc" fill-opacity="0.8" />
+      <polygon points="0,3 32,-16 32,22 0,41" fill="#7c3aed" fill-opacity="0.85" />
+
+      <!-- Circuit Traces & Nodes -->
+      <circle cx="0" cy="3" r="5" fill="#ffffff" filter="url(#bloom-high)" />
+      <line x1="0" y1="-70" x2="0" y2="-100" stroke="#38bdf8" stroke-width="2" />
+      <circle cx="0" cy="-100" r="4" fill="#38bdf8" />
+      
+      <line x1="65" y1="44" x2="105" y2="65" stroke="#c084fc" stroke-width="2" />
+      <circle cx="105" cy="65" r="4" fill="#c084fc" />
+
+      <line x1="-65" y1="44" x2="-105" y2="65" stroke="#34d399" stroke-width="2" />
+      <circle cx="-105" cy="65" r="4" fill="#34d399" />
+    </g>
+
+    <!-- Floating Coordinates Tag -->
+    <g transform="translate(-75, 120)">
+      <rect width="150" height="24" rx="4" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <text x="75" y="16" fill="#64748b" class="mono" font-size="10" text-anchor="middle">COORD // 31.52° N, 74.35° E</text>
+    </g>
+  </g>
+</svg>

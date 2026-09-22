@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 64" width="100%" height="100%">
+  <defs>
+    <linearGradient id="typing-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a1022" />
+      <stop offset="50%" stop-color="#0e172e" />
+      <stop offset="100%" stop-color="#0a1022" />
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes type-in {
+      0% { width: 0; }
+      70%, 100% { width: 100%; }
+    }
+    .cursor { animation: cursor-blink 0.9s infinite; }
+  </style>
+
+  <rect width="900" height="64" rx="10" fill="url(#typing-bg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Terminal Prefix -->
+  <g transform="translate(24, 20)">
+    <text x="0" y="16" fill="#10b981" class="mono" font-size="16" font-weight="900">~/pasha $</text>
+    <text x="110" y="16" fill="url(#text-grad)" class="mono" font-size="15" font-weight="700">AI Full-Stack Developer • Systems Architect • Creative Technologist</text>
+    <!-- Blinking Cursor -->
+    <rect x="745" y="2" width="9" height="18" rx="1" fill="#38bdf8" class="cursor" />
+  </g>
+</svg>
