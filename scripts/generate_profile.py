@@ -397,50 +397,131 @@ def _status_dot(x, y, color="#10b981"):
 def generate_overview_svg(data):
     last_sync = data.get("last_sync", "—")
     is_live = data.get("is_live", False)
-    live_label = "LIVE API" if is_live else "CACHED"
-    live_color = PALETTE["green"] if is_live else PALETTE["amber"]
+    repos = data.get("public_repos", 0)
+    contribs = data.get("total_contributions", 0)
+    streak = data.get("current_streak", 0)
+    cash_val = f"$ {contribs * 108500 + 420000:,}"
 
-    cards = [
-        ("SAFEHOUSES", str(data.get("public_repos", 0)), PALETTE["cyan"], "PROPERTIES"),
-        ("RESPECT", f"{data.get('total_contributions', 0):,}", PALETTE["indigo"], "ALL TIME"),
-        ("WANTED LEVEL", f"{data.get('current_streak', 0)}", PALETTE["yellow"], f"MAX: {data.get('longest_streak', 0)}d"),
-        ("CREW MEMBERS", str(data.get("followers", 0)), PALETTE["amber"], "NETWORK"),
-    ]
-
-    card_svgs = []
-    for i, (label, value, color, sub) in enumerate(cards):
-        tx = i * 222
-        card_svgs.append(f'''
-    <g transform="translate({tx}, 0)">
-      <rect width="200" height="120" rx="8" fill="{PALETTE['bg_card']}" stroke="{PALETTE['border']}" stroke-width="1" />
-      <rect width="200" height="3" rx="1.5" fill="{color}" y="0" />
-      <text x="16" y="30" fill="{PALETTE['text_muted']}" class="mono" font-size="9" font-weight="700">{label}</text>
-      <text x="16" y="72" fill="{color}" class="mono" font-size="36" font-weight="900">{value}</text>
-      <text x="16" y="104" fill="{PALETTE['text_secondary']}" class="mono" font-size="9">{sub}</text>
-    </g>''')
-
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 210" width="100%" height="100%">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" width="100%" height="100%">
   {SHARED_SVG_HEAD}
   {SHARED_STYLES}
 
-  <rect width="920" height="210" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
+  <!-- GTA V Pause Menu Base -->
+  <rect width="940" height="360" rx="4" fill="#080b10" stroke="#1f2937" stroke-width="2" />
 
-  <!-- Header -->
-  <g transform="translate(28, 24)">
-    {_status_dot(6, 7, live_color)}
-    <text x="20" y="11" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">PASHA DEV // LOS SANTOS ENGINEERING</text>
-    {_badge(380, -2, live_label, live_color)}
-    <text x="864" y="11" fill="{PALETTE['text_muted']}" class="mono" font-size="10" text-anchor="end">SYNC: {last_sync}</text>
+  <!-- GTA V Pause Menu Tabs -->
+  <g transform="translate(0, 0)">
+    <rect width="940" height="42" fill="#05070a" />
+    <g class="gta-mission" font-size="13" font-weight="900" letter-spacing="1.5px">
+      <text x="50" y="26" fill="#64748b">MAP</text>
+      <text x="140" y="26" fill="#64748b">BRIEF</text>
+      <!-- Active Tab: STATS -->
+      <rect x="230" y="0" width="120" height="42" fill="#ffffff" />
+      <text x="290" y="26" fill="#000000" text-anchor="middle">▼ STATS ▼</text>
+      <text x="410" y="26" fill="#64748b">WEAPONS</text>
+      <text x="530" y="26" fill="#64748b">VEHICLES</text>
+      <text x="650" y="26" fill="#64748b">AWARDS</text>
+      <text x="760" y="26" fill="#64748b">ONLINE</text>
+    </g>
+    <text x="910" y="26" fill="#54B948" class="mono" font-size="10" text-anchor="end">LIVE TELEMETRY</text>
+    <line x1="0" y1="42" x2="940" y2="42" stroke="#ffffff" stroke-width="1.5" />
   </g>
-  <line x1="28" y1="48" x2="892" y2="48" stroke="{PALETTE['border']}" stroke-width="1" />
 
-  <!-- Metric Cards -->
-  <g transform="translate(28, 68)">
-    {''.join(card_svgs)}
+  <!-- Left Category Sidebar -->
+  <g transform="translate(24, 64)" class="mono" font-size="11" font-weight="800">
+    <!-- Active Category -->
+    <rect width="210" height="38" fill="#F5AF00" rx="3" />
+    <text x="16" y="24" fill="#000000">► OVERVIEW</text>
+
+    <g transform="translate(0, 48)">
+      <rect width="210" height="34" fill="#0f1522" rx="3" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#cbd5e1">CHARACTER (PASHA)</text>
+    </g>
+    <g transform="translate(0, 92)">
+      <rect width="210" height="34" fill="#0f1522" rx="3" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#cbd5e1">SKILLS &amp; ATTRIBUTES</text>
+    </g>
+    <g transform="translate(0, 136)">
+      <rect width="210" height="34" fill="#0f1522" rx="3" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#cbd5e1">HEISTS &amp; MISSIONS</text>
+    </g>
+    <g transform="translate(0, 180)">
+      <rect width="210" height="34" fill="#0f1522" rx="3" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#cbd5e1">LSPD CRIMINAL RECORD</text>
+    </g>
+    <g transform="translate(0, 224)">
+      <rect width="210" height="34" fill="#0f1522" rx="3" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="22" fill="#cbd5e1">MAZE BANK ACCOUNT</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="258" y1="56" x2="258" y2="336" stroke="#22272e" stroke-width="1" />
+
+  <!-- Right Stats Table (Authentic GTA V In-Game Pause Table) -->
+  <g transform="translate(280, 64)" class="mono">
+    <!-- Row 1: Total Cash Take -->
+    <g transform="translate(0, 0)">
+      <rect width="630" height="36" fill="#0d121c" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">TOTAL HEIST TAKE / REVENUE</text>
+      <text x="614" y="22" fill="#54B948" font-size="15" font-weight="900" text-anchor="end">{cash_val}</text>
+      <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
+    </g>
+
+    <!-- Row 2: Verified Missions Passed -->
+    <g transform="translate(0, 37)">
+      <rect width="630" height="36" fill="#090d15" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">MISSIONS PASSED (CONTRIBUTIONS)</text>
+      <text x="614" y="22" fill="#ffffff" font-size="14" font-weight="900" text-anchor="end">{contribs:,} HEISTS</text>
+      <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
+    </g>
+
+    <!-- Row 3: Properties Owned -->
+    <g transform="translate(0, 74)">
+      <rect width="630" height="36" fill="#0d121c" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">SAFEHOUSES &amp; FRONTS (REPOSITORIES)</text>
+      <text x="614" y="22" fill="#F5AF00" font-size="14" font-weight="900" text-anchor="end">{repos} PROPERTIES</text>
+      <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
+    </g>
+
+    <!-- Row 4: Current Wanted Level -->
+    <g transform="translate(0, 111)">
+      <rect width="630" height="36" fill="#090d15" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">CURRENT WANTED STATUS</text>
+      <text x="614" y="22" fill="#ef4444" font-size="14" font-weight="900" text-anchor="end">★★★★★ 5-STAR PRIORITY</text>
+      <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
+    </g>
+
+    <!-- Row 5: Longest Police Pursuit -->
+    <g transform="translate(0, 148)">
+      <rect width="630" height="36" fill="#0d121c" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">ACTIVE EVASION (COMMIT STREAK)</text>
+      <text x="614" y="22" fill="#38bdf8" font-size="14" font-weight="900" text-anchor="end">{streak} DAYS ACTIVE</text>
+      <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
+    </g>
+
+    <!-- Row 6: Favorite Weapon -->
+    <g transform="translate(0, 185)">
+      <rect width="630" height="36" fill="#090d15" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">FAVORITE WEAPON / FRAMEWORK</text>
+      <text x="614" y="22" fill="#F5AF00" font-size="13" font-weight="900" text-anchor="end">PYTHON 3.12 (SYSTEMS CALIBER)</text>
+      <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
+    </g>
+
+    <!-- Row 7: Mental State -->
+    <g transform="translate(0, 222)">
+      <rect width="630" height="36" fill="#0d121c" />
+      <text x="16" y="22" fill="#94a3b8" font-size="11">MENTAL STATE</text>
+      <text x="614" y="22" fill="#ef4444" font-size="13" font-weight="900" text-anchor="end">PSYCHOPATH (UNSTOPPABLE SHIPPER)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Helper Bar -->
+  <g transform="translate(24, 342)" class="mono" font-size="9" fill="#64748b">
+    <text x="0" y="0">&gt; GTA V PAUSE MENU // PRESS [ESC] TO RESUME HEIST</text>
+    <text x="890" y="0" text-anchor="end" fill="#94a3b8">LAST SYNC: {last_sync}</text>
   </g>
 </svg>'''
-
-
 # ────────────────────────────────────────────
 # 2. GITHUB-STATS.SVG
 # ────────────────────────────────────────────

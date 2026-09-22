@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="radio-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#040609" />
+      <stop offset="50%" stop-color="#0b1019" />
+      <stop offset="100%" stop-color="#040609" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, monospace; }
+    .gta-title { font-family: 'Impact', 'Arial Black', sans-serif; font-style: italic; }
+    .station-name { font-family: 'Impact', 'Arial Black', sans-serif; font-size: 13px; letter-spacing: 1px; }
+  </style>
+
+  <rect width="940" height="180" rx="10" fill="url(#radio-bg)" stroke="#1f2937" stroke-width="1.5" />
+
+  <!-- Header -->
+  <g transform="translate(28, 22)">
+    <text x="0" y="12" fill="#F5AF00" class="gta-title" font-size="14">RADIO LOS SANTOS // IN-STUDIO AUDIO WHEEL</text>
+    <text x="884" y="12" fill="#54B948" class="mono" font-size="10" text-anchor="end">CURRENT TRACK: SYNTHESIZING PROD CODE</text>
+    <line x1="0" y1="22" x2="884" y2="22" stroke="#222" stroke-width="1" />
+  </g>
+
+  <!-- 4 Radio Station Channels -->
+  <g transform="translate(28, 62)">
+    <!-- Station 1: Radio Los Santos -->
+    <g transform="translate(0, 0)">
+      <rect width="206" height="88" rx="6" fill="#0d131f" stroke="#F5AF00" stroke-width="1.5" />
+      <rect width="206" height="4" rx="2" fill="#F5AF00" />
+      <text x="14" y="24" fill="#F5AF00" class="station-name">RADIO LOS SANTOS</text>
+      <text x="14" y="42" fill="#ffffff" class="mono" font-size="11" font-weight="700">HIP-HOP &amp; TRAP</text>
+      <text x="14" y="60" fill="#94a3b8" class="mono" font-size="9">VIBE: High-Velocity Builds</text>
+      <text x="14" y="74" fill="#54B948" class="mono" font-size="8">● NOW PLAYING: Python 3.12 Core</text>
+    </g>
+
+    <!-- Station 2: West Coast Classics -->
+    <g transform="translate(226, 0)">
+      <rect width="206" height="88" rx="6" fill="#0d131f" stroke="#334155" stroke-width="1" />
+      <text x="14" y="24" fill="#60a5fa" class="station-name">WEST COAST CLASSICS</text>
+      <text x="14" y="42" fill="#ffffff" class="mono" font-size="11" font-weight="700">GOLDEN ERA G-FUNK</text>
+      <text x="14" y="60" fill="#94a3b8" class="mono" font-size="9">VIBE: Robust SQL &amp; Docker</text>
+      <text x="14" y="74" fill="#64748b" class="mono" font-size="8">● Dre, 2Pac, Snoop, Eazy-E</text>
+    </g>
+
+    <!-- Station 3: Non-Stop Pop FM -->
+    <g transform="translate(452, 0)">
+      <rect width="206" height="88" rx="6" fill="#0d131f" stroke="#334155" stroke-width="1" />
+      <text x="14" y="24" fill="#ec4899" class="station-name">NON-STOP POP 100.7</text>
+      <text x="14" y="42" fill="#ffffff" class="mono" font-size="11" font-weight="700">DANCE &amp; SYNTHPOP</text>
+      <text x="14" y="60" fill="#94a3b8" class="mono" font-size="9">VIBE: 60 FPS Framer Motion UI</text>
+      <text x="14" y="74" fill="#64748b" class="mono" font-size="8">● Clean React Components</text>
+    </g>
+
+    <!-- Station 4: FlyLo FM -->
+    <g transform="translate(678, 0)">
+      <rect width="206" height="88" rx="6" fill="#0d131f" stroke="#334155" stroke-width="1" />
+      <text x="14" y="24" fill="#c084fc" class="station-name">FLYLO FM // EXPERIMENTAL</text>
+      <text x="14" y="42" fill="#ffffff" class="mono" font-size="11" font-weight="700">EXPERIMENTAL BEATS</text>
+      <text x="14" y="60" fill="#94a3b8" class="mono" font-size="9">VIBE: Autonomous AI &amp; Shaders</text>
+      <text x="14" y="74" fill="#64748b" class="mono" font-size="8">● Flying Lotus, Glitch &amp; Neural</text>
+    </g>
+  </g>
+</svg>

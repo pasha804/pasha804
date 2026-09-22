@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phone-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="50%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', Menlo, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .gta-title { font-family: 'Impact', 'Arial Black', sans-serif; font-style: italic; letter-spacing: 1px; }
+  </style>
+
+  <rect width="940" height="380" rx="12" fill="#040608" stroke="#1f2937" stroke-width="1.5" />
+
+  <!-- Section Header -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="14" fill="#F5AF00" class="gta-title" font-size="16">iFRUIT OS 14 // INCOMING HEIST CHAT LOG</text>
+    <text x="876" y="14" fill="#94a3b8" class="mono" font-size="10" text-anchor="end">NETWORK: LOS SANTOS 5G • 100% SECURE</text>
+    <line x1="0" y1="26" x2="876" y2="26" stroke="#222" stroke-width="1" />
+  </g>
+
+  <!-- Message 1: Lester Crest (Tactical Mind) -->
+  <g transform="translate(32, 80)">
+    <rect width="876" height="58" rx="8" fill="#0e131d" stroke="#1e293b" stroke-width="1" />
+    <circle cx="30" cy="29" r="16" fill="#3b82f6" />
+    <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">L</text>
+    <text x="60" y="24" fill="#F5AF00" class="sans" font-size="13" font-weight="800">LESTER CREST</text>
+    <text x="175" y="24" fill="#64748b" class="mono" font-size="9">14:02 // SECURE SATELLITE UPLINK</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"Pasha, I've bypassed the enterprise firewalls. The Nexora server room is ready for extraction. Make sure your FastAPI endpoints don't leave any socket traces for LSPD cyber."</text>
+  </g>
+
+  <!-- Message 2: Franklin Clinton (Showroom & WebGL) -->
+  <g transform="translate(32, 150)">
+    <rect width="876" height="58" rx="8" fill="#0e131d" stroke="#1e293b" stroke-width="1" />
+    <circle cx="30" cy="29" r="16" fill="#10b981" />
+    <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">F</text>
+    <text x="60" y="24" fill="#54B948" class="sans" font-size="13" font-weight="800">FRANKLIN CLINTON</text>
+    <text x="210" y="24" fill="#64748b" class="mono" font-size="9">14:15 // VINEWOOD HILLS</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"Yo Pasha, that BMW 7-Series 3D configurator is pure artwork homie! Those GLSL raymarched clear-coat shaders look cleaner than anything at Los Santos Customs. Chop loves it too."</text>
+  </g>
+
+  <!-- Message 3: Lamar Davis (Pasha Tools & Hustle) -->
+  <g transform="translate(32, 220)">
+    <rect width="876" height="58" rx="8" fill="#0e131d" stroke="#1e293b" stroke-width="1" />
+    <circle cx="30" cy="29" r="16" fill="#f59e0b" />
+    <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">LD</text>
+    <text x="60" y="24" fill="#f59e0b" class="sans" font-size="13" font-weight="800">LAMAR DAVIS</text>
+    <text x="180" y="24" fill="#64748b" class="mono" font-size="9">14:21 // STRAWBERRY</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"Can your underground utility Pasha Tools convert this 4K video for LD Organics? Need that in-memory FFmpeg engine cooking fast, man! You the real code gangster out here!"</text>
+  </g>
+
+  <!-- Message 4: Trevor Philips (Unhinged Deployment) -->
+  <g transform="translate(32, 290)">
+    <rect width="876" height="58" rx="8" fill="#0e131d" stroke="#1e293b" stroke-width="1" />
+    <circle cx="30" cy="29" r="16" fill="#ef4444" />
+    <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">T</text>
+    <text x="60" y="24" fill="#ef4444" class="sans" font-size="13" font-weight="800">TREVOR PHILIPS</text>
+    <text x="195" y="24" fill="#64748b" class="mono" font-size="9">14:29 // SANDY SHORES AIRFIELD</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"PASHA! DID YOU PUSH TO PRODUCTION YET?! IF A SINGLE DOCKER CONTAINER CRASHES I AM FLYING A DUSTER PLANE STRAIGHT INTO THE DATA CENTER! KEEP SHIPPING!"</text>
+  </g>
+
+  <!-- Phone Status Footer -->
+  <g transform="translate(32, 362)" class="mono" font-size="9" fill="#64748b">
+    <text x="0" y="0">&gt; iFruit Messages encrypted with AES-256 • Press [DEL] to wipe logs</text>
+  </g>
+</svg>

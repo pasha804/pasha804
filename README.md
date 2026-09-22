@@ -1,6 +1,6 @@
 <!--
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                    GRAND THEFT AUTO: PASHA DEV // LOS SANTOS ENGINEERING     ║
+║                    GRAND THEFT AUTO: PASHA DEV // LOS SANTOS EDITION         ║
 ║                    THE MASTERMIND // FULL-STACK & AI ARCHITECT               ║
 ║                 Muhammad Mubashar • Lahore, Pakistan                         ║
 ║                                                                              ║
@@ -10,32 +10,32 @@
 
 <div align="center">
 
-<!-- ═══════════════════════ GTA HERO LOADING SCREEN ═══════════════════════ -->
-<img src="./assets/gta-hero-banner.jpg" width="100%" alt="Grand Theft Auto: Pasha Dev — The Mastermind // Los Santos Command Center"/>
+<!-- ═══════════════════════ [1] GRAND THEFT AUTO OFFICIAL GAME TITLE ═══════════════════════ -->
+<img src="./assets/gta-title-logo.svg" width="100%" alt="Grand Theft Auto: Pasha Dev // Los Santos Edition"/>
 
 <br/>
 
-<!-- ═══════════════════════ MISSION PASSED BANNER ═══════════════════════ -->
+<!-- ═══════════════════════ [2] GTA V LOADING SCREEN COMIC ART ═══════════════════════ -->
+<img src="./assets/gta-hero-banner.jpg" width="100%" alt="Grand Theft Auto: Pasha Dev — The Mastermind // Los Santos Penthouse"/>
+
+<br/>
+
+<!-- ═══════════════════════ [3] GTA V IN-GAME HUD (MINIMAP + HEALTH/ARMOR + CASH + 5-STARS) ═══════════════════════ -->
+<img src="./assets/gta-hud.svg" width="100%" alt="GTA V In-Game HUD: Minimap Radar, Health, Armor, Cash, Wanted Level"/>
+
+<br/>
+
+<!-- ═══════════════════════ [4] MISSION PASSED // RESPECT + ═══════════════════════ -->
 <img src="./assets/mission-passed.svg" width="100%" alt="Mission Passed // Respect +"/>
 
 <br/>
 
-<!-- ═══════════════════════ TERMINAL PROMPT ═══════════════════════ -->
-<img src="./assets/typing.svg" width="100%" alt="Pasha Dev Terminal Session"/>
-
-<br/>
-
-<!-- ═══════════════════════ BOOT SEQUENCE ═══════════════════════ -->
-<img src="./assets/boot-sequence.svg" width="100%" alt="System Boot Sequence"/>
-
-<br/>
-
-<!-- ═══════════════════════ CLI TERMINAL ═══════════════════════ -->
-<img src="./assets/cli-terminal.svg" width="100%" alt="CLI Whoami Terminal Session"/>
+<!-- ═══════════════════════ [5] iFRUIT OS // INCOMING HEIST CHAT LOG ═══════════════════════ -->
+<img src="./assets/ifruit-phone.svg" width="100%" alt="iFruit OS: Incoming Heist Messages from Lester, Franklin, Lamar, Trevor"/>
 
 <br/><br/>
 
-<!-- ═══════════════════════ LIFEINVADER / SYNDICATE UPLINKS ═══════════════════════ -->
+<!-- ═══════════════════════ SYNDICATE DIRECT UPLINKS ═══════════════════════ -->
 <a href="https://pasha-portfolio-v6.netlify.app/">
   <img src="https://img.shields.io/badge/PORTFOLIO-LIVE_v6-F5AF00?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Live Portfolio"/>
 </a>
@@ -56,22 +56,23 @@
 
 ---
 
-## 🧬 01 // CHARACTER SELECT & LSPD DOSSIER
+## 🚨 01 // LSPD SUSPECT FILE #804: THE MASTERMIND
 
 <table>
 <tr>
 <td width="65%" valign="top">
 
 ### Muhammad Mubashar — Pasha Dev
-**The Mastermind // AI Full-Stack Developer • Systems Architect • Product Engineer**
+**CLASSIFICATION: MASTERMIND // AI FULL-STACK ARCHITECT**  
+**KNOWN OPERATING BASE: LAHORE // ACTIVE SECTOR: LOS SANTOS**
 
-Operating from the underground digital underbelly of Los Santos, I plan and execute full-scale software heists at the convergence of **bulletproof backend architectures**, **type-safe frontend systems**, **autonomous AI agent syndicates**, and **cinematic WebGL experiences**.
+Operating out of an encrypted penthouse overlooking the Vinewood Hills, suspect orchestrates high-stakes digital heists across global web infrastructure. Known to synthesize production-grade systems in record time using multi-agent AI tool calling and zero-friction full-stack frameworks.
 
 > *"Survival before abstraction. Respect before shortcuts. Zero-friction execution. AI as the ultimate crew multiplier."*
 
-**Criminal Engineering Specialties:**
+**CRIMINAL RECORD & SPECIALTIES:**
 
-🤖 **Autonomous AI Syndicates** — Autonomous workflows, tool calling, persistent state memory, and low-latency voice integration.
+🤖 **Autonomous AI Syndicates** — Autonomous workflows, tool calling, persistent state memory, and low-latency neural voice synthesis.
 
 🌐 **Distributed Safehouse Networks** — Resilient microservice platforms built on React, Next.js, TypeScript, FastAPI, PostgreSQL, and Redis.
 
@@ -87,45 +88,25 @@ Operating from the underground digital underbelly of Los Santos, I plan and exec
 <img src="./assets/gta-mugshot.jpg" width="100%" alt="LSPD Booking Mugshot: Pasha Dev"/>
 
 <br/>
-<sub><b>LSPD SUSPECT FILE #804</b><br/><code>STATUS: ACTIVE IN LOS SANTOS</code></sub>
+<sub><b>LSPD BOOKING PLACARD #804</b><br/><code>CHARGES: ROGUE AI ARCHITECTURE</code></sub>
 
 </td>
 </tr>
 </table>
 
-<br/>
+---
 
-<!-- LIVE TELEMETRY METRICS — Auto-updated via GitHub Actions every 6 hours -->
+## 🎮 02 // GTA V PAUSE MENU // VERIFIED IN-GAME STATS
+
+> Real-time verified data pulled directly from the GitHub API and refreshed automatically every 6 hours via Actions CI/CD.
+
 <div align="center">
-  <img src="./profile/metrics.svg" width="100%" alt="Pasha Dev Telemetry Metrics"/>
+  <img src="./profile/overview.svg" width="100%" alt="GTA V In-Game Pause Menu: Verified Stats &amp; Revenue"/>
 </div>
 
 ---
 
-## ⚡ 02 // THE HEIST BLUEPRINT (METHODOLOGY)
-
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 01 / RECON & FRICTION ANALYSIS  ──► Deconstruct user pain & latency bounds  │
-│ 02 / BLUEPRINT & SCHEMA DDL     ──► PostgreSQL DDL, API contracts & types  │
-│ 03 / TACTICAL AI-TOOL BUILD     ──► High-velocity builds with tool calling   │
-│ 04 / RIGOROUS TYPE & LATENCY QA ──► Strict tests, memory profiles & edges   │
-│ 05 / CONTAINERIZED HEIST SHIP   ──► Multi-cloud CI/CD (Docker, Vercel, Rail) │
-│ 06 / LIVE TELEMETRY OBSERVATION ──► Live event streams, metrics & iteration │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
-
-**Core Heist Principles:**
-
-* **Architecture before abstraction.** A system must survive its initial assumptions.
-* **Systems before shortcuts.** Temporary hacks compound into technical paralysis.
-* **UX before decoration.** Visual depth must reinforce product clarity, never obscure it.
-* **AI as multiplier.** Velocity is accelerated by AI, but architectural decisions remain under human command.
-* **Shipping over endless planning.** A product is purely theoretical until real users interact with it.
-
----
-
-## 🛠️ 03 // WEAPON WHEEL // FULL-STACK ARSENAL
+## 🛠️ 03 // WEAPON WHEEL // AMMU-NATION ARSENAL
 
 <div align="center">
   <img src="./assets/weapon-wheel.svg" width="100%" alt="GTA V Weapon Wheel Full-Stack Arsenal"/>
@@ -152,12 +133,12 @@ Operating from the underground digital underbelly of Los Santos, I plan and exec
 
 Nexora is an AI-powered skill social platform merging professional developer identity, collaborative communities, competitive peer-to-peer skill practice, and automated AI coaching.
 
-**Architecture Highlights:**
+**Heist Execution Highlights:**
 
-* **Client Tier**: React + TypeScript + Vite + Tailwind CSS + shadcn/ui + Framer Motion + TanStack Query.
-* **Backend API**: FastAPI Async REST & WebSocket microservices running in isolated Docker containers.
-* **AI Judge & Coach**: Autonomous LLM agent judging live coding challenges, tracking skill progression curves, and delivering actionable feedback.
-* **Persistence Layer**: Relational developer graph in PostgreSQL paired with in-memory Redis caching and challenge queues.
+* **Client Infiltration**: React + TypeScript + Vite + Tailwind CSS + shadcn/ui + Framer Motion + TanStack Query.
+* **Backend Microservices**: FastAPI Async REST & WebSocket microservices running in isolated Docker containers.
+* **Autonomous AI Referee**: Autonomous LLM agent judging live coding challenges, tracking skill progression curves, and delivering actionable feedback.
+* **Vault Storage**: Relational developer graph in PostgreSQL paired with in-memory Redis caching and challenge queues.
 
 </td>
 <td width="40%" valign="top">
@@ -182,7 +163,7 @@ Nexora is an AI-powered skill social platform merging professional developer ide
 
 ---
 
-## 🧪 05 // PROPERTIES & SAFEHOUSES (DYNASTY 8 EXECUTIVE & WARSTOCK)
+## 🏢 05 // PROPERTIES & SAFEHOUSES (DYNASTY 8 EXECUTIVE & WARSTOCK)
 
 <br/>
 
@@ -399,7 +380,15 @@ A testing ground for experiential web technology:
 
 ---
 
-## 🏛️ 06 // HEIST ARCHITECTURE BLUEPRINT
+## 📻 06 // RADIO LOS SANTOS // CODING SOUNDTRACK
+
+<div align="center">
+  <img src="./assets/radio-stations.svg" width="100%" alt="Radio Los Santos // In-Studio Audio Wheel"/>
+</div>
+
+---
+
+## 🏛️ 07 // HEIST ARCHITECTURE BLUEPRINT
 
 How software systems are designed from user touchpoint to distributed storage:
 
@@ -409,18 +398,11 @@ How software systems are designed from user touchpoint to distributed storage:
 
 ---
 
-## 📊 07 // LSPD CRIMINAL RECORD — LIVE TELEMETRY
-
-> **All stats below are real-time data** sourced directly from the GitHub API and auto-refreshed every 6 hours via GitHub Actions CI/CD. No static fakes, no third-party services.
+## 📊 08 // LSPD CRIMINAL RECORD — LIVE TELEMETRY DECK
 
 <div align="center">
 
-<!-- COMMAND CENTER OVERVIEW -->
-<img src="./profile/overview.svg" width="100%" alt="GitHub Command Center Telemetry Deck"/>
-
-<br/><br/>
-
-<!-- STATS + LANGUAGES SIDE BY SIDE -->
+<!-- STATS + WEAPON AMMO SIDE BY SIDE -->
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
@@ -439,7 +421,7 @@ How software systems are designed from user touchpoint to distributed storage:
 
 <br/><br/>
 
-<!-- MONTHLY -->
+<!-- MONTHLY PAYOUTS -->
 <img src="./profile/monthly.svg" width="100%" alt="This Month Dynamic Activity Telemetry"/>
 
 <br/><br/>
@@ -456,21 +438,19 @@ How software systems are designed from user touchpoint to distributed storage:
 
 ---
 
-## ⚙️ 08 // CREW EXPANSION WORKFLOW
-
-I do not treat AI as a replacement for engineering fundamentals. AI is an **exponential multiplier** for research velocity, syntax generation, and exploration, while architectural boundaries, security, type safety, testing, and production deployments remain strictly under developer command.
-
-<div align="center">
-  <img src="./assets/ai-workflow.svg" width="100%" alt="AI × Engineering Workflow Pipeline"/>
-</div>
+## ⚙️ 09 // CREW EXPANSION WORKFLOW
 
 ```text
 RECON ──► SCHEMATICS ──► ARCHITECTURE ──► AI BUILD ──► VALIDATION ──► TEST ──► SHIP ──► OBSERVE ──► ITERATE
 ```
 
+<div align="center">
+  <img src="./assets/ai-workflow.svg" width="100%" alt="AI × Engineering Workflow Pipeline"/>
+</div>
+
 ---
 
-## 🌍 09 // FROM PAKISTAN TO THE WORLD (TERRITORY MAP)
+## 🌍 10 // FROM PAKISTAN TO THE WORLD (TERRITORY MAP)
 
 <div align="center">
   <img src="./assets/pakistan-global.svg" width="100%" alt="From Pakistan to Global Internet"/>
@@ -478,7 +458,7 @@ RECON ──► SCHEMATICS ──► ARCHITECTURE ──► AI BUILD ──► V
 
 ---
 
-## 🌐 10 // LIFEINVADER & SYNDICATE CONTACTS
+## 🌐 11 // LIFEINVADER & SYNDICATE CONTACTS
 
 I am always open to discussing high-stakes AI-native products, scalable full-stack architecture, developer tools, and innovative engineering collaborations.
 
