@@ -1,310 +1,570 @@
-# ⚡ PASHA DEV
+<!-- ========================================================= -->
 
-### AI Full-Stack Developer · Builder · Product Engineer
+<!--                     PASHA DEV README                      -->
 
-> **I don't just write code. I turn ideas into products.**
+<!-- ========================================================= -->
 
-I’m **Muhammad Mubashar — Pasha Dev**, an AI-focused full-stack developer from Pakistan building modern web applications, developer tools, AI systems, and product experiences.
+<div align="center">
 
-My work sits at the intersection of:
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,50:0b1736,100:111827&height=220&section=header&text=PASHA%20DEV&fontSize=64&fontColor=ffffff&fontAlignY=38&desc=AI%20FULL-STACK%20DEVELOPER%20%7C%20BUILDER%20%7C%20PRODUCT%20ENGINEER&descAlignY=62&descSize=16&animation=fadeIn" width="100%"/>
 
-**AI × Full-Stack Engineering × Product Design × Automation**
+<br/>
 
-I enjoy taking an idea from **zero → architecture → interface → backend → deployment → real users.**
+<a href="https://github.com/pasha804">
+<img src="https://komarev.com/ghpvc/?username=pasha804&style=for-the-badge&color=6366f1&label=PROFILE+VIEWS"/>
+</a>
+
+<a href="https://github.com/pasha804?tab=followers">
+<img src="https://img.shields.io/github/followers/pasha804?style=for-the-badge&logo=github&label=FOLLOWERS&color=111827"/>
+</a>
+
+<a href="https://github.com/pasha804">
+<img src="https://img.shields.io/github/stars/pasha804?style=for-the-badge&logo=github&label=TOTAL%20STARS&color=111827"/>
+</a>
+
+<br/><br/>
+
+# ⚡ I BUILD PRODUCTS, NOT JUST PROJECTS.
+
+### AI Full-Stack Developer • Product Builder • Creative Technologist
+
+**React · TypeScript · Python · FastAPI · PostgreSQL · AI · Cloud**
+
+<br/>
+
+> **Turning ambitious ideas into real digital products.**
+
+</div>
+
+---
+
+<div align="center">
 
 ```text
-┌──────────────────────────────────────────────────────────────┐
+╭──────────────────────────────────────────────────────────────╮
 │                                                              │
-│   BUILDING DIGITAL PRODUCTS, NOT JUST DEMO PROJECTS.        │
+│   IDEA  →  DESIGN  →  ENGINEER  →  DEPLOY  →  ITERATE       │
 │                                                              │
-│   Frontend      →  React / Next.js / TypeScript              │
-│   Backend       →  Python / FastAPI / PostgreSQL              │
-│   AI            →  AI APIs / Agents / Automation              │
-│   Experience    →  Motion / 3D / Cinematic Interfaces         │
-│   Infrastructure→  Docker / Vercel / Railway / Cloudflare    │
+│   AI        UX         FULL-STACK      CLOUD       SCALE     │
 │                                                              │
-└──────────────────────────────────────────────────────────────┘
+╰──────────────────────────────────────────────────────────────╯
+```
+
+</div>
+
+# 🧬 WHO IS PASHA DEV?
+
+I'm **Muhammad Mubashar — Pasha Dev**, an AI-focused full-stack developer from Pakistan building products across **web engineering, artificial intelligence, developer tooling and creative digital experiences.**
+
+I like working at the point where:
+
+**Engineering × AI × Product Design × Automation**
+
+meet.
+
+I don't want a project to simply *work*.
+
+I want it to have:
+
+* 🧠 thoughtful architecture
+* ⚡ fast interactions
+* 🎨 strong visual identity
+* 🤖 meaningful AI integration
+* 🔐 sensible engineering practices
+* 🌍 production-ready deployment
+* 📈 room to evolve
+
+My favorite workflow is simple:
+
+```text
+Think deeply
+     ↓
+Build aggressively
+     ↓
+Test everything
+     ↓
+Ship it
+     ↓
+Learn from reality
+     ↓
+Build the next version
 ```
 
 ---
 
-## 🧠 WHAT I BUILD
+# 🚀 WHAT I'M BUILDING
 
-I’m especially interested in products where **engineering, AI and user experience meet**.
+<div align="center">
 
-### 🚀 AI-Powered Products
+### 🟣 NEXORA
 
-Building applications where AI is part of the actual product experience — not just a chatbot pasted onto a website.
+**GAMIFY PROFESSIONAL GROWTH**
 
-### 🌐 Full-Stack Applications
+</div>
 
-From responsive React interfaces to production APIs, databases, authentication, deployment and infrastructure.
+Nexora is an AI-powered skill social platform combining ideas from professional networks, developer communities and competitive learning.
 
-### 🛠️ Developer & Utility Tools
+```text
+              NEXORA
+                 │
+       ┌─────────┼─────────┐
+       ↓         ↓         ↓
+    SOCIAL     SKILLS      AI
+       │         │         │
+       ↓         ↓         ↓
+     FEED      PvP       COACH
+     GROUPS    JUDGE     FEEDBACK
+       │         │         │
+       └─────────┼─────────┘
+                 ↓
+          PROFESSIONAL
+             GROWTH
+```
 
-Creating practical tools that solve real problems while keeping the experience fast, simple and accessible.
+### Core Systems
 
-### 🎬 Cinematic Web Experiences
-
-Interactive websites with strong visual direction, animation, storytelling and modern frontend engineering.
-
-### 🤖 Autonomous Systems
-
-Exploring AI agents, local-first systems, voice interfaces, memory, automation and human-computer interaction.
-
----
-
-# 🔥 CURRENTLY BUILDING
-
-## 🟣 Nexora
-
-### **Gamify Professional Growth**
-
-A skill-based social platform combining ideas from:
-
-**LinkedIn × Discord × Competitive Coding**
-
-Nexora is being designed around a simple idea:
-
-> **Learning becomes more powerful when people build, compete and grow together.**
-
-**Core concepts**
-
-* 🧑‍💻 Professional skill profiles
-* 🌐 Social feed & communities
-* ⚔️ Skill-based PvP challenges
-* 🤖 AI judging & feedback
+* 🧑‍💻 Skill-based profiles
+* 🌐 Social feed
+* 💬 Communities
+* ⚔️ Competitive PvP challenges
+* 🤖 AI judging
 * 🧠 AI learning coach
-* 🏆 Progress & competitive systems
-* 💬 Real-time collaboration
-* 📈 Developer growth tracking
+* 🏆 Progress systems
+* 📊 Skill progression
+* 🔥 Real-time collaboration
 
-**Stack**
+### Architecture
 
 `React` `TypeScript` `Vite` `Tailwind` `shadcn/ui`
+
 `FastAPI` `PostgreSQL` `Redis` `Docker`
 
 ---
 
-# 🛠️ MY ENGINEERING STACK
+# 🛠️ OTHER PRODUCTS & BUILDS
 
-### Frontend
+<table>
+<tr>
+<td width="50%">
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=next.js\&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=000)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge\&logo=three.js\&logoColor=white)
-![WebGL](https://img.shields.io/badge/WebGL-990000?style=for-the-badge\&logo=webgl\&logoColor=white)
+### 🔵 PASHA TOOLS
 
-### Backend & APIs
+A growing collection of practical free web utilities.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge\&logo=express\&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge\&logo=jsonwebtokens\&logoColor=white)
+**Focus**
 
-### Databases
+`Tools` · `Automation` · `AI` · `Media` · `Productivity`
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge\&logo=sqlite\&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge\&logo=supabase\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=000)
+**Stack**
 
-### Cloud & Infrastructure
+`React` · `Python` · `FastAPI` · `Vercel` · `Railway`
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-000000?style=for-the-badge\&logo=netlify\&logoColor=00C7B7)
-![Railway](https://img.shields.io/badge/Railway-000000?style=for-the-badge\&logo=railway\&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge\&logo=cloudflare\&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge\&logo=nginx\&logoColor=white)
+</td>
 
-### Data & Engineering
+<td width="50%">
 
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge\&logo=numpy\&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge\&logo=matplotlib\&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge\&logo=githubactions\&logoColor=white)
+### 💜 WISHORA
 
-### Creative Technology
+A personalized digital greeting-card platform designed around beautiful, instant experiences.
 
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge\&logo=figma\&logoColor=white)
-![Framer](https://img.shields.io/badge/Framer-000000?style=for-the-badge\&logo=framer\&logoColor=white)
-![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge\&logo=blender\&logoColor=white)
+**Focus**
+
+`Creative Web` · `Cards` · `Animation` · `Personalization`
+
+**Stack**
+
+`Next.js` · `TypeScript` · `Tailwind` · `Framer Motion`
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### 🤖 ZORO 2.0
+
+A native Windows AI assistant concept built around voice, automation, memory and local computer interaction.
+
+**Focus**
+
+`AI` · `Voice` · `Automation` · `Desktop`
+
+**Stack**
+
+`Tauri` · `React` · `Python` · `Voice AI`
+
+</td>
+
+<td width="50%">
+
+### 🎬 CREATIVE WEB
+
+Cinematic interactive experiences designed around storytelling rather than generic templates.
+
+**Focus**
+
+`Motion` · `3D` · `Interaction` · `Visual Design`
+
+**Stack**
+
+`React` · `Framer Motion` · `Three.js` · `WebGL`
+
+</td>
+</tr>
+</table>
 
 ---
 
-# 🧩 WHAT I CARE ABOUT
+# ⚙️ ENGINEERING STACK
+
+<div align="center">
+
+### FRONTEND
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,html,css,tailwind,vite" />
+
+### BACKEND
+
+<img src="https://skillicons.dev/icons?i=python,fastapi,nodejs,express" />
+
+### DATABASES
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,supabase,firebase,redis" />
+
+### CLOUD / DEVOPS
+
+<img src="https://skillicons.dev/icons?i=docker,vercel,netlify,cloudflare,nginx,githubactions" />
+
+### CREATIVE TECHNOLOGY
+
+<img src="https://skillicons.dev/icons?i=threejs,blender,figma" />
+
+### DEVELOPMENT
+
+<img src="https://skillicons.dev/icons?i=git,github,npm,vscode" />
+
+</div>
+
+---
+
+# 🧠 ENGINEERING PHILOSOPHY
+
+<table>
+<tr>
+<td align="center" width="20%">
+
+### 01
+
+🧩
+
+**ARCHITECTURE**
+
+Build systems that can evolve.
+
+</td>
+
+<td align="center" width="20%">
+
+### 02
+
+⚡
+
+**PERFORMANCE**
+
+Fast interfaces feel better.
+
+</td>
+
+<td align="center" width="20%">
+
+### 03
+
+🎨
+
+**EXPERIENCE**
+
+Engineering should feel good to use.
+
+</td>
+
+<td align="center" width="20%">
+
+### 04
+
+🤖
+
+**AI-NATIVE**
+
+Use AI where it creates real leverage.
+
+</td>
+
+<td align="center" width="20%">
+
+### 05
+
+🚀
+
+**SHIP**
+
+Ideas matter when users can actually use them.
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🤖 AI + DEVELOPMENT
+
+AI is deeply integrated into my development workflow.
+
+Not as:
+
+> **"AI, build everything for me."**
+
+But as:
+
+> **"How can AI make my engineering loop dramatically faster?"**
+
+### My AI workflow
 
 ```text
-01  Product Thinking
-    Build for real users, not just screenshots.
+                    ┌───────────────┐
+                    │     IDEA      │
+                    └───────┬───────┘
+                            ↓
+                    ┌───────────────┐
+                    │    RESEARCH   │
+                    └───────┬───────┘
+                            ↓
+              ┌─────────────┴─────────────┐
+              ↓                           ↓
+        ARCHITECTURE                    UX/UI
+              ↓                           ↓
+              └─────────────┬─────────────┘
+                            ↓
+                    ┌───────────────┐
+                    │  AI-ASSISTED  │
+                    │ DEVELOPMENT   │
+                    └───────┬───────┘
+                            ↓
+                    ┌───────────────┐
+                    │ TEST + DEBUG  │
+                    └───────┬───────┘
+                            ↓
+                    ┌───────────────┐
+                    │    DEPLOY     │
+                    └───────┬───────┘
+                            ↓
+                    ┌───────────────┐
+                    │    ITERATE    │
+                    └───────────────┘
+```
 
-02  Clean Architecture
-    Keep systems understandable, scalable and maintainable.
+**AI accelerates the process.
+Engineering still owns the decisions.**
 
-03  Exceptional UX
-    Functionality matters. Experience matters too.
+---
 
-04  AI-Native Development
-    Use AI as an engineering multiplier, not a replacement for thinking.
+# 📊 GITHUB COMMAND CENTER
 
-05  Shipping
-    Ideas become valuable when they actually reach users.
+<div align="center">
 
-06  Continuous Learning
-    Every project should make the next one better.
+### 🔥 CONTRIBUTION STREAK
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=pasha804&theme=transparent&hide_border=true&background=00000000" width="90%"/>
+
+<br/><br/>
+
+### 📈 GITHUB OVERVIEW
+
+<img src="https://github-readme-stats.vercel.app/api?username=pasha804&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent&rank_icon=github&custom_title=Pasha%20Dev%20%E2%80%94%20GitHub%20Activity" width="49%"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pasha804&layout=donut-vertical&langs_count=8&hide_border=true&theme=transparent&custom_title=Languages" width="39%"/>
+
+</div>
+
+---
+
+# 🟩 CONTRIBUTION ACTIVITY
+
+<div align="center">
+
+### MY DEVELOPMENT ACTIVITY
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=pasha804&bg_color=00000000&color=8b9cff&line=6366f1&point=ffffff&area=true&hide_border=true&custom_title=Pasha%20Dev%20%E2%80%94%20Contribution%20Activity" width="100%"/>
+
+</div>
+
+> **This section is generated from GitHub activity and changes as the repository activity changes.**
+
+---
+
+# 🐍 CONTRIBUTION SNAKE
+
+<div align="center">
+
+<!-- Requires the GitHub Action below to generate the SVG -->
+
+<img src="https://raw.githubusercontent.com/pasha804/pasha804/output/github-contribution-grid-snake.svg" width="95%"/>
+
+</div>
+
+---
+
+# 📅 MY CODING RHYTHM
+
+```text
+TODAY
+  │
+  ├── Code
+  ├── Debug
+  ├── Design
+  ├── Learn
+  └── Ship
+       │
+       ↓
+THIS WEEK
+       │
+       ├── New features
+       ├── Refactors
+       ├── Experiments
+       └── Product iteration
+              │
+              ↓
+THIS MONTH
+              │
+              ├── More commits
+              ├── More projects
+              ├── Better architecture
+              └── Better products
 ```
 
 ---
 
-# 📌 SELECTED WORK
+# 🏆 GITHUB TROPHIES
 
-### 🟣 Nexora
+<div align="center">
 
-**AI-powered skill-based social platform**
+<img src="https://github-profile-trophy.vercel.app/?username=pasha804&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=2&column=4" width="95%"/>
 
-`React` `TypeScript` `FastAPI` `PostgreSQL` `Redis`
-
----
-
-### 🔵 Pasha Tools
-
-**A growing collection of free web utilities**
-
-Designed around simple workflows, fast processing and accessible tools.
-
-`Next.js / React` `Python` `FastAPI` `Railway` `Vercel`
+</div>
 
 ---
 
-### 💜 Wishora
-
-**Personalized digital greeting-card platform**
-
-A no-signup experience for creating and downloading beautiful personalized cards.
-
-`Next.js` `TypeScript` `Tailwind` `Framer Motion`
-
----
-
-### 🤖 Zoro 2.0
-
-**Native AI desktop assistant**
-
-A Windows-first AI workstation concept combining voice interaction, local controls, memory, automation and AI reasoning.
-
-`Tauri` `React` `Python` `Voice AI` `Local Systems`
-
----
-
-# ⚡ HOW I WORK
+# 📌 WHAT I'M CURRENTLY EXPLORING
 
 ```text
-IDEA
-  ↓
-RESEARCH
-  ↓
-SYSTEM DESIGN
-  ↓
-UI / UX
-  ↓
-IMPLEMENTATION
-  ↓
-AI INTEGRATION
-  ↓
-TESTING
-  ↓
-DEPLOYMENT
-  ↓
-ITERATE
+┌───────────────────────────────────────────────────────────┐
+│                                                           │
+│  █ AI-NATIVE APPLICATIONS                                 │
+│                                                           │
+│  █ AUTONOMOUS AGENTS                                      │
+│                                                           │
+│  █ VOICE-FIRST INTERFACES                                 │
+│                                                           │
+│  █ LOCAL-FIRST AI SYSTEMS                                 │
+│                                                           │
+│  █ FULL-STACK ARCHITECTURE                                │
+│                                                           │
+│  █ CREATIVE / CINEMATIC WEB                               │
+│                                                           │
+│  █ DEVELOPER TOOLS                                        │
+│                                                           │
+│  █ PRODUCT ENGINEERING                                    │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
 ```
 
-I use modern AI-assisted development tools heavily, but I care about understanding the systems behind the output.
+---
 
-**AI generates faster.
-Engineering decides what should exist.**
+# 🌐 FIND ME ON THE INTERNET
+
+<div align="center">
+
+<a href="https://github.com/pasha804">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://linkedin.com/in/pasha-dev">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="https://instagram.com/@pasha_dev_">
+<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
+
+<a href="https://tiktok.com/@pasha_dev_">
+<img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"/>
+</a>
+
+<a href="https://youtube.com/@Pasha804a">
+<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
+
+<a href="mailto:pashadev804@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+🌍 **Portfolio**
+
+### [pasha-portfolio-v6.netlify.app](https://pasha-portfolio-v6.netlify.app/)
+
+</div>
 
 ---
 
-# 📊 GITHUB ACTIVITY
+# 🎯 THE MISSION
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pasha804&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="170"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pasha804&theme=tokyonight&hide_border=true" height="170"/>
-</p>
+I'm not trying to build hundreds of random repositories.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pasha804&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="170"/>
-</p>
-
----
-
-# 🌐 CONNECT WITH ME
-
-<p align="left">
-  <a href="https://github.com/pasha804">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://linkedin.com/in/pasha-dev">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://instagram.com/@pasha_dev_">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
-  <a href="https://tiktok.com/@pasha_dev_">
-    <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"/>
-  </a>
-  <a href="https://youtube.com/@Pasha804a">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
-  </a>
-</p>
-
-📧 **Email:** `pashadev804@gmail.com`
-
-🌍 **Portfolio:** `https://pasha-portfolio-v6.netlify.app/`
-
----
-
-# 🧭 CURRENT MISSION
-
-> **Build products that are useful, technically serious, and impossible to confuse with a tutorial project.**
-
-I’m continuously exploring:
-
-* AI-native applications
-* Full-stack architecture
-* Developer tooling
-* Autonomous agents
-* Voice interfaces
-* Product design
-* Creative web experiences
-* Startup engineering
-
----
-
-## 💻 FROM PAKISTAN, BUILDING FOR THE INTERNET.
+I'm trying to build **fewer, deeper, more ambitious products.**
 
 ```text
-██████╗  █████╗ ███████╗██╗  ██╗ █████╗
-██╔══██╗██╔══██╗██╔════╝██║  ██║██╔══██╗
-██████╔╝███████║███████╗███████║███████║
-██╔═══╝ ██╔══██║╚════██║██╔══██║██╔══██║
-██║     ██║  ██║███████║██║  ██║██║  ██║
-╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+                    BUILD
+                      ↓
+                  PRODUCT
+                      ↓
+                   USERS
+                      ↓
+                  FEEDBACK
+                      ↓
+                  ITERATION
+                      ↓
+                  BETTER
+                      ↓
+                    BUILD
 ```
 
-### `BUILD → SHIP → LEARN → REPEAT`
+### The long-term direction:
+
+**AI + Software + Product + Creativity**
+
+One system at a time.
 
 ---
 
-<p align="center">
-  <sub>Built with curiosity, caffeine & an unreasonable amount of iteration.</sub>
-</p>
+<div align="center">
+
+## ⚡ BUILD → SHIP → LEARN → REPEAT
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:111827,50:0b1736,100:050816&height=130&section=footer&animation=fadeIn" width="100%"/>
+
+<sub>
+
+**Pasha Dev · Muhammad Mubashar**
+
+Built from Pakistan 🇵🇰 · Building for the internet 🌍
+
+</sub>
+
+</div>
