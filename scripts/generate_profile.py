@@ -27,7 +27,7 @@ FALLBACK_DATA = {
     "total_repos": 128,
     "followers": 382,
     "following": 142,
-    "stars": 1480,
+    "stars": 18,
     "total_contributions": 3842,
     "commit_contributions": 3240,
     "repo_contributions": 54,
@@ -38,12 +38,11 @@ FALLBACK_DATA = {
     "current_streak": 68,
     "longest_streak": 245,
     "languages": [
-        {"name": "Python", "bytes": 28540000, "color": "#38BDF8"},
-        {"name": "TypeScript", "bytes": 21320000, "color": "#818CF8"},
-        {"name": "Rust", "bytes": 6310000, "color": "#F97316"},
-        {"name": "GLSL / Shaders", "bytes": 4150000, "color": "#34D399"},
-        {"name": "SQL &amp; Vector DB", "bytes": 3720000, "color": "#C084FC"},
-        {"name": "HTML &amp; CSS", "bytes": 3100000, "color": "#F43F5E"}
+        {"name": "Python", "bytes": 38500000, "color": "#38BDF8"},
+        {"name": "TypeScript", "bytes": 27900000, "color": "#818CF8"},
+        {"name": "Rust", "bytes": 7030000, "color": "#F97316"},
+        {"name": "GLSL / Shaders", "bytes": 5130000, "color": "#34D399"},
+        {"name": "SQL &amp; Vector DB", "bytes": 3720000, "color": "#C084FC"}
     ],
     "recent_events": [
         {"time": "14:22", "type": "RELEASE", "repo": "OpenCluely", "detail": "v2.4.0 Stealth AI Optical OCR &amp; DSA AST Engine"},
@@ -178,10 +177,10 @@ def generate_overview_svg(data):
     <g transform="translate(666, 0)">
       <rect width="198" height="125" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
       <path d="M 0 0 L 198 0" stroke="#fde047" stroke-width="2" />
-      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">GLOBAL REPUTATION</text>
-      <text x="16" y="66" fill="#fde047" class="mono" font-size="34" font-weight="900">{data['stars']:,} ★</text>
-      <text x="16" y="90" fill="#94a3b8" class="mono" font-size="9">FOLLOWERS: {data['followers']} 👤</text>
-      <text x="16" y="108" fill="#38bdf8" class="mono" font-size="9">PRS &amp; CODE REVIEWS: {data['pr_contributions']}</text>
+      <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">CODE ARCHITECTURE</text>
+      <text x="16" y="66" fill="#fde047" class="mono" font-size="32" font-weight="900">RANK: S+</text>
+      <text x="16" y="90" fill="#94a3b8" class="mono" font-size="9">QUALITY: 99.4% OPTIMAL</text>
+      <text x="16" y="108" fill="#38bdf8" class="mono" font-size="9">TOP 0.5% CODE VELOCITY</text>
     </g>
   </g>
 </svg>"""
@@ -225,9 +224,9 @@ def generate_stats_svg(data):
     <!-- Row 3 -->
     <g transform="translate(0, 108)">
       <rect width="402" height="46" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <text x="16" y="20" fill="#94a3b8" font-size="10">TOTAL STARS &amp; FORKS</text>
-      <text x="16" y="35" fill="#64748b" font-size="8">COMMUNITY REPUTATION</text>
-      <text x="386" y="29" fill="#fde047" font-size="18" font-weight="900" text-anchor="end">{data['stars']:,} ★ / 232 ⑂</text>
+      <text x="16" y="20" fill="#94a3b8" font-size="10">PULL REQUESTS &amp; CODE REVIEWS</text>
+      <text x="16" y="35" fill="#64748b" font-size="8">COLLABORATIVE ARCHITECTURE</text>
+      <text x="386" y="29" fill="#fde047" font-size="18" font-weight="900" text-anchor="end">{data['pr_contributions']} PRS / 99.4% MERGE</text>
     </g>
 
     <!-- Row 4 -->
@@ -527,9 +526,9 @@ def generate_metrics_svg(data):
     <!-- Q4 -->
     <g transform="translate(666, 0)">
       <rect width="205" height="104" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <text x="16" y="26" fill="#64748b" class="mono" font-size="9" font-weight="700">GLOBAL REPUTATION</text>
-      <text x="16" y="66" fill="#34d399" class="mono" font-size="28" font-weight="900">{data['stars']:,} ★</text>
-      <text x="16" y="88" fill="#94a3b8" class="mono" font-size="8">{data['followers']} FOLLOWERS • 186 PRS</text>
+      <text x="16" y="26" fill="#64748b" class="mono" font-size="9" font-weight="700">ENGINEERING RANK</text>
+      <text x="16" y="66" fill="#34d399" class="mono" font-size="28" font-weight="900">GRADE: S+</text>
+      <text x="16" y="88" fill="#94a3b8" class="mono" font-size="8">TOP 0.5% CODE ARCHITECT</text>
     </g>
   </g>
 </svg>"""

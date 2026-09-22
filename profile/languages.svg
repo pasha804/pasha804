@@ -34,23 +34,23 @@
   
         <g transform="translate(24, 68)">
           <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">Python</text>
-          <text x="395" y="14" fill="#38BDF8" class="mono" font-size="11" font-weight="800" text-anchor="end">42.5%</text>
+          <text x="395" y="14" fill="#38BDF8" class="mono" font-size="11" font-weight="800" text-anchor="end">46.8%</text>
           <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="97" height="12" rx="6" fill="#38BDF8" />
+          <rect x="125" y="4" width="107" height="12" rx="6" fill="#38BDF8" />
         </g>
         
         <g transform="translate(24, 107)">
           <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">TypeScript</text>
-          <text x="395" y="14" fill="#818CF8" class="mono" font-size="11" font-weight="800" text-anchor="end">31.8%</text>
+          <text x="395" y="14" fill="#818CF8" class="mono" font-size="11" font-weight="800" text-anchor="end">33.9%</text>
           <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="73" height="12" rx="6" fill="#818CF8" />
+          <rect x="125" y="4" width="77" height="12" rx="6" fill="#818CF8" />
         </g>
         
         <g transform="translate(24, 146)">
           <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">Rust</text>
-          <text x="395" y="14" fill="#F97316" class="mono" font-size="11" font-weight="800" text-anchor="end">9.4%</text>
+          <text x="395" y="14" fill="#F97316" class="mono" font-size="11" font-weight="800" text-anchor="end">8.5%</text>
           <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="21" height="12" rx="6" fill="#F97316" />
+          <rect x="125" y="4" width="19" height="12" rx="6" fill="#F97316" />
         </g>
         
         <g transform="translate(24, 185)">
@@ -62,16 +62,9 @@
         
         <g transform="translate(24, 224)">
           <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">SQL &amp; Vector DB</text>
-          <text x="395" y="14" fill="#C084FC" class="mono" font-size="11" font-weight="800" text-anchor="end">5.5%</text>
+          <text x="395" y="14" fill="#C084FC" class="mono" font-size="11" font-weight="800" text-anchor="end">4.5%</text>
           <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="12" height="12" rx="6" fill="#C084FC" />
-        </g>
-        
-        <g transform="translate(24, 263)">
-          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">HTML &amp; CSS</text>
-          <text x="395" y="14" fill="#F43F5E" class="mono" font-size="11" font-weight="800" text-anchor="end">4.6%</text>
-          <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="10" height="12" rx="6" fill="#F43F5E" />
+          <rect x="125" y="4" width="10" height="12" rx="6" fill="#C084FC" />
         </g>
         
 

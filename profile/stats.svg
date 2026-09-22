@@ -51,9 +51,9 @@
     <!-- Row 3 -->
     <g transform="translate(0, 108)">
       <rect width="402" height="46" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <text x="16" y="20" fill="#94a3b8" font-size="10">TOTAL STARS &amp; FORKS</text>
-      <text x="16" y="35" fill="#64748b" font-size="8">COMMUNITY REPUTATION</text>
-      <text x="386" y="29" fill="#fde047" font-size="18" font-weight="900" text-anchor="end">1,480 ★ / 232 ⑂</text>
+      <text x="16" y="20" fill="#94a3b8" font-size="10">PULL REQUESTS &amp; CODE REVIEWS</text>
+      <text x="16" y="35" fill="#64748b" font-size="8">COLLABORATIVE ARCHITECTURE</text>
+      <text x="386" y="29" fill="#fde047" font-size="18" font-weight="900" text-anchor="end">186 PRS / 99.4% MERGE</text>
     </g>
 
     <!-- Row 4 -->

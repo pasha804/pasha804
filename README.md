@@ -244,7 +244,7 @@ A native Windows AI command center running locally on the user's operating syste
 <img src="./assets/opencluely.svg" width="100%" alt="OpenCluely Architecture"/>
 
 ### 🛡️ [OpenCluely](https://github.com/pasha804/OpenCluely)
-*Stealth AI Interview & DSA Companion (993+ ★)*
+*Stealth AI Interview & DSA Companion*
 
 An open-source stealth AI overlay for live technical interviews, DSA, and OAs:
 
@@ -255,7 +255,7 @@ An open-source stealth AI overlay for live technical interviews, DSA, and OAs:
 ```text
 [ PROJECT ]  OpenCluely
 [ STACK ]    TypeScript • Electron/Tauri • Gemini AI • Whisper • Vision OCR
-[ STATUS ]   Open Source Trending // 993+ Stars
+[ STATUS ]   Active Development // Open Source
 [ REPO ]     https://github.com/pasha804/OpenCluely
 ```
 

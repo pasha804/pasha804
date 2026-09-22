@@ -51,9 +51,9 @@
     <!-- Q4 -->
     <g transform="translate(666, 0)">
       <rect width="205" height="104" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-      <text x="16" y="26" fill="#64748b" class="mono" font-size="9" font-weight="700">GLOBAL REPUTATION</text>
-      <text x="16" y="66" fill="#34d399" class="mono" font-size="28" font-weight="900">1,480 ★</text>
-      <text x="16" y="88" fill="#94a3b8" class="mono" font-size="8">382 FOLLOWERS • 186 PRS</text>
+      <text x="16" y="26" fill="#64748b" class="mono" font-size="9" font-weight="700">ENGINEERING RANK</text>
+      <text x="16" y="66" fill="#34d399" class="mono" font-size="28" font-weight="900">GRADE: S+</text>
+      <text x="16" y="88" fill="#94a3b8" class="mono" font-size="8">TOP 0.5% CODE ARCHITECT</text>
     </g>
   </g>
 </svg>
