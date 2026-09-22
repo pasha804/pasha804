@@ -1,34 +1,36 @@
 <!--
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                    PASHA DEV // COMMAND CENTER                               ║
-║                    AI FULL-STACK SYSTEMS ARCHITECT                           ║
-║                 Muhammad Mubashar • Lahore, Pakistan                         ║
+║                    PASHA DEV // COMMAND CENTER v3.0                        ║
+║                    AI FULL-STACK SYSTEMS ARCHITECT                         ║
+║                 Muhammad Mubashar • Lahore, Pakistan                       ║
+║                                                                            ║
+║  Stats: LIVE via GitHub API  •  Auto-refresh: Every 6h via Actions CI/CD   ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 -->
 
 <div align="center">
 
-<!-- HERO 3D VOLUMETRIC MOTION BANNER -->
+<!-- ═══════════════════════ HERO BANNER ═══════════════════════ -->
 <img src="./assets/hero-3d-motion.gif" width="100%" alt="Pasha Dev — AI Full-Stack Developer Command Center"/>
 
-<br/><br/>
+<br/>
 
-<!-- REAL-TIME TERMINAL PROMPT & BLINKING CURSOR -->
+<!-- ═══════════════════════ TERMINAL PROMPT ═══════════════════════ -->
 <img src="./assets/typing.svg" width="100%" alt="Pasha Dev Terminal Session"/>
 
 <br/>
 
-<!-- SYSTEM KERNEL BOOT SEQUENCE -->
+<!-- ═══════════════════════ BOOT SEQUENCE ═══════════════════════ -->
 <img src="./assets/boot-sequence.svg" width="100%" alt="System Boot Sequence"/>
 
 <br/>
 
-<!-- CLI / GUI HYBRID WHOAMI PANEL -->
+<!-- ═══════════════════════ CLI TERMINAL ═══════════════════════ -->
 <img src="./assets/cli-terminal.svg" width="100%" alt="CLI Whoami Terminal Session"/>
 
 <br/><br/>
 
-<!-- QUICK ACTION TELEMETRY BADGES -->
+<!-- ═══════════════════════ QUICK LINKS ═══════════════════════ -->
 <a href="https://pasha-portfolio-v6.netlify.app/">
   <img src="https://img.shields.io/badge/PORTFOLIO-LIVE_v6-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio"/>
 </a>
@@ -42,7 +44,7 @@
 </a>
 &nbsp;
 <a href="mailto:pashadev804@gmail.com">
-  <img src="https://img.shields.io/badge/DIRECT_EMAIL-CONNECT-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Direct Email Contact"/>
+  <img src="https://img.shields.io/badge/EMAIL-CONNECT-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Direct Email"/>
 </a>
 
 </div>
@@ -88,6 +90,7 @@ I build software systems at the convergence of **production-grade backend archit
 
 <br/>
 
+<!-- LIVE TELEMETRY METRICS — Auto-updated via GitHub Actions every 6 hours -->
 <div align="center">
   <img src="./profile/metrics.svg" width="100%" alt="Pasha Dev Telemetry Metrics"/>
 </div>
@@ -129,18 +132,18 @@ I build software systems at the convergence of **production-grade backend archit
 
 <div align="center">
 
-### **NEXORA — Gamify Professional Growth**
-*Learn Together • Build Together • Compete Together*
-
-<br/>
-
 <img src="./assets/nexora-3d-motion.gif" width="100%" alt="Nexora 3D Platform Showcase"/>
 
 <br/>
 
-<img src="./assets/nexora.svg" width="100%" alt="Nexora System Architecture Diagram"/>
-
 </div>
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+### NEXORA — Gamify Professional Growth
+*Learn Together • Build Together • Compete Together*
 
 Nexora is an AI-powered skill social platform merging professional developer identity, collaborative communities, competitive peer-to-peer skill practice, and automated AI coaching.
 
@@ -151,29 +154,47 @@ Nexora is an AI-powered skill social platform merging professional developer ide
 * **AI Judge & Coach**: Autonomous LLM agent judging live coding challenges, tracking skill progression curves, and delivering actionable feedback.
 * **Persistence Layer**: Relational developer graph in PostgreSQL paired with in-memory Redis caching and challenge queues.
 
+</td>
+<td width="40%" valign="top">
+
+<img src="./assets/nexora.svg" width="100%" alt="Nexora System Architecture"/>
+
+<br/>
+
 ```text
 [ PROJECT ]  Nexora
-[ STACK ]    React • TypeScript • FastAPI • PostgreSQL • Redis • Docker • Framer Motion
-[ STATUS ]   Active Development // Private Sprint
-[ LIVE ]     Private Alpha
+[ STACK ]    React • TypeScript
+             FastAPI • PostgreSQL
+             Redis • Docker
+             Framer Motion
+[ STATUS ]   Active Development
+[ ACCESS ]   Private Alpha
 ```
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🧪 05 // PRODUCT LAB (PRODUCTION SYSTEMS)
+## 🧪 05 // PRODUCT LAB — PRODUCTION SYSTEMS
 
-Production-grade utilities, digital platforms, native desktop systems, and AI developer tooling:
+<br/>
+
+<!-- ─────────── ROW 1: PASHA TOOLS + WISHORA ─────────── -->
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
+<div align="center">
 <img src="./assets/pasha-tools-3d-motion.gif" width="100%" alt="Pasha Tools 3D Motion"/>
+</div>
 
-<img src="./assets/pasha-tools.svg" width="100%" alt="Pasha Tools Architecture"/>
+<br/>
 
 ### 🔵 [Pasha Tools](https://pashatools.com)
-*Free Multi-Tool Web Platform*
+**Free Multi-Tool Web Platform**
 
 A high-performance web utility suite optimized for zero-friction browser workflows:
 
@@ -181,22 +202,30 @@ A high-performance web utility suite optimized for zero-friction browser workflo
 * **Document Suite**: High-speed PDF page manipulation, text parsing, and automated transforms.
 * **Cloud Architecture**: Scaled across Railway (Python/FastAPI) and Vercel (React), engineered with SEO canonical routing and AdSense compliance.
 
+<div align="center">
+
+<img src="./assets/pasha-tools.svg" width="100%" alt="Pasha Tools Architecture"/>
+
 ```text
 [ PROJECT ]  Pasha Tools
-[ STACK ]    React • FastAPI • Python • FFmpeg • Railway • Vercel
-[ STATUS ]   Production Live
+[ STACK ]    React • FastAPI • Python • FFmpeg
+[ STATUS ]   ● Production Live
 [ LIVE ]     https://pashatools.com
 ```
+
+</div>
 
 </td>
 <td width="50%" valign="top">
 
+<div align="center">
 <img src="./assets/wishora-3d-motion.gif" width="100%" alt="Wishora 3D Motion"/>
+</div>
 
-<img src="./assets/wishora.svg" width="100%" alt="Wishora Architecture"/>
+<br/>
 
 ### 💜 [Wishora](https://wishora.live)
-*Personalized Digital Greeting & Card Platform*
+**Personalized Digital Greeting & Card Platform**
 
 **FREE FOREVER • NO SIGNUP • INSTANT DOWNLOAD**
 
@@ -204,24 +233,40 @@ A high-performance web utility suite optimized for zero-friction browser workflo
 * **Fluid Experience**: Built with Next.js App Router, Tailwind CSS, and Framer Motion for smooth 60 FPS transitions.
 * **Zero Barrier**: Frictionless user experience designed for maximum viral adoption.
 
+<div align="center">
+
+<img src="./assets/wishora.svg" width="100%" alt="Wishora Architecture"/>
+
 ```text
 [ PROJECT ]  Wishora
-[ STACK ]    Next.js • TypeScript • Tailwind • Framer Motion
-[ STATUS ]   Production Live
+[ STACK ]    Next.js • TypeScript • Tailwind
+             Framer Motion
+[ STATUS ]   ● Production Live
 [ LIVE ]     https://wishora.live
 ```
 
+</div>
+
 </td>
 </tr>
+</table>
+
+<br/>
+
+<!-- ─────────── ROW 2: ZORO 2.0 + OPENCLUELY ─────────── -->
+
+<table>
 <tr>
 <td width="50%" valign="top">
 
+<div align="center">
 <img src="./assets/zoro-3d-motion.gif" width="100%" alt="Zoro 2.0 Native Windows AI Assistant"/>
+</div>
 
-<img src="./assets/zoro.svg" width="100%" alt="Zoro 2.0 Architecture"/>
+<br/>
 
 ### 🤖 Zoro 2.0
-*Native Windows AI Assistant (Desktop Application)*
+**Native Windows AI Assistant (Desktop Application)**
 
 A native Windows AI command center running locally on the user's operating system:
 
@@ -229,22 +274,31 @@ A native Windows AI command center running locally on the user's operating syste
 * **Voice & Memory**: Local neural speech processing, long-term contextual memory, and automated desktop tool execution.
 * **Cyberpunk Command Center**: Low-latency dark HUD designed for instant keyboard hotkey invocation.
 
+<div align="center">
+
+<img src="./assets/zoro.svg" width="100%" alt="Zoro 2.0 Architecture"/>
+
 ```text
 [ PROJECT ]  Zoro 2.0
-[ STACK ]    Tauri (Rust) • React • Python Core • Speech Synthesis • Windows OS
-[ STATUS ]   Internal Desktop Build
+[ STACK ]    Tauri (Rust) • React
+             Python Core • Speech Synthesis
+[ STATUS ]   ● Internal Desktop Build
 [ SOURCE ]   Local Windows System
 ```
+
+</div>
 
 </td>
 <td width="50%" valign="top">
 
-<img src="./assets/opencluely-3d-motion.gif" width="100%" alt="OpenCluely Stealth AI Overlay 3D Motion"/>
+<div align="center">
+<img src="./assets/opencluely-3d-motion.gif" width="100%" alt="OpenCluely Stealth AI Overlay"/>
+</div>
 
-<img src="./assets/opencluely.svg" width="100%" alt="OpenCluely Architecture"/>
+<br/>
 
 ### 🛡️ [OpenCluely](https://github.com/pasha804/OpenCluely)
-*Stealth AI Interview & DSA Companion*
+**Stealth AI Interview & DSA Companion**
 
 An open-source stealth AI overlay for live technical interviews, DSA, and OAs:
 
@@ -252,12 +306,19 @@ An open-source stealth AI overlay for live technical interviews, DSA, and OAs:
 * **Optical Screen Engine**: Real-time canvas OCR parsing problem statements and algorithmic constraints on the fly.
 * **Multi-Model Intelligence**: Instant algorithmic proofs streaming optimal time/space complexity solutions (O(N) / O(log N)).
 
+<div align="center">
+
+<img src="./assets/opencluely.svg" width="100%" alt="OpenCluely Architecture"/>
+
 ```text
 [ PROJECT ]  OpenCluely
-[ STACK ]    TypeScript • Electron/Tauri • Gemini AI • Whisper • Vision OCR
-[ STATUS ]   Active Development // Open Source
-[ REPO ]     https://github.com/pasha804/OpenCluely
+[ STACK ]    TypeScript • Electron/Tauri
+             Gemini AI • Whisper • Vision OCR
+[ STATUS ]   ● Active Dev // Open Source
+[ REPO ]     github.com/pasha804/OpenCluely
 ```
+
+</div>
 
 </td>
 </tr>
@@ -275,16 +336,18 @@ How software systems are designed from user touchpoint to distributed storage:
 
 ---
 
-## 📊 07 // GITHUB COMMAND CENTER (TELEMETRY DECK)
+## 📊 07 // GITHUB COMMAND CENTER — LIVE TELEMETRY
 
-Live engineering telemetry generated directly from the GitHub API and refreshed automatically via GitHub Actions CI/CD:
+> **All stats below are real-time data** sourced directly from the GitHub API and auto-refreshed every 6 hours via GitHub Actions CI/CD. No static fakes, no third-party services.
 
 <div align="center">
 
+<!-- COMMAND CENTER OVERVIEW -->
 <img src="./profile/overview.svg" width="100%" alt="GitHub Command Center Telemetry Deck"/>
 
 <br/><br/>
 
+<!-- STATS + LANGUAGES SIDE BY SIDE -->
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
@@ -298,11 +361,12 @@ Live engineering telemetry generated directly from the GitHub API and refreshed 
 
 <br/>
 
+<!-- STREAK -->
 <img src="./profile/streak.svg" width="100%" alt="Contribution Streak & Consistency Tracker"/>
 
 <br/><br/>
 
-<!-- DYNAMIC CURRENT MONTH TELEMETRY -->
+<!-- MONTHLY -->
 <img src="./profile/monthly.svg" width="100%" alt="This Month Dynamic Activity Telemetry"/>
 
 <br/><br/>
@@ -395,5 +459,9 @@ I am always open to discussing AI-native products, scalable full-stack architect
 `Lahore, Pakistan // 31.5204° N, 74.3587° E`
 
 <sub>Engineered with precision, curiosity, and an obsession with shipping durable software.</sub>
+
+<br/>
+
+<sub>📊 Stats are <b>LIVE</b> — refreshed every 6 hours via <a href="./.github/workflows/profile-dashboard.yml">GitHub Actions CI/CD</a> using real GitHub API data.</sub>
 
 </div>

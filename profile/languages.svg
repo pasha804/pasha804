@@ -15,12 +15,25 @@
       <stop offset="50%" stop-color="#334155" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#818cf8" stop-opacity="0.5" />
     </linearGradient>
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="glow-sm" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
 
+  
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
   </style>
+
 
   <rect width="450" height="340" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
@@ -30,45 +43,45 @@
   </g>
   <line x1="24" y1="48" x2="426" y2="48" stroke="#1e293b" stroke-width="1" />
 
-  <!-- Bars -->
   
         <g transform="translate(24, 68)">
-          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">Python</text>
-          <text x="395" y="14" fill="#38BDF8" class="mono" font-size="11" font-weight="800" text-anchor="end">46.8%</text>
-          <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="107" height="12" rx="6" fill="#38BDF8" />
-        </g>
-        
-        <g transform="translate(24, 107)">
           <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">TypeScript</text>
-          <text x="395" y="14" fill="#818CF8" class="mono" font-size="11" font-weight="800" text-anchor="end">33.9%</text>
-          <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="77" height="12" rx="6" fill="#818CF8" />
+          <text x="395" y="14" fill="#3178c6" class="mono" font-size="11" font-weight="800" text-anchor="end">62.5%</text>
+          <rect x="130" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+          <rect x="130" y="4" width="137" height="12" rx="6" fill="#3178c6" />
         </g>
-        
+        <g transform="translate(24, 107)">
+          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">Python</text>
+          <text x="395" y="14" fill="#3572A5" class="mono" font-size="11" font-weight="800" text-anchor="end">30.5%</text>
+          <rect x="130" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+          <rect x="130" y="4" width="67" height="12" rx="6" fill="#3572A5" />
+        </g>
         <g transform="translate(24, 146)">
-          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">Rust</text>
-          <text x="395" y="14" fill="#F97316" class="mono" font-size="11" font-weight="800" text-anchor="end">8.5%</text>
-          <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="19" height="12" rx="6" fill="#F97316" />
+          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">JavaScript</text>
+          <text x="395" y="14" fill="#f1e05a" class="mono" font-size="11" font-weight="800" text-anchor="end">2.6%</text>
+          <rect x="130" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+          <rect x="130" y="4" width="5" height="12" rx="6" fill="#f1e05a" />
         </g>
-        
         <g transform="translate(24, 185)">
-          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">GLSL / Shaders</text>
-          <text x="395" y="14" fill="#34D399" class="mono" font-size="11" font-weight="800" text-anchor="end">6.2%</text>
-          <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="14" height="12" rx="6" fill="#34D399" />
+          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">HTML</text>
+          <text x="395" y="14" fill="#e34c26" class="mono" font-size="11" font-weight="800" text-anchor="end">2.5%</text>
+          <rect x="130" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+          <rect x="130" y="4" width="5" height="12" rx="6" fill="#e34c26" />
         </g>
-        
         <g transform="translate(24, 224)">
-          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">SQL &amp; Vector DB</text>
-          <text x="395" y="14" fill="#C084FC" class="mono" font-size="11" font-weight="800" text-anchor="end">4.5%</text>
-          <rect x="125" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
-          <rect x="125" y="4" width="10" height="12" rx="6" fill="#C084FC" />
+          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">CSS</text>
+          <text x="395" y="14" fill="#663399" class="mono" font-size="11" font-weight="800" text-anchor="end">1.7%</text>
+          <rect x="130" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+          <rect x="130" y="4" width="4" height="12" rx="6" fill="#663399" />
         </g>
-        
+        <g transform="translate(24, 263)">
+          <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">PHP</text>
+          <text x="395" y="14" fill="#4F5D95" class="mono" font-size="11" font-weight="800" text-anchor="end">0.2%</text>
+          <rect x="130" y="4" width="220" height="12" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+          <rect x="130" y="4" width="4" height="12" rx="6" fill="#4F5D95" />
+        </g>
 
   <g transform="translate(24, 316)">
-    <text x="0" y="7" fill="#64748b" class="mono" font-size="9">STACK DOMINANCE: PYTHON (AI/CORE) + TYPESCRIPT (FULL-STACK)</text>
+    <text x="0" y="7" fill="#64748b" class="mono" font-size="9">SOURCE: GITHUB API LANGUAGE ANALYSIS</text>
   </g>
 </svg>

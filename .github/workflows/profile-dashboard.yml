@@ -2,8 +2,13 @@ name: Update Profile Telemetry & Dashboard
 
 on:
   schedule:
-    # Run every 6 hours automatically
+    # Refresh every 6 hours for live telemetry
     - cron: '0 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_profile.py'
+      - '.github/workflows/profile-dashboard.yml'
   workflow_dispatch:
 
 permissions:
@@ -29,10 +34,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate Dynamic 3D Profile Dashboards
+      - name: Generate Live Profile Telemetry Dashboards
         env:
-          # Uses built-in token automatically; if GH_PAT secret is set by user, it uses that for private data
-          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
         run: |
           python scripts/generate_profile.py
 
@@ -44,6 +48,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected in profile dashboards. Working tree clean."
           else
-            git commit -m "chore(profile): refresh 3D telemetry dashboards [skip ci]"
+            git commit -m "chore(telemetry): refresh live profile dashboards [skip ci]"
             git push origin main
           fi
