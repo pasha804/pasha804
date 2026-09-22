@@ -48,7 +48,7 @@
         <rect width="402" height="42" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
         <text x="16" y="18" fill="#94a3b8" class="mono" font-size="10">TOTAL CONTRIBUTIONS</text>
         <text x="16" y="33" fill="#64748b" class="mono" font-size="8">VERIFIED GIT HISTORY</text>
-        <text x="386" y="27" fill="#38bdf8" class="mono" font-size="16" font-weight="900" text-anchor="end">226</text>
+        <text x="386" y="27" fill="#38bdf8" class="mono" font-size="16" font-weight="900" text-anchor="end">229</text>
       </g>
       <g transform="translate(0, 50)">
         <rect width="402" height="42" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />

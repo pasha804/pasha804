@@ -51,7 +51,7 @@
       <rect width="272" height="94" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
       <rect width="272" height="3" rx="1.5" fill="#38bdf8" />
       <text x="16" y="28" fill="#64748b" class="mono" font-size="9" font-weight="700">TOTAL CONTRIBUTIONS</text>
-      <text x="16" y="64" fill="#38bdf8" class="mono" font-size="32" font-weight="900">226</text>
+      <text x="16" y="64" fill="#38bdf8" class="mono" font-size="32" font-weight="900">229</text>
       <text x="76" y="60" fill="#94a3b8" class="mono" font-size="11">EVENTS</text>
       <text x="16" y="82" fill="#64748b" class="mono" font-size="9">PAST 12 MONTHS</text>
     </g>
