@@ -50,13 +50,13 @@
         <rect width="402" height="42" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />
         <text x="16" y="18" fill="#94a3b8" class="mono" font-size="10">TOTAL HEISTS</text>
         <text x="16" y="33" fill="#64748b" class="mono" font-size="8">VERIFIED MISSIONS PASSED</text>
-        <text x="386" y="27" fill="#54B948" class="mono" font-size="16" font-weight="900" text-anchor="end">240</text>
+        <text x="386" y="27" fill="#54B948" class="mono" font-size="16" font-weight="900" text-anchor="end">252</text>
       </g>
       <g transform="translate(0, 50)">
         <rect width="402" height="42" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />
         <text x="16" y="18" fill="#94a3b8" class="mono" font-size="10">PROPERTIES OWNED</text>
         <text x="16" y="33" fill="#64748b" class="mono" font-size="8">SAFEHOUSES &amp; BUSINESSES</text>
-        <text x="386" y="27" fill="#0072C6" class="mono" font-size="16" font-weight="900" text-anchor="end">60</text>
+        <text x="386" y="27" fill="#0072C6" class="mono" font-size="16" font-weight="900" text-anchor="end">61</text>
       </g>
       <g transform="translate(0, 100)">
         <rect width="402" height="42" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />

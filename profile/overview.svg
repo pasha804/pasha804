@@ -95,7 +95,7 @@
     <g transform="translate(0, 0)">
       <rect width="630" height="36" fill="#0d121c" />
       <text x="16" y="22" fill="#94a3b8" font-size="11">TOTAL HEIST TAKE / REVENUE</text>
-      <text x="614" y="22" fill="#54B948" font-size="15" font-weight="900" text-anchor="end">$ 26,460,000</text>
+      <text x="614" y="22" fill="#54B948" font-size="15" font-weight="900" text-anchor="end">$ 27,762,000</text>
       <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
     </g>
 
@@ -103,7 +103,7 @@
     <g transform="translate(0, 37)">
       <rect width="630" height="36" fill="#090d15" />
       <text x="16" y="22" fill="#94a3b8" font-size="11">MISSIONS PASSED (CONTRIBUTIONS)</text>
-      <text x="614" y="22" fill="#ffffff" font-size="14" font-weight="900" text-anchor="end">240 HEISTS</text>
+      <text x="614" y="22" fill="#ffffff" font-size="14" font-weight="900" text-anchor="end">252 HEISTS</text>
       <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
     </g>
 
@@ -111,7 +111,7 @@
     <g transform="translate(0, 74)">
       <rect width="630" height="36" fill="#0d121c" />
       <text x="16" y="22" fill="#94a3b8" font-size="11">SAFEHOUSES &amp; FRONTS (REPOSITORIES)</text>
-      <text x="614" y="22" fill="#F5AF00" font-size="14" font-weight="900" text-anchor="end">60 PROPERTIES</text>
+      <text x="614" y="22" fill="#F5AF00" font-size="14" font-weight="900" text-anchor="end">61 PROPERTIES</text>
       <line x1="0" y1="36" x2="630" y2="36" stroke="#1e293b" stroke-width="1" />
     </g>
 
@@ -150,6 +150,6 @@
   <!-- Bottom Helper Bar -->
   <g transform="translate(24, 342)" class="mono" font-size="9" fill="#64748b">
     <text x="0" y="0">&gt; GTA V PAUSE MENU // PRESS [ESC] TO RESUME HEIST</text>
-    <text x="890" y="0" text-anchor="end" fill="#94a3b8">LAST SYNC: 2026-09-26 10:28 UTC</text>
+    <text x="890" y="0" text-anchor="end" fill="#94a3b8">LAST SYNC: 2026-09-26 15:19 UTC</text>
   </g>
 </svg>
