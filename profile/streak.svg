@@ -76,13 +76,13 @@
       <rect width="272" height="3" rx="1.5" fill="#C00000" />
       <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">WANTED LEVEL</text>
       <text x="16" y="58" fill="#C00000" class="gta-mission" font-size="24" font-weight="900">1-STAR PRIORITY</text>
-      <text x="16" y="80" fill="#94a3b8" class="mono" font-size="10">0 DAYS CONSECUTIVE</text>
+      <text x="16" y="80" fill="#94a3b8" class="mono" font-size="10">1 DAYS CONSECUTIVE</text>
     </g>
     <g transform="translate(296, 0)">
       <rect width="272" height="96" rx="8" fill="#111111" stroke="#333333" stroke-width="1" />
       <rect width="272" height="3" rx="1.5" fill="#54B948" />
       <text x="16" y="24" fill="#64748b" class="mono" font-size="9" font-weight="700">TOTAL MISSIONS</text>
-      <text x="16" y="58" fill="#54B948" class="gta-mission" font-size="24" font-weight="900">233</text>
+      <text x="16" y="58" fill="#54B948" class="gta-mission" font-size="24" font-weight="900">240</text>
       <text x="16" y="80" fill="#94a3b8" class="mono" font-size="10">VERIFIED PASSED</text>
     </g>
     <g transform="translate(592, 0)">
