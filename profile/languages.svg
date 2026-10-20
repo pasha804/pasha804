@@ -66,7 +66,7 @@
         </g>
         <g transform="translate(24, 185)">
           <text x="0" y="14" fill="#f8fafc" class="mono" font-size="11" font-weight="700">JavaScript</text>
-          <text x="395" y="14" fill="#f1e05a" class="mono" font-size="11" font-weight="800" text-anchor="end">2.9%</text>
+          <text x="395" y="14" fill="#f1e05a" class="mono" font-size="11" font-weight="800" text-anchor="end">3.0%</text>
           <rect x="130" y="4" width="220" height="12" rx="6" fill="#111111" stroke="#333333" stroke-width="1" />
           <rect x="130" y="4" width="6" height="12" rx="6" fill="#f1e05a" />
         </g>
