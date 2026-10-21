@@ -57,7 +57,7 @@
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
         <text x="16" y="18" fill="#94A3B8" class="mono" font-size="10">PUBLIC REPOSITORIES</text>
         <text x="16" y="33" fill="#64748B" class="mono" font-size="8">OPEN-SOURCE &amp; PRODUCTION CODEBASES</text>
-        <text x="386" y="27" fill="#0066FF" class="mono" font-size="16" font-weight="900" text-anchor="end">64</text>
+        <text x="386" y="27" fill="#6366F1" class="mono" font-size="16" font-weight="900" text-anchor="end">64</text>
       </g>
       <g transform="translate(0, 100)">
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
@@ -69,7 +69,7 @@
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
         <text x="16" y="18" fill="#94A3B8" class="mono" font-size="10">STARS EARNED</text>
         <text x="16" y="33" fill="#64748B" class="mono" font-size="8">ECOSYSTEM RECOGNITION</text>
-        <text x="386" y="27" fill="#FBBF24" class="mono" font-size="16" font-weight="900" text-anchor="end">3</text>
+        <text x="386" y="27" fill="#FBBF24" class="mono" font-size="16" font-weight="900" text-anchor="end">10</text>
       </g>
       <g transform="translate(0, 200)">
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
