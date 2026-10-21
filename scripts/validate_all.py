@@ -9,7 +9,7 @@ with open(readme_path, "r", encoding="utf-8") as f:
     content = f.read()
 
 # Find all local asset references
-local_refs = re.findall(r'(?:src|href)=["\'](\./(?:assets|profile)/[^"\']+)["\']', content)
+local_refs = re.findall(r'(?:src|href)=["\']((?:\./)?(?:assets|profile)/[^"\']+)["\']', content)
 print(f"Total local references in README: {len(local_refs)}")
 
 missing = 0

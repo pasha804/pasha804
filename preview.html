@@ -3,311 +3,279 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grand Theft Auto: Pasha Dev — Los Santos Edition</title>
+  <title>Muhammad Mubashar (Pasha Dev) — Editorial Profile Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,500;1,6..72,300;1,6..72,500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #040608;
-      --card-bg: #0a0e14;
-      --border: #22272e;
+      --bg: #030712;
+      --card-bg: #071228;
+      --border: #1e3a8a;
+      --border-accent: #0284c7;
       --text: #94a3b8;
-      --text-bright: #f8fafc;
-      --link: #F5AF00;
-      --gta-yellow: #F5AF00;
-      --gta-green: #54B948;
-    }
-    [data-theme="light"] {
-      --bg: #f3f4f6;
-      --card-bg: #ffffff;
-      --border: #e2e8f0;
-      --text: #475569;
-      --text-bright: #0f172a;
-      --link: #d97706;
-      --gta-yellow: #d97706;
-      --gta-green: #16a34a;
+      --text-bright: #f0f9ff;
+      --primary: #0066FF;
+      --cyan: #38BDF8;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background-color: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
       padding: 40px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      min-height: 100vh;
     }
     .preview-container {
-      max-width: 980px;
+      max-width: 1040px;
       width: 100%;
     }
     .top-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: var(--card-bg);
+      background: rgba(7, 18, 40, 0.85);
       border: 1px solid var(--border);
       padding: 14px 24px;
-      border-radius: 12px;
+      border-radius: 14px;
       margin-bottom: 28px;
       position: sticky;
-      top: 20px;
+      top: 16px;
       z-index: 100;
       backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);
     }
     .badge {
-      background: linear-gradient(135deg, #F5AF00, #EA4335);
-      color: #000;
-      padding: 4px 12px;
+      background: linear-gradient(135deg, #0066FF, #38BDF8);
+      color: #030712;
+      padding: 5px 12px;
       border-radius: 9999px;
       font-size: 11px;
       font-weight: 800;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .status-text {
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--cyan);
     }
     .btn {
-      background: linear-gradient(135deg, #F5AF00, #d97706);
-      color: #000;
+      background: linear-gradient(135deg, #0066FF, #0284c7);
+      color: #fff;
       border: none;
       padding: 8px 18px;
       border-radius: 8px;
       cursor: pointer;
       font-weight: 700;
-      font-size: 13px;
-      transition: transform 0.2s;
+      font-size: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: inline-block;
     }
-    .btn:hover { transform: translateY(-1px); }
-    img {
-      max-width: 100%;
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+    }
+    .content-stream {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .content-stream img {
+      width: 100%;
       height: auto;
       display: block;
-      border-radius: 8px;
+      border-radius: 12px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .content-stream a img:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(0, 102, 255, 0.25);
+    }
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 8px 0 16px 0;
+    }
+    .badges-row img {
+      width: auto !important;
+      height: 32px !important;
+      border-radius: 4px !important;
     }
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin: 20px 0;
+      gap: 20px;
     }
-    .product-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 40px;
       padding: 20px;
-      transition: transform 0.2s, border-color 0.2s;
-    }
-    .product-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--gta-yellow);
-    }
-    .product-card img { margin-bottom: 12px; }
-    .product-card h3 {
-      font-size: 18px;
-      margin: 8px 0 4px;
-      border: none;
-      color: var(--text-bright);
-    }
-    .product-card p {
-      font-size: 13px;
-      line-height: 1.5;
-      color: var(--text);
-    }
-    h1, h2, h3 {
-      color: var(--text-bright);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-      margin-top: 36px;
-      font-family: 'Impact', 'Arial Black', sans-serif;
-      font-style: italic;
-      letter-spacing: 1px;
-    }
-    hr {
-      border: 0;
-      border-top: 1px solid var(--border);
-      margin: 36px 0;
-    }
-    blockquote {
-      margin: 16px 0;
-      padding: 12px 20px;
-      border-left: 3px solid #F5AF00;
-      background: rgba(245, 175, 0, 0.06);
-      border-radius: 0 8px 8px 0;
-      color: var(--text-bright);
-      font-style: italic;
-    }
-    pre {
-      background: #080c16;
-      border: 1px solid #1e293b;
-      padding: 16px;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'JetBrains Mono', Consolas, monospace;
       font-size: 12px;
-      color: #94a3b8;
+      font-family: 'JetBrains Mono', monospace;
+      color: #64748b;
+      border-top: 1px solid var(--border);
     }
-    .section-spacer { height: 16px; }
   </style>
 </head>
 <body>
 
   <div class="preview-container">
-    <div class="top-bar">
+    <header class="top-bar">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span class="badge">LIVE PREVIEW</span>
+        <span class="status-text">MUHAMMAD MUBASHAR // BLACK &amp; ELECTRIC BLUE EDITION</span>
+      </div>
       <div>
-        <span class="badge">GTA V // OPERATION LOS SANTOS</span>
-        <strong style="margin-left: 8px; color: var(--text-bright);">Grand Theft Auto: Pasha Dev // Los Santos Edition</strong>
+        <a href="https://github.com/pasha804" target="_blank" class="btn">View on GitHub ↗</a>
       </div>
-      <button class="btn" onclick="toggleTheme()">Toggle Dark / Light Mode</button>
-    </div>
+    </header>
 
-    <!-- Official GTA Title Logo -->
-    <div style="text-align: center;">
-      <img src="./assets/gta-title-logo.svg" alt="Grand Theft Auto: Pasha Dev Title Logo">
-      <div class="section-spacer"></div>
-      <img src="./assets/gta-hero-banner.jpg" alt="GTA Pasha Dev Hero Loading Screen">
-      <div class="section-spacer"></div>
-      <img src="./assets/gta-hud.svg" alt="GTA V In-Game Top Screen HUD">
-      <div class="section-spacer"></div>
-      <img src="./assets/mission-passed.svg" alt="Mission Passed // Respect +">
-      <div class="section-spacer"></div>
-      <img src="./assets/ifruit-phone.svg" alt="iFruit OS: Incoming Heist Messages">
-    </div>
+    <main class="content-stream">
 
-    <hr>
+      <!-- Hero Portrait Banner with Embedded Fisheye Selfie -->
+      <a href="https://pasha-portfolio-v6.netlify.app/">
+        <img src="assets/pasha-hero-portrait.svg" alt="Muhammad Mubashar (Pasha Dev) — AI Systems Architect, Full-Stack Developer and Creative Technologist">
+      </a>
 
-    <!-- Character Select & LSPD Dossier -->
-    <h2>🚨 01 // LSPD SUSPECT FILE #804: THE MASTERMIND</h2>
-    <table style="width: 100%; border-collapse: collapse;">
-      <tr>
-        <td style="width: 65%; vertical-align: top; padding-right: 24px;">
-          <h3 style="border: none; margin: 0; font-family: -apple-system, sans-serif; font-style: normal;">Muhammad Mubashar — Pasha Dev</h3>
-          <p><strong>CLASSIFICATION: MASTERMIND // AI FULL-STACK ARCHITECT</strong></p>
-          <blockquote>"Survival before abstraction. Respect before shortcuts. Zero-friction execution. AI as the ultimate crew multiplier."</blockquote>
-          <p>Operating out of an encrypted penthouse overlooking the Vinewood Hills, suspect orchestrates high-stakes digital heists across global web infrastructure. Known to synthesize production-grade systems in record time using multi-agent AI tool calling.</p>
-        </td>
-        <td style="width: 35%; text-align: center; vertical-align: middle;">
-          <img src="./assets/gta-mugshot.jpg" style="width: 100%; max-width: 240px; margin: 0 auto;" alt="LSPD Booking Mugshot: Pasha Dev">
-          <div style="font-size: 11px; margin-top: 8px; font-weight: 700; color: #F5AF00;">LSPD BOOKING PLACARD #804</div>
-        </td>
-      </tr>
-    </table>
-
-    <hr>
-
-    <!-- GTA V In-Game Pause Menu Stats -->
-    <h2>🎮 02 // GTA V PAUSE MENU // VERIFIED IN-GAME STATS</h2>
-    <img src="./profile/overview.svg" alt="GTA V Pause Menu STATS Screen">
-
-    <hr>
-
-    <!-- Weapon Wheel -->
-    <h2>🛠️ 03 // WEAPON WHEEL // AMMU-NATION ARSENAL</h2>
-    <img src="./assets/weapon-wheel.svg" alt="GTA V Weapon Wheel Full-Stack Arsenal">
-
-    <hr>
-
-    <!-- The Big Score: Operation Nexora -->
-    <h2>🟣 04 // THE BIG SCORE: OPERATION NEXORA (FLAGSHIP HEIST)</h2>
-    <div style="text-align: center;">
-      <img src="./assets/gta-nexora-heist.jpg" alt="The Big Score: Operation Nexora Heist Planning Board">
-      <div class="section-spacer"></div>
-      <img src="./assets/nexora.svg" alt="Nexora Architecture Diagram">
-    </div>
-
-    <hr>
-
-    <!-- Properties & Safehouses -->
-    <h2>🏢 05 // PROPERTIES &amp; SAFEHOUSES (DYNASTY 8 EXECUTIVE &amp; WARSTOCK)</h2>
-    <div class="grid-2">
-      <div class="product-card">
-        <img src="./assets/gta-pasha-tools.jpg" alt="Pasha Tools Underground Utility Workshop">
-        <img src="./assets/pasha-tools.svg" alt="Pasha Tools Architecture">
-        <h3>🔵 Pasha Tools</h3>
-        <p>Ammu-Nation Style Utility Arsenal • FFmpeg media pipelines, in-memory PDF engine, Railway + Vercel multi-cloud architecture.</p>
+      <!-- Quick Social Badges -->
+      <div class="badges-row">
+        <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=googlechrome" alt="Portfolio website"></a>
+        <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=linkedin" alt="LinkedIn profile"></a>
+        <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GitHub profile"></a>
+        <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=youtube" alt="YouTube Channel"></a>
+        <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=gmail" alt="Email pashadev804@gmail.com"></a>
       </div>
-      <div class="product-card">
-        <img src="./assets/gta-wishora-vice.jpg" alt="Wishora Vice City Neon Digital Card Studio">
-        <img src="./assets/wishora.svg" alt="Wishora Architecture">
-        <h3>💜 Wishora</h3>
-        <p>Vice City Neon Digital Greeting Studio • Next.js, Framer Motion, instant canvas PNG export, frictionless viral adoption.</p>
+
+      <!-- 01 About -->
+      <img src="assets/title-about.svg" alt="01 About — Hello, I'm Mubashar.">
+      <img src="assets/about-intro.svg" alt="About Muhammad Mubashar">
+
+      <!-- 02 Proof & Highlights -->
+      <img src="assets/title-recognition.svg" alt="02 Proof — On the record.">
+      <img src="assets/achievement-motif-v2.svg" alt="Verified metrics">
+
+      <!-- 03 Selected Work -->
+      <img src="assets/title-work.svg" alt="03 Selected work — Products, not assignments.">
+
+      <!-- Project 1: Pasha DevPilot (IBM Bob 2.0 Hackathon Flagship) -->
+      <a href="https://github.com/pasha804/pasha-devpilot">
+        <img src="assets/project-devpilot.svg" alt="Pasha DevPilot: Autonomous AI Software Engineer built for IBM Bob 2.0 Hackathon">
+      </a>
+      <div class="badges-row">
+        <a href="https://web-production-787ab.up.railway.app"><img src="https://img.shields.io/badge/Live_Production-web--production--787ab.up.railway.app-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=railway" alt="Pasha DevPilot Live"></a>
+        <a href="https://github.com/pasha804/pasha-devpilot"><img src="https://img.shields.io/badge/Repository-pasha--devpilot-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="Pasha DevPilot Repository"></a>
+        <a href="https://bob.ibm.com"><img src="https://img.shields.io/badge/AI_Backbone-IBM_Bob_2.0-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=ibm" alt="IBM Bob 2.0"></a>
       </div>
-    </div>
 
-    <div class="grid-2">
-      <div class="product-card">
-        <img src="./assets/gta-zoro-warstock.jpg" alt="Zoro 2.0 Warstock Tactical AI Companion">
-        <img src="./assets/zoro.svg" alt="Zoro Architecture">
-        <h3>🤖 Zoro 2.0</h3>
-        <p>Warstock Cache &amp; Carry Tactical AI • Tauri (Rust) + React HUD UI + Python Core, local speech synthesis, hotkey console.</p>
+      <!-- Project 2: SyncForge -->
+      <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet">
+        <img src="assets/project-syncforge.svg" alt="SyncForge: Real-Time Multi-Cursor Collaborative Code Editor and Mesh Voice Studio">
+      </a>
+      <div class="badges-row">
+        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Repository-SyncForge-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="SyncForge Repository"></a>
+        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Engine-Monaco_&_WebRTC_Mesh-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=webrtc" alt="Monaco & WebRTC Mesh"></a>
+        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Sync-Sub--10ms_Delta-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=fastapi" alt="Sub-10ms Delta Sync"></a>
       </div>
-      <div class="product-card">
-        <img src="./assets/gta-opencluely-stealth.jpg" alt="OpenCluely Stealth AI Infiltration Interface">
-        <img src="./assets/opencluely.svg" alt="OpenCluely Architecture">
-        <h3>🛡️ OpenCluely</h3>
-        <p>Stealth AI Infiltration Companion • Real-time optical canvas OCR, undetectable transparent HUD, optimal O(N) algorithmic proofs.</p>
+
+      <!-- Project 3: PrivateDoc -->
+      <a href="https://github.com/pasha804/Private_DOC">
+        <img src="assets/project-privatedoc.svg" alt="PrivateDoc: On-Device Private AI Document Intelligence with Local Llama 3.2">
+      </a>
+      <div class="badges-row">
+        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Repository-PrivateDoc-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="PrivateDoc Repository"></a>
+        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Edge_AI-ExecuTorch_&_Llama_3.2-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=pytorch" alt="ExecuTorch & Llama 3.2"></a>
+        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Privacy-100%25_Air--Gapped_Offline-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=android" alt="100% Air-Gapped Offline"></a>
       </div>
-    </div>
 
-    <div class="grid-2">
-      <div class="product-card">
-        <img src="./assets/gta-bmw-showroom.jpg" alt="BMW 7-Series Legendary Motorsport Showroom">
-        <h3>🏎️ BMW 7-Series 3D Experience</h3>
-        <p>Legendary Motorsport Showroom • Interactive WebGL automotive studio, custom raymarched GLSL paint shaders, 60 FPS orbit director.</p>
+      <!-- Project 4: GhostReview -->
+      <a href="https://github.com/pasha804/gost-review-github">
+        <img src="assets/project-ghostreview.svg" alt="GhostReview: AI-Powered Code Intelligence and Autonomous PR Review Engine">
+      </a>
+      <div class="badges-row">
+        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Repository-GhostReview-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GhostReview Repository"></a>
+        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Inference-Groq_LPU_Sub--300ms-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=speedtest" alt="Groq LPU Sub-300ms"></a>
+        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Testing-24%20pytest%20Passed-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=pytest" alt="24 pytest Passed"></a>
       </div>
-      <div class="product-card">
-        <img src="./assets/creative-lab.svg" alt="Creative Web Lab Architecture">
-        <h3>🧪 Creative Web Lab</h3>
-        <p>Cinematic WebGL &amp; Motion Experiments • Three.js particle simulations, experiential storytelling landing pages, micro-interactions.</p>
+
+      <!-- Project 5: OpenCluely -->
+      <a href="https://github.com/pasha804/OpenCluely">
+        <img src="assets/project-opencluely.svg" alt="OpenCluely: Undetectable desktop AI assistant">
+      </a>
+      <div class="badges-row">
+        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/Repository-OpenCluely-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="OpenCluely Repository"></a>
+        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/License-MIT_Open_Source-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=opensourceinitiative" alt="MIT Open Source"></a>
       </div>
-    </div>
 
-    <hr>
+      <!-- Project 6: BMW 7-Series 3D -->
+      <a href="https://github.com/pasha804/bmw-7-series-3d-experience">
+        <img src="assets/project-bmw7.svg" alt="BMW 7-Series 3D Showroom">
+      </a>
+      <div class="badges-row">
+        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Repository-BMW_7--Series_3D-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="BMW 7-Series Repository"></a>
+        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Graphics-WebGL_60FPS-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=three.js" alt="Three.js WebGL"></a>
+      </div>
 
-    <!-- Radio Los Santos -->
-    <h2>📻 06 // RADIO LOS SANTOS // CODING SOUNDTRACK</h2>
-    <img src="./assets/radio-stations.svg" alt="Radio Los Santos Wheel">
+      <!-- Project 7: Nexora -->
+      <a href="https://github.com/pasha804/NEXORA">
+        <img src="assets/project-nexora.svg" alt="Nexora: AI-powered skill social platform">
+      </a>
+      <div class="badges-row">
+        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Repository-NEXORA-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="NEXORA Repository"></a>
+        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Status-Private_Alpha-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=git" alt="Private Alpha"></a>
+      </div>
 
-    <hr>
+      <!-- 04 Toolkit -->
+      <img src="assets/title-toolkit.svg" alt="04 Toolkit — The tools I reach for.">
+      <img src="assets/tech-constellation-v2.svg" alt="Tech Stack Constellation">
 
-    <!-- Architecture Blueprint -->
-    <h2>🏛️ 07 // HEIST ARCHITECTURE BLUEPRINT</h2>
-    <img src="./assets/architecture.svg" alt="System Architecture Blueprint">
+      <!-- 05 Commit Log & Live Telemetry -->
+      <img src="assets/title-commits.svg" alt="05 Commit log — A cadence of shipping.">
 
-    <hr>
+      <div class="grid-2">
+        <img src="profile/github-stats.svg" alt="Verified GitHub Engineering Stats">
+        <img src="profile/languages.svg" alt="Language Breakdown by Bytes">
+      </div>
 
-    <!-- LSPD Criminal Record & Live Telemetry -->
-    <h2>📊 08 // LSPD CRIMINAL RECORD — LIVE TELEMETRY DECK</h2>
-    <div class="grid-2">
-      <img src="./profile/github-stats.svg" alt="GitHub Stats">
-      <img src="./profile/languages.svg" alt="Languages Ammo Count">
-    </div>
-    <div class="section-spacer"></div>
+      <img src="profile/contributions.svg" alt="52-Week Contribution Cadence Telemetry Heatmap">
 
-    <img src="./profile/streak.svg" alt="LSPD Wanted Status &amp; Active Streak">
-    <div class="section-spacer"></div>
+      <!-- 06 System Architecture -->
+      <img src="assets/title-architecture.svg" alt="06 Architecture — Systems that scale with poise.">
+      <img src="assets/architecture-blueprint.svg" alt="System Architecture Blueprint">
 
-    <img src="./profile/monthly.svg" alt="Monthly Payouts">
-    <div class="section-spacer"></div>
+      <!-- 07 Connect & Signature -->
+      <img src="assets/title-connect.svg" alt="07 Connect — Let's build something extraordinary.">
 
-    <img src="./profile/contributions.svg" alt="Territory Heatmap">
-    <div class="section-spacer"></div>
+      <div class="badges-row">
+        <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=gmail" alt="Email Pasha"></a>
+        <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=linkedin" alt="LinkedIn profile"></a>
+        <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GitHub profile"></a>
+        <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=googlechrome" alt="Portfolio website"></a>
+        <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=youtube" alt="YouTube Channel"></a>
+      </div>
 
-    <img src="./profile/activity.svg" alt="Recent Heists Log">
+      <a href="https://pasha-portfolio-v6.netlify.app/">
+        <img src="assets/footer-signature-v2.svg" alt="Muhammad Mubashar Signature">
+      </a>
 
-    <hr>
+    </main>
 
-    <!-- Footer -->
-    <div style="text-align: center; margin-top: 36px;">
-      <img src="./assets/footer.svg" alt="Build Ship Iterate Footer">
-    </div>
-
+    <footer class="footer-note">
+      <p>Muhammad Mubashar (Pasha Dev) · Editorial Profile README System · Lahore, Pakistan</p>
+      <p style="margin-top: 6px; color: var(--cyan);">Designed with precision in Black &amp; Electric Blue</p>
+    </footer>
   </div>
 
-  <script>
-    function toggleTheme() {
-      const html = document.documentElement;
-      const current = html.getAttribute("data-theme");
-      html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
-    }
-  </script>
 </body>
 </html>

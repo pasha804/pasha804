@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="p5-t">
+  <title id="p5-t">Wishora: Instant personalized greeting card platform featuring frictionless client-side canvas rendering</title>
+  <defs>
+    <linearGradient id="p5-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+    </linearGradient>
+    <radialGradient id="p5-glow" cx="80%" cy="30%" r="55%">
+      <stop offset="0" stop-color="#0066FF" stop-opacity=".3"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="p5-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="p5-glowf" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="p5-clip"><rect width="1200" height="370" rx="18"/></clipPath>
+    <linearGradient id="p5-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .p5-serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+    .p5-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .p5-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .p5-in { animation: p5-in 1.2s cubic-bezier(.16,1,.3,1) both; }
+    .p5-draw { stroke-dasharray: 600; stroke-dashoffset: 600; animation: p5-draw 2s cubic-bezier(.65,0,.35,1) .5s forwards; }
+    @keyframes p5-in { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes p5-draw { to { stroke-dashoffset: 0; } }
+    .p5-trace { stroke-dasharray: 564 3136; stroke-dashoffset: 3700; animation: p5-trace 7s linear infinite; }
+    @keyframes p5-trace { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .p5-in { animation: none; } .p5-draw { animation: none; } .p5-trace { display: none; } }
+  </style>
+
+  <g clip-path="url(#p5-clip)">
+    <rect width="1200" height="370" fill="url(#p5-bg)"/>
+    <rect x="700" width="500" height="370" fill="url(#p5-grid)"/>
+    <rect width="1200" height="370" fill="url(#p5-glow)"/>
+
+    <!-- Left Details -->
+    <g class="p5-in" transform="translate(56, 48)">
+      <text class="p5-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">05 · INTERACTIVE WEB · CANVAS MOTION · 2026</text>
+      <text class="p5-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">Wishora</text>
+      <text class="p5-sans" y="94" font-size="16.5" fill="#94A3B8">Instant personalized greeting card platform featuring 60 FPS neon canvas motion.</text>
+      <text class="p5-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> Client-side HTML5 canvas rendering, instant PNG export, Framer Motion</text>
+      <line class="p5-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+
+      <!-- Metrics -->
+      <g transform="translate(0, 186)">
+        <text class="p5-serif" font-size="32" font-weight="300" fill="#F0F9FF">60 FPS</text>
+        <text class="p5-sans" y="22" font-size="12" fill="#94A3B8">Fluid Canvas Motion</text>
+      </g>
+      <g transform="translate(200, 186)">
+        <text class="p5-serif" font-size="32" font-weight="300" fill="#F0F9FF">Instant</text>
+        <text class="p3-sans" y="22" font-size="12" fill="#94A3B8">Client PNG Export</text>
+      </g>
+      <g transform="translate(400, 186)">
+        <text class="p5-serif" font-size="32" font-weight="300" fill="#34D399">Live</text>
+        <text class="p5-sans" y="22" font-size="12" fill="#94A3B8">Production Worldwide</text>
+      </g>
+
+      <!-- Tech Stack Chips -->
+      <g transform="translate(0, 246)">
+        <g transform="translate(0, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p5-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Next.js 15</text></g>
+        <g transform="translate(98, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p5-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">TypeScript</text></g>
+        <g transform="translate(196, 0)"><rect width="96" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p5-mono" x="48" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Tailwind CSS</text></g>
+        <g transform="translate(300, 0)"><rect width="106" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p5-mono" x="53" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Framer Motion</text></g>
+      </g>
+    </g>
+
+    <!-- Right Graphic Illustration: Digital Greeting Card Canvas -->
+    <g transform="translate(740, 60)" class="p5-in">
+      <rect width="390" height="240" rx="12" fill="#071228" stroke="#1E3A8A" stroke-opacity=".6"/>
+      <rect width="390" height="34" rx="12" fill="#0A1838"/>
+      <text class="p5-mono" x="20" y="21" font-size="11" fill="#E0F2FE">CANVAS 2D // REAL-TIME GREETING STUDIO</text>
+
+      <!-- Card Frame inside Canvas -->
+      <g transform="translate(45, 52)">
+        <rect width="300" height="110" rx="10" fill="#0B1A3D" stroke="#38BDF8" stroke-width="1.5"/>
+        <circle cx="150" cy="45" r="24" fill="#0066FF" fill-opacity=".3" filter="url(#p5-glowf)"/>
+        <text class="p5-serif" x="150" y="52" text-anchor="middle" font-size="20" font-style="italic" fill="#F0F9FF">Happy Celebrations</text>
+        <text class="p5-mono" x="150" y="74" text-anchor="middle" font-size="10" fill="#38BDF8">Crafted with Wishora Engine</text>
+
+        <!-- Floating Sparkles -->
+        <circle cx="60" cy="30" r="2.5" fill="#60A5FA"/>
+        <circle cx="240" cy="35" r="2" fill="#93C5FD"/>
+        <circle cx="75" cy="85" r="1.5" fill="#38BDF8"/>
+        <circle cx="225" cy="80" r="2" fill="#60A5FA"/>
+      </g>
+
+      <!-- Instant Export Pill -->
+      <g transform="translate(24, 176)">
+        <rect width="342" height="46" rx="8" fill="#050E24" stroke="#0066FF" stroke-width="1.2"/>
+        <text class="p5-mono" x="16" y="20" font-size="10.5" fill="#F0F9FF">INSTANT HARDWARE ACCELERATED PNG</text>
+        <text class="p5-mono" x="16" y="36" font-size="9.5" fill="#34D399">✓ 300 DPI Export · Zero Server Load · P2P Viral Distribution</text>
+      </g>
+    </g>
+
+    <!-- Animated Border Tracing -->
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect class="p5-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#p5-trace)" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -319,23 +319,23 @@ def fetch_github_data():
 
 # Shared color palette
 PALETTE = {
-    "bg_deep": "#000000",
-    "bg_mid": "#0a0a0a",
-    "bg_dark": "#050505",
-    "bg_card": "#111111",
-    "border": "#333333",
-    "border_light": "#555555",
-    "cyan": "#54B948",
-    "indigo": "#0072C6",
-    "purple": "#FF007F",
-    "emerald": "#39FF14",
-    "green": "#00FF00",
-    "yellow": "#F2A900",
-    "amber": "#FF8C00",
-    "rose": "#C00000",
-    "text_white": "#f8fafc",
-    "text_secondary": "#94a3b8",
-    "text_muted": "#64748b",
+    "bg_deep": "#030712",
+    "bg_mid": "#070E1E",
+    "bg_dark": "#02050E",
+    "bg_card": "#071228",
+    "border": "#1E3A8A",
+    "border_light": "#0284C7",
+    "cyan": "#38BDF8",
+    "indigo": "#0066FF",
+    "purple": "#818CF8",
+    "emerald": "#34D399",
+    "green": "#10B981",
+    "yellow": "#38BDF8",
+    "amber": "#60A5FA",
+    "rose": "#EF4444",
+    "text_white": "#F0F9FF",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
 }
 
 SHARED_SVG_HEAD = f"""
@@ -347,7 +347,7 @@ SHARED_SVG_HEAD = f"""
     </linearGradient>
     <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="{PALETTE['cyan']}" />
-      <stop offset="100%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0066FF" />
     </linearGradient>
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{PALETTE['cyan']}" stop-opacity="0.6" />
@@ -368,10 +368,10 @@ SHARED_SVG_HEAD = f"""
 
 SHARED_STYLES = """
   <style>
-    .mono { font-family: 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-    .gta-title { font-family: 'Impact', 'Arial Black', sans-serif; font-style: italic; text-transform: uppercase; stroke: #000; stroke-width: 0.8px; }
-    .gta-mission { font-family: 'Impact', 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+    .gta-title { font-family: Georgia, serif; font-style: italic; letter-spacing: 0.5px; }
+    .gta-mission { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 1.5px; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
     .pulse { animation: pulse 2s ease-in-out infinite; }
   </style>
@@ -527,11 +527,11 @@ def generate_overview_svg(data):
 # ────────────────────────────────────────────
 def generate_stats_svg(data):
     rows_data = [
-        ("TOTAL HEISTS", "VERIFIED MISSIONS PASSED", f"{data.get('total_contributions', 0):,}", PALETTE["cyan"]),
-        ("PROPERTIES OWNED", "SAFEHOUSES &amp; BUSINESSES", str(data.get("public_repos", 0)), PALETTE["indigo"]),
-        ("CREW MEMBERS", "GANG NETWORK", str(data.get("followers", 0)), PALETTE["emerald"]),
-        ("BOUNTY COLLECTED", "COMMUNITY RESPECT", str(data.get("stars_received", 0)), PALETTE["yellow"]),
-        ("SURVIVAL TIME", "CONSECUTIVE DAYS SURVIVED", f"{data.get('current_streak', 0)} DAYS", PALETTE["rose"]),
+        ("TOTAL CONTRIBUTIONS", "VERIFIED COMMIT &amp; CODE CADENCE", f"{data.get('total_contributions', 0):,}", PALETTE["cyan"]),
+        ("PUBLIC REPOSITORIES", "OPEN-SOURCE &amp; PRODUCTION CODEBASES", str(data.get("public_repos", 0)), PALETTE["indigo"]),
+        ("COMMUNITY REACH", "DEVELOPER &amp; GITHUB NETWORK", str(data.get("followers", 0)), PALETTE["emerald"]),
+        ("STARS EARNED", "ECOSYSTEM RECOGNITION", str(data.get("stars_received", 0)), PALETTE["yellow"]),
+        ("ACTIVE SHIPPING STREAK", "CONSECUTIVE DAYS BUILDING", f"{data.get('current_streak', 0)} DAYS", PALETTE["cyan"]),
     ]
 
     rows = []
@@ -552,7 +552,7 @@ def generate_stats_svg(data):
   <rect width="450" height="340" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
   <g transform="translate(24, 22)">
-    <text x="0" y="14" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">CRIMINAL RECORD // LIVE</text>
+    <text x="0" y="14" fill="{PALETTE['text_white']}" class="gta-title" font-size="14" font-weight="800">ENGINEERING STATS // LIVE TELEMETRY</text>
   </g>
   <line x1="24" y1="48" x2="426" y2="48" stroke="{PALETTE['border']}" stroke-width="1" />
 
@@ -561,8 +561,8 @@ def generate_stats_svg(data):
   </g>
 
   <g transform="translate(24, 320)">
-    {_status_dot(4, 4)}
-    <text x="14" y="8" fill="{PALETTE['text_muted']}" class="mono" font-size="9">DATA SOURCE: GITHUB API • VERIFIED</text>
+    {_status_dot(4, 4, PALETTE['cyan'])}
+    <text x="14" y="8" fill="{PALETTE['text_muted']}" class="mono" font-size="9">DATA SOURCE: GITHUB GRAPHQL API • VERIFIED</text>
   </g>
 </svg>'''
 
@@ -637,11 +637,11 @@ def generate_contributions_svg(data):
     start_y = 52
 
     def get_color(cnt):
-        if cnt == 0:    return "#161b22"
-        elif cnt <= 2:  return "#0e4429"
-        elif cnt <= 5:  return "#006d32"
-        elif cnt <= 9:  return "#26a641"
-        else:           return "#39d353"
+        if cnt == 0:    return "#071228"
+        elif cnt <= 2:  return "#0C2B5E"
+        elif cnt <= 5:  return "#0052CC"
+        elif cnt <= 9:  return "#0080FF"
+        else:           return "#38BDF8"
 
     cells = []
     for w_idx, week in enumerate(weeks[-52:]):
@@ -675,17 +675,17 @@ def generate_contributions_svg(data):
   <rect width="920" height="190" rx="12" fill="url(#db-bg)" stroke="url(#border-glow)" stroke-width="1.5" />
 
   <g transform="translate(32, 18)">
-    {_status_dot(6, 6, "#39d353")}
-    <text x="20" y="10" fill="{PALETTE['text_white']}" class="gta-title" font-size="13" font-weight="800">TERRITORY CONTROL // HEATMAP</text>
-    <text x="220" y="10" fill="{PALETTE['text_muted']}" class="mono" font-size="10">// {data.get('total_contributions', 0):,} CONTRIBUTIONS</text>
+    {_status_dot(6, 6, "#38BDF8")}
+    <text x="20" y="10" fill="{PALETTE['text_white']}" class="gta-title" font-size="13" font-weight="800">52-WEEK COMMIT CADENCE // TELEMETRY</text>
+    <text x="290" y="10" fill="{PALETTE['text_muted']}" class="mono" font-size="10">// {data.get('total_contributions', 0):,} VERIFIED CODE ACTIONS</text>
 
     <g transform="translate(700, 0)" class="mono" font-size="9">
       <text x="-36" y="9" fill="{PALETTE['text_muted']}">LESS</text>
-      <rect x="0" y="0" width="10" height="10" rx="2" fill="#161b22" />
-      <rect x="14" y="0" width="10" height="10" rx="2" fill="#0e4429" />
-      <rect x="28" y="0" width="10" height="10" rx="2" fill="#006d32" />
-      <rect x="42" y="0" width="10" height="10" rx="2" fill="#26a641" />
-      <rect x="56" y="0" width="10" height="10" rx="2" fill="#39d353" />
+      <rect x="0" y="0" width="10" height="10" rx="2" fill="#071228" />
+      <rect x="14" y="0" width="10" height="10" rx="2" fill="#0C2B5E" />
+      <rect x="28" y="0" width="10" height="10" rx="2" fill="#0052CC" />
+      <rect x="42" y="0" width="10" height="10" rx="2" fill="#0080FF" />
+      <rect x="56" y="0" width="10" height="10" rx="2" fill="#38BDF8" />
       <text x="72" y="9" fill="{PALETTE['text_muted']}">MORE</text>
     </g>
   </g>

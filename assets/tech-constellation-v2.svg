@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Tech Stack and Arsenal">
+  <defs>
+    <linearGradient id="tc-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+    </linearGradient>
+    <radialGradient id="tc-glow" cx="50%" cy="50%" r="65%">
+      <stop offset="0" stop-color="#0066FF" stop-opacity=".2"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="tc-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 H 0 V 30" fill="none" stroke="#1E3A8A" stroke-opacity=".15"/>
+    </pattern>
+  </defs>
+  <style>
+    .tc-serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+    .tc-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .tc-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  </style>
+
+  <rect width="1200" height="440" rx="16" fill="url(#tc-bg)"/>
+  <rect width="1200" height="440" rx="16" fill="url(#tc-grid)"/>
+  <rect width="1200" height="440" rx="16" fill="url(#tc-glow)"/>
+
+  <!-- Five Core Categorized Clusters -->
+  <g transform="translate(48, 38)">
+    <!-- Column 1: Core Languages -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="360" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
+      <line x1="0" y1="0" x2="210" y2="0" stroke="#38BDF8" stroke-width="2.5"/>
+      <text class="tc-mono" x="18" y="32" font-size="11" letter-spacing="1.5" fill="#38BDF8">01 // LANGUAGES</text>
+      <text class="tc-serif" x="18" y="62" font-size="20" fill="#F0F9FF">Core Foundation</text>
+
+      <g transform="translate(18, 90)" class="tc-mono" font-size="12" fill="#E0F2FE">
+        <text y="0"><tspan fill="#38BDF8">▸</tspan> TypeScript</text>
+        <text y="30"><tspan fill="#38BDF8">▸</tspan> JavaScript (ESNext)</text>
+        <text y="60"><tspan fill="#38BDF8">▸</tspan> Python (Asyncio)</text>
+        <text y="90"><tspan fill="#38BDF8">▸</tspan> Rust (Tauri / Core)</text>
+        <text y="120"><tspan fill="#38BDF8">▸</tspan> SQL (Postgres)</text>
+        <text y="150"><tspan fill="#38BDF8">▸</tspan> C / C++</text>
+        <text y="180"><tspan fill="#38BDF8">▸</tspan> HTML5 / CSS3</text>
+        <text y="210"><tspan fill="#38BDF8">▸</tspan> GLSL Shaders</text>
+      </g>
+    </g>
+
+    <!-- Column 2: AI & Machine Learning -->
+    <g transform="translate(228, 0)">
+      <rect width="210" height="360" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
+      <line x1="0" y1="0" x2="210" y2="0" stroke="#0066FF" stroke-width="2.5"/>
+      <text class="tc-mono" x="18" y="32" font-size="11" letter-spacing="1.5" fill="#38BDF8">02 // AI &amp; ML</text>
+      <text class="tc-serif" x="18" y="62" font-size="20" fill="#F0F9FF">Intelligence</text>
+
+      <g transform="translate(18, 90)" class="tc-mono" font-size="12" fill="#E0F2FE">
+        <text y="0"><tspan fill="#60A5FA">▸</tspan> Autonomous Agents</text>
+        <text y="30"><tspan fill="#60A5FA">▸</tspan> LLM Orchestration</text>
+        <text y="60"><tspan fill="#60A5FA">▸</tspan> Vision OCR Engines</text>
+        <text y="90"><tspan fill="#60A5FA">▸</tspan> Whisper Audio STT</text>
+        <text y="120"><tspan fill="#60A5FA">▸</tspan> Prompt Architecture</text>
+        <text y="150"><tspan fill="#60A5FA">▸</tspan> Vector Embeddings</text>
+        <text y="180"><tspan fill="#60A5FA">▸</tspan> Live Judging Logic</text>
+        <text y="210"><tspan fill="#60A5FA">▸</tspan> Local &amp; Edge Inference</text>
+      </g>
+    </g>
+
+    <!-- Column 3: Frontend & 3D -->
+    <g transform="translate(456, 0)">
+      <rect width="210" height="360" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
+      <line x1="0" y1="0" x2="210" y2="0" stroke="#38BDF8" stroke-width="2.5"/>
+      <text class="tc-mono" x="18" y="32" font-size="11" letter-spacing="1.5" fill="#38BDF8">03 // FRONTEND</text>
+      <text class="tc-serif" x="18" y="62" font-size="20" fill="#F0F9FF">Interface &amp; 3D</text>
+
+      <g transform="translate(18, 90)" class="tc-mono" font-size="12" fill="#E0F2FE">
+        <text y="0"><tspan fill="#38BDF8">▸</tspan> React 19 / Modern</text>
+        <text y="30"><tspan fill="#38BDF8">▸</tspan> Next.js App Router</text>
+        <text y="60"><tspan fill="#38BDF8">▸</tspan> Three.js / WebGL</text>
+        <text y="90"><tspan fill="#38BDF8">▸</tspan> Raymarching Shaders</text>
+        <text y="120"><tspan fill="#38BDF8">▸</tspan> Tailwind CSS</text>
+        <text y="150"><tspan fill="#38BDF8">▸</tspan> Framer Motion</text>
+        <text y="180"><tspan fill="#38BDF8">▸</tspan> HTML5 Canvas 2D</text>
+        <text y="210"><tspan fill="#38BDF8">▸</tspan> Responsive UI/UX</text>
+      </g>
+    </g>
+
+    <!-- Column 4: Backend & Systems -->
+    <g transform="translate(684, 0)">
+      <rect width="210" height="360" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
+      <line x1="0" y1="0" x2="210" y2="0" stroke="#0066FF" stroke-width="2.5"/>
+      <text class="tc-mono" x="18" y="32" font-size="11" letter-spacing="1.5" fill="#38BDF8">04 // BACKEND</text>
+      <text class="tc-serif" x="18" y="62" font-size="20" fill="#F0F9FF">Engines &amp; Data</text>
+
+      <g transform="translate(18, 90)" class="tc-mono" font-size="12" fill="#E0F2FE">
+        <text y="0"><tspan fill="#60A5FA">▸</tspan> FastAPI (Python)</text>
+        <text y="30"><tspan fill="#60A5FA">▸</tspan> Node.js / Express</text>
+        <text y="60"><tspan fill="#60A5FA">▸</tspan> PostgreSQL</text>
+        <text y="90"><tspan fill="#60A5FA">▸</tspan> Redis Pub/Sub</text>
+        <text y="120"><tspan fill="#60A5FA">▸</tspan> Docker / Compose</text>
+        <text y="150"><tspan fill="#60A5FA">▸</tspan> REST APIs &amp; WS</text>
+        <text y="180"><tspan fill="#60A5FA">▸</tspan> FFmpeg Pipelines</text>
+        <text y="210"><tspan fill="#60A5FA">▸</tspan> Microservices</text>
+      </g>
+    </g>
+
+    <!-- Column 5: Desktop & DevOps -->
+    <g transform="translate(912, 0)">
+      <rect width="192" height="360" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
+      <line x1="0" y1="0" x2="192" y2="0" stroke="#34D399" stroke-width="2.5"/>
+      <text class="tc-mono" x="18" y="32" font-size="11" letter-spacing="1.5" fill="#34D399">05 // PLATFORMS</text>
+      <text class="tc-serif" x="18" y="62" font-size="20" fill="#F0F9FF">Desktop &amp; CI/CD</text>
+
+      <g transform="translate(18, 90)" class="tc-mono" font-size="12" fill="#E0F2FE">
+        <text y="0"><tspan fill="#34D399">▸</tspan> Tauri (Rust/Win)</text>
+        <text y="30"><tspan fill="#34D399">▸</tspan> Git &amp; GitHub</text>
+        <text y="60"><tspan fill="#34D399">▸</tspan> Actions CI/CD</text>
+        <text y="90"><tspan fill="#34D399">▸</tspan> Postman Suite</text>
+        <text y="120"><tspan fill="#34D399">▸</tspan> Linux / Bash</text>
+        <text y="150"><tspan fill="#34D399">▸</tspan> Vercel &amp; Railway</text>
+        <text y="180"><tspan fill="#34D399">▸</tspan> Zero-Config Prod</text>
+        <text y="210"><tspan fill="#34D399">▸</tspan> Performance Audit</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Border -->
+  <rect x=".5" y=".5" width="1199" height="439" rx="15.5" fill="none" stroke="#38BDF8" stroke-opacity=".22"/>
+</svg>

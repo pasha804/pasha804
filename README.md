@@ -1,520 +1,140 @@
 <!--
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                    GRAND THEFT AUTO: PASHA DEV // LOS SANTOS EDITION         ║
-║                    THE MASTERMIND // FULL-STACK & AI ARCHITECT               ║
-║                 Muhammad Mubashar • Lahore, Pakistan                         ║
+║                    MUHAMMAD MUBASHAR (PASHA DEV)                             ║
+║             AI SYSTEMS ARCHITECT • FULL-STACK & 3D TECHNOLOGIST              ║
+║                 Lahore, Pakistan • 31.5204° N, 74.3587° E                    ║
 ║                                                                              ║
-║  Stats: LIVE via GitHub API  •  Auto-refresh: Every 6h via Actions CI/CD     ║
+║  Live Telemetry synced via GitHub Actions CI/CD every 6 hours               ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 -->
 
-<div align="center">
-
-<!-- ═══════════════════════ [1] GRAND THEFT AUTO OFFICIAL GAME TITLE ═══════════════════════ -->
-<img src="./assets/gta-title-logo.svg" width="100%" alt="Grand Theft Auto: Pasha Dev // Los Santos Edition"/>
-
-<br/>
-
-<!-- ═══════════════════════ [2] GTA V LOADING SCREEN COMIC ART ═══════════════════════ -->
-<img src="./assets/gta-hero-banner.jpg" width="100%" alt="Grand Theft Auto: Pasha Dev — The Mastermind // Los Santos Penthouse"/>
-
-<br/>
-
-<!-- ═══════════════════════ [3] GTA V IN-GAME HUD (MINIMAP + HEALTH/ARMOR + CASH + 5-STARS) ═══════════════════════ -->
-<img src="./assets/gta-hud.svg" width="100%" alt="GTA V In-Game HUD: Minimap Radar, Health, Armor, Cash, Wanted Level"/>
-
-<br/>
-
-<!-- ═══════════════════════ [4] MISSION PASSED // RESPECT + ═══════════════════════ -->
-<img src="./assets/mission-passed.svg" width="100%" alt="Mission Passed // Respect +"/>
-
-<br/>
-
-<!-- ═══════════════════════ [5] iFRUIT OS // INCOMING HEIST CHAT LOG ═══════════════════════ -->
-<img src="./assets/ifruit-phone.svg" width="100%" alt="iFruit OS: Incoming Heist Messages from Lester, Franklin, Lamar, Trevor"/>
-
-<br/><br/>
-
-<!-- ═══════════════════════ SYNDICATE DIRECT UPLINKS ═══════════════════════ -->
 <a href="https://pasha-portfolio-v6.netlify.app/">
-  <img src="https://img.shields.io/badge/PORTFOLIO-LIVE_v6-F5AF00?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Live Portfolio"/>
-</a>
-&nbsp;
-<a href="https://linkedin.com/in/pasha-dev">
-  <img src="https://img.shields.io/badge/LINKEDIN-PASHA--DEV-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
-</a>
-&nbsp;
-<a href="https://github.com/pasha804">
-  <img src="https://img.shields.io/badge/GITHUB-PASHA804-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository"/>
-</a>
-&nbsp;
-<a href="mailto:pashadev804@gmail.com">
-  <img src="https://img.shields.io/badge/EMAIL-DIRECT_LINE-54B948?style=for-the-badge&logo=gmail&logoColor=black" alt="Direct Email"/>
+  <img src="assets/pasha-hero-portrait.svg" width="100%" alt="Muhammad Mubashar (Pasha Dev) — AI Systems Architect, Full-Stack Developer and Creative Technologist. Engineering intelligence. Architecting resilient platforms. Designing experiences.">
 </a>
 
-</div>
+<p align="center">
+  <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=googlechrome" alt="Portfolio website"></a>
+  <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=linkedin" alt="LinkedIn profile"></a>
+  <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GitHub profile"></a>
+  <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=youtube" alt="YouTube Channel"></a>
+  <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=gmail" alt="Email pashadev804@gmail.com"></a>
+</p>
+
+<!-- ═══════════════════════ 01 ABOUT ═══════════════════════ -->
+<img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Mubashar.">
+<img src="assets/about-intro.svg" width="100%" alt="About: AI Systems Architect and Full-Stack Engineer based in Lahore, Pakistan. Founder of Pasha Tools, Nexora, and OpenCluely. Obsessed with high-velocity software, autonomous intelligence, and resilient microservices.">
+
+<!-- ═══════════════════════ 02 PROOF & HIGHLIGHTS ═══════════════════════ -->
+<img src="assets/title-recognition.svg" width="100%" alt="02 Proof — On the record.">
+<img src="assets/achievement-motif-v2.svg" width="100%" alt="Verified metrics: 50+ repositories shipped, sub-80ms AI referee judging latency, 60 FPS WebGL raymarching shader engines, and 100% production shipping focus.">
+
+<!-- ═══════════════════════ 03 SELECTED WORK ═══════════════════════ -->
+<img src="assets/title-work.svg" width="100%" alt="03 Selected work — Products, not assignments.">
+
+<!-- Project 1: Pasha DevPilot (IBM Bob 2.0 Hackathon Flagship) -->
+<a href="https://github.com/pasha804/pasha-devpilot">
+  <img src="assets/project-devpilot.svg" width="100%" alt="Pasha DevPilot: Autonomous AI Software Engineer built for IBM Bob 2.0 Hackathon. 7-state automated SDLC pipeline, AST defect scanning, pytest auto-healing.">
+</a>
+<p align="center">
+  <a href="https://web-production-787ab.up.railway.app"><img src="https://img.shields.io/badge/Live_Production-web--production--787ab.up.railway.app-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=railway" alt="Pasha DevPilot Live"></a>
+  <a href="https://github.com/pasha804/pasha-devpilot"><img src="https://img.shields.io/badge/Repository-pasha--devpilot-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="Pasha DevPilot Repository"></a>
+  <a href="https://bob.ibm.com"><img src="https://img.shields.io/badge/AI_Backbone-IBM_Bob_2.0-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=ibm" alt="IBM Bob 2.0"></a>
+</p>
+
+<!-- Project 2: SyncForge -->
+<a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet">
+  <img src="assets/project-syncforge.svg" width="100%" alt="SyncForge: Real-Time Multi-Cursor Collaborative Code Editor and Mesh Voice Studio. Built with React 19, Monaco Editor, FastAPI, WebSockets, WebRTC.">
+</a>
+<p align="center">
+  <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Repository-SyncForge-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="SyncForge Repository"></a>
+  <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Engine-Monaco_&_WebRTC_Mesh-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=webrtc" alt="Monaco & WebRTC Mesh"></a>
+  <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Sync-Sub--10ms_Delta-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=fastapi" alt="Sub-10ms Delta Sync"></a>
+</p>
+
+<!-- Project 3: PrivateDoc -->
+<a href="https://github.com/pasha804/Private_DOC">
+  <img src="assets/project-privatedoc.svg" width="100%" alt="PrivateDoc: On-Device Private AI Document Intelligence with Local Llama 3.2. Built with Android 36, ExecuTorch 1.3, Llama 3.2 1B (INT4), ML Kit OCR, Jetpack Compose.">
+</a>
+<p align="center">
+  <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Repository-PrivateDoc-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="PrivateDoc Repository"></a>
+  <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Edge_AI-ExecuTorch_&_Llama_3.2-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=pytorch" alt="ExecuTorch & Llama 3.2"></a>
+  <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Privacy-100%25_Air--Gapped_Offline-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=android" alt="100% Air-Gapped Offline"></a>
+</p>
+
+<!-- Project 4: GhostReview -->
+<a href="https://github.com/pasha804/gost-review-github">
+  <img src="assets/project-ghostreview.svg" width="100%" alt="GhostReview: AI-Powered Code Intelligence and Autonomous PR Review Engine. Built with React 19, FastAPI, Groq LLM sub-second reasoning, Celery, Redis, Vite 8.">
+</a>
+<p align="center">
+  <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Repository-GhostReview-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GhostReview Repository"></a>
+  <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Inference-Groq_LPU_Sub--300ms-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=speedtest" alt="Groq LPU Sub-300ms"></a>
+  <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Testing-24%20pytest%20Passed-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=pytest" alt="24 pytest Passed"></a>
+</p>
+
+<!-- Project 5: OpenCluely -->
+<a href="https://github.com/pasha804/OpenCluely">
+  <img src="assets/project-opencluely.svg" width="100%" alt="OpenCluely: Undetectable desktop AI assistant for technical interviews and algorithmic mastery. Built with Tauri Rust, TypeScript, Gemini AI, Vision OCR, Whisper.">
+</a>
+<p align="center">
+  <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/Repository-OpenCluely-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="OpenCluely Repository"></a>
+  <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/License-MIT_Open_Source-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=opensourceinitiative" alt="MIT Open Source"></a>
+</p>
+
+<!-- Project 6: BMW 7-Series 3D Experience -->
+<a href="https://github.com/pasha804/bmw-7-series-3d-experience">
+  <img src="assets/project-bmw7.svg" width="100%" alt="BMW 7-Series 3D Experience: Photorealistic 3D automotive configurator engineered with custom GLSL raymarching shaders. Built with Three.js, WebGL, GLSL, React, TypeScript.">
+</a>
+<p align="center">
+  <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Repository-BMW_7--Series_3D-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="BMW 7-Series Repository"></a>
+  <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Graphics-WebGL_60FPS-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=three.js" alt="Three.js WebGL"></a>
+</p>
+
+<!-- Project 7: Nexora -->
+<a href="https://github.com/pasha804/NEXORA">
+  <img src="assets/project-nexora.svg" width="100%" alt="Nexora: AI-powered skill social platform with live coding challenges & autonomous referee. Built with React, TypeScript, FastAPI, PostgreSQL, Redis, Docker.">
+</a>
+<p align="center">
+  <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Repository-NEXORA-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="NEXORA Repository"></a>
+  <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Status-Private_Alpha-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=git" alt="Private Alpha"></a>
+</p>
+
+<!-- ═══════════════════════ 04 TOOLKIT ═══════════════════════ -->
+<img src="assets/title-toolkit.svg" width="100%" alt="04 Toolkit — The tools I reach for.">
+<img src="assets/tech-constellation-v2.svg" width="100%" alt="Tech Stack Constellation: Core Languages, AI and Machine Learning, Frontend and 3D Graphics, Backend and Distributed Systems, Desktop and Platform DevOps.">
+
+<!-- ═══════════════════════ 05 COMMIT LOG & TELEMETRY ═══════════════════════ -->
+<img src="assets/title-commits.svg" width="100%" alt="05 Commit log — A cadence of shipping.">
 
----
-
-## 🚨 01 // LSPD SUSPECT FILE #804: THE MASTERMIND
-
-<table>
-<tr>
-<td width="65%" valign="top">
-
-### Muhammad Mubashar — Pasha Dev
-**CLASSIFICATION: MASTERMIND // AI FULL-STACK ARCHITECT**  
-**KNOWN OPERATING BASE: LAHORE // ACTIVE SECTOR: LOS SANTOS**
-
-Operating out of an encrypted penthouse overlooking the Vinewood Hills, suspect orchestrates high-stakes digital heists across global web infrastructure. Known to synthesize production-grade systems in record time using multi-agent AI tool calling and zero-friction full-stack frameworks.
-
-> *"Survival before abstraction. Respect before shortcuts. Zero-friction execution. AI as the ultimate crew multiplier."*
-
-**CRIMINAL RECORD & SPECIALTIES:**
-
-🤖 **Autonomous AI Syndicates** — Autonomous workflows, tool calling, persistent state memory, and low-latency neural voice synthesis.
-
-🌐 **Distributed Safehouse Networks** — Resilient microservice platforms built on React, Next.js, TypeScript, FastAPI, PostgreSQL, and Redis.
-
-🖥️ **Stealth Desktop Infiltration** — Native low-overhead transparent HUD companions engineered with Tauri (Rust) and local Python neural cores.
-
-🏎️ **Photorealistic WebGL Simulators** — Custom GLSL raymarching, Draco geometry compression, and 60 FPS automotive visual studio pipelines.
-
-⚡ **Mission Passed (Prod Shipping)** — Rapid execution from recon through architecture, strict automated testing, containerized deployment, and live telemetry observability.
-
-</td>
-<td width="35%" align="center" valign="middle">
-
-<img src="./assets/gta-mugshot.jpg" width="100%" alt="LSPD Booking Mugshot: Pasha Dev"/>
-
-<br/>
-<sub><b>LSPD BOOKING PLACARD #804</b><br/><code>CHARGES: ROGUE AI ARCHITECTURE</code></sub>
-
-</td>
-</tr>
-</table>
-
----
-
-## 🎮 02 // GTA V PAUSE MENU // VERIFIED IN-GAME STATS
-
-> Real-time verified data pulled directly from the GitHub API and refreshed automatically every 6 hours via Actions CI/CD.
-
-<div align="center">
-  <img src="./profile/overview.svg" width="100%" alt="GTA V In-Game Pause Menu: Verified Stats &amp; Revenue"/>
-</div>
-
----
-
-## 🛠️ 03 // WEAPON WHEEL // AMMU-NATION ARSENAL
-
-<div align="center">
-  <img src="./assets/weapon-wheel.svg" width="100%" alt="GTA V Weapon Wheel Full-Stack Arsenal"/>
-</div>
-
----
-
-## 🟣 04 // THE BIG SCORE: OPERATION NEXORA (FLAGSHIP HEIST)
-
-<div align="center">
-
-<img src="./assets/gta-nexora-heist.jpg" width="100%" alt="The Big Score: Operation Nexora Heist Planning Board"/>
-
-<br/>
-
-</div>
-
-<table>
-<tr>
-<td width="60%" valign="top">
-
-### NEXORA — Gamify Professional Growth
-*Learn Together • Build Together • Compete Together*
-
-Nexora is an AI-powered skill social platform merging professional developer identity, collaborative communities, competitive peer-to-peer skill practice, and automated AI coaching.
-
-**Heist Execution Highlights:**
-
-* **Client Infiltration**: React + TypeScript + Vite + Tailwind CSS + shadcn/ui + Framer Motion + TanStack Query.
-* **Backend Microservices**: FastAPI Async REST & WebSocket microservices running in isolated Docker containers.
-* **Autonomous AI Referee**: Autonomous LLM agent judging live coding challenges, tracking skill progression curves, and delivering actionable feedback.
-* **Vault Storage**: Relational developer graph in PostgreSQL paired with in-memory Redis caching and challenge queues.
-
-</td>
-<td width="40%" valign="top">
-
-<img src="./assets/nexora.svg" width="100%" alt="Nexora System Architecture"/>
-
-<br/>
-
-```text
-[ OPERATION ] Nexora
-[ LOADOUT ]   React • TypeScript
-              FastAPI • PostgreSQL
-              Redis • Docker
-              Framer Motion
-[ STATUS ]    Active Infiltration
-[ CLEARANCE ] Private Alpha
-```
-
-</td>
-</tr>
-</table>
-
----
-
-## 🏢 05 // PROPERTIES & SAFEHOUSES (DYNASTY 8 EXECUTIVE & WARSTOCK)
-
-<br/>
-
-<!-- ─────────── ROW 1: PASHA TOOLS + WISHORA ─────────── -->
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<div align="center">
-<img src="./assets/gta-pasha-tools.jpg" width="100%" alt="Pasha Tools Underground Utility Workshop"/>
-</div>
-
-<br/>
-
-### 🔵 [Pasha Tools](https://pashatools.com)
-**Ammu-Nation Style Utility Arsenal**
-
-A high-performance web utility suite optimized for zero-friction browser workflows:
-
-* **Media Engine**: In-memory FFmpeg video conversions, audio extractions, and yt-dlp pipelines.
-* **Document Suite**: High-speed PDF page manipulation, text parsing, and automated transforms.
-* **Cloud Architecture**: Scaled across Railway (Python/FastAPI) and Vercel (React), engineered with SEO canonical routing and AdSense compliance.
-
-<div align="center">
-
-<img src="./assets/pasha-tools.svg" width="100%" alt="Pasha Tools Architecture"/>
-
-```text
-[ PROPERTY ] Pasha Tools
-[ LOADOUT ]  React • FastAPI • Python • FFmpeg
-[ STATUS ]   ● Production Live
-[ SITE ]     https://pashatools.com
-```
-
-</div>
-
-</td>
-<td width="50%" valign="top">
-
-<div align="center">
-<img src="./assets/gta-wishora-vice.jpg" width="100%" alt="Wishora Vice City Neon Digital Card Studio"/>
-</div>
-
-<br/>
-
-### 💜 [Wishora](https://wishora.live)
-**Vice City Neon Digital Greeting & Card Studio**
-
-**FREE FOREVER • NO SIGNUP • INSTANT DOWNLOAD**
-
-* **Instant Canvas Export**: Client-side canvas rendering for ultra-crisp personalized PNG greetings.
-* **Fluid Experience**: Built with Next.js App Router, Tailwind CSS, and Framer Motion for smooth 60 FPS transitions.
-* **Zero Barrier**: Frictionless user experience designed for maximum viral adoption.
-
-<div align="center">
-
-<img src="./assets/wishora.svg" width="100%" alt="Wishora Architecture"/>
-
-```text
-[ PROPERTY ] Wishora
-[ LOADOUT ]  Next.js • TypeScript • Tailwind
-             Framer Motion
-[ STATUS ]   ● Production Live
-[ SITE ]     https://wishora.live
-```
-
-</div>
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ─────────── ROW 2: ZORO 2.0 + OPENCLUELY ─────────── -->
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<div align="center">
-<img src="./assets/gta-zoro-warstock.jpg" width="100%" alt="Zoro 2.0 Warstock Tactical AI Companion"/>
-</div>
-
-<br/>
-
-### 🤖 Zoro 2.0
-**Warstock Cache & Carry Tactical AI (Desktop Companion)**
-
-A native Windows AI command center running locally on the user's operating system:
-
-* **Multi-Process Architecture**: Tauri (Rust wrapper) hosting a React HUD UI wired directly to a Python AI core.
-* **Voice & Memory**: Local neural speech processing, long-term contextual memory, and automated desktop tool execution.
-* **Cyberpunk Command Center**: Low-latency dark HUD designed for instant keyboard hotkey invocation.
-
-<div align="center">
-
-<img src="./assets/zoro.svg" width="100%" alt="Zoro 2.0 Architecture"/>
-
-```text
-[ HARDWARE ] Zoro 2.0
-[ LOADOUT ]  Tauri (Rust) • React
-             Python Core • Speech Synthesis
-[ STATUS ]   ● Internal Desktop Build
-[ SOURCE ]   Local Windows System
-```
-
-</div>
-
-</td>
-<td width="50%" valign="top">
-
-<div align="center">
-<img src="./assets/gta-opencluely-stealth.jpg" width="100%" alt="OpenCluely Stealth AI Infiltration Interface"/>
-</div>
-
-<br/>
-
-### 🛡️ [OpenCluely](https://github.com/pasha804/OpenCluely)
-**Stealth AI Interview & Infiltration Companion**
-
-An open-source stealth AI overlay for live technical interviews, DSA, and algorithmic challenges:
-
-* **Stealth Transparent HUD**: Invisible frameless desktop overlay with zero screen-capture footprint and hotkey triggers.
-* **Optical Screen Engine**: Real-time canvas OCR parsing problem statements and algorithmic constraints on the fly.
-* **Multi-Model Intelligence**: Instant algorithmic proofs streaming optimal time/space complexity solutions (O(N) / O(log N)).
-
-<div align="center">
-
-<img src="./assets/opencluely.svg" width="100%" alt="OpenCluely Architecture"/>
-
-```text
-[ GADGET ]   OpenCluely
-[ LOADOUT ]  TypeScript • Electron/Tauri
-             Gemini AI • Whisper • Vision OCR
-[ STATUS ]   ● Active Dev // Open Source
-[ REPO ]     github.com/pasha804/OpenCluely
-```
-
-</div>
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ─────────── ROW 3: BMW 7-SERIES + CREATIVE LAB ─────────── -->
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<div align="center">
-<img src="./assets/gta-bmw-showroom.jpg" width="100%" alt="BMW 7-Series Legendary Motorsport Showroom"/>
-</div>
-
-<br/>
-
-### 🏎️ [BMW 7-Series 3D Experience](https://github.com/pasha804/bmw-7-series-3d-experience)
-**Legendary Motorsport // Photorealistic WebGL & Three.js Studio**
-
-An interactive 3D WebGL automotive configurator engineered with custom shaders:
-
-* **Raymarched Shaders**: Custom GLSL vertex and fragment pipelines simulating metallic clear-coat paint and ambient light physics.
-* **Dynamic Camera Director**: Spline-based 60 FPS cinematic camera orbits, interior 360° pan, and interactive wheel/trim configurator.
-* **Rendering Engine**: Screen-Space Ambient Occlusion (SSAO), HDR tone mapping, and Draco geometry compression for instant load times.
-
-<div align="center">
-
-```text
-[ SHOWROOM ] BMW 7-Series Experience
-[ ENGINE ]   Three.js • WebGL • GLSL Shaders
-             React • Draco Compression
-[ STATUS ]   ● Production Live
-[ REPO ]     github.com/pasha804/bmw-7-series-3d-experience
-```
-
-</div>
-
-</td>
-<td width="50%" valign="top">
-
-<div align="center">
-<img src="./assets/creative-lab.svg" width="100%" alt="Creative Web Lab Architecture"/>
-</div>
-
-<br/>
-
-### 🧪 Creative Web Lab
-**Cinematic WebGL & Motion Experiments**
-
-A testing ground for experiential web technology:
-
-* **Interactive 3D**: Three.js, WebGL shaders, and physics-driven particle simulations.
-* **Storytelling Interfaces**: Narrative-driven landing pages and interactive digital artifacts.
-* **Micro-Interactions**: Micro-animations and responsive typography designed to make web apps feel alive.
-
-<div align="center">
-
-```text
-[ LAB ]      Creative Web Lab
-[ FOCUS ]    WebGL • Three.js • Canvas API
-             GLSL Shaders • Motion Systems
-[ STATUS ]   ● Continuous Experimentation
-```
-
-</div>
-
-</td>
-</tr>
-</table>
-
----
-
-## 📻 06 // RADIO LOS SANTOS // CODING SOUNDTRACK
-
-<div align="center">
-  <img src="./assets/radio-stations.svg" width="100%" alt="Radio Los Santos // In-Studio Audio Wheel"/>
-</div>
-
----
-
-## 🏛️ 07 // HEIST ARCHITECTURE BLUEPRINT
-
-How software systems are designed from user touchpoint to distributed storage:
-
-<div align="center">
-  <img src="./assets/architecture.svg" width="100%" alt="System Architecture Blueprint"/>
-</div>
-
----
-
-## 📊 08 // LSPD CRIMINAL RECORD — LIVE TELEMETRY DECK
-
-<div align="center">
-
-<!-- STATS + WEAPON AMMO SIDE BY SIDE -->
 <table width="100%">
-<tr>
-<td width="50%" valign="top">
-  <img src="./profile/github-stats.svg" width="100%" alt="Verified GitHub Engineering Stats"/>
-</td>
-<td width="50%" valign="top">
-  <img src="./profile/languages.svg" width="100%" alt="Byte-Weighted Language Telemetry"/>
-</td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="profile/github-stats.svg" width="100%" alt="Verified GitHub Engineering Stats">
+    </td>
+    <td width="50%" valign="top">
+      <img src="profile/languages.svg" width="100%" alt="Language Breakdown by Bytes">
+    </td>
+  </tr>
 </table>
 
 <br/>
 
-<!-- WANTED STREAK -->
-<img src="./profile/streak.svg" width="100%" alt="LSPD Wanted Status & Active Heist Streak"/>
+<img src="profile/contributions.svg" width="100%" alt="52-Week Contribution Cadence Telemetry Heatmap">
 
-<br/><br/>
+<!-- ═══════════════════════ 06 SYSTEM ARCHITECTURE ═══════════════════════ -->
+<img src="assets/title-architecture.svg" width="100%" alt="06 Architecture — Systems that scale with poise.">
+<img src="assets/architecture-blueprint.svg" width="100%" alt="System Architecture Blueprint: End-to-end multi-tier pipeline connecting client touchpoints, edge gateway, autonomous AI inference core, microservices, and persistent distributed data layers.">
 
-<!-- MONTHLY PAYOUTS -->
-<img src="./profile/monthly.svg" width="100%" alt="This Month Dynamic Activity Telemetry"/>
+<!-- ═══════════════════════ 07 CONNECT & FOOTER ═══════════════════════ -->
+<img src="assets/title-connect.svg" width="100%" alt="07 Connect — Let's build something extraordinary.">
 
-<br/><br/>
-
-<!-- 52-WEEK TERRITORY HEATMAP -->
-<img src="./profile/contributions.svg" width="100%" alt="52-Week Territory Control Matrix"/>
-
-<br/><br/>
-
-<!-- LIVE ACTIVITY LOG -->
-<img src="./profile/activity.svg" width="100%" alt="Recent Heists Event Stream"/>
-
-</div>
-
----
-
-## ⚙️ 09 // CREW EXPANSION WORKFLOW
-
-```text
-RECON ──► SCHEMATICS ──► ARCHITECTURE ──► AI BUILD ──► VALIDATION ──► TEST ──► SHIP ──► OBSERVE ──► ITERATE
-```
-
-<div align="center">
-  <img src="./assets/ai-workflow.svg" width="100%" alt="AI × Engineering Workflow Pipeline"/>
-</div>
-
----
-
-## 🌍 10 // FROM PAKISTAN TO THE WORLD (TERRITORY MAP)
-
-<div align="center">
-  <img src="./assets/pakistan-global.svg" width="100%" alt="From Pakistan to Global Internet"/>
-</div>
-
----
-
-## 🌐 11 // LIFEINVADER & SYNDICATE CONTACTS
-
-I am always open to discussing high-stakes AI-native products, scalable full-stack architecture, developer tools, and innovative engineering collaborations.
-
-<div align="center">
+<p align="center">
+  <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=gmail" alt="Email Pasha"></a>
+  <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=linkedin" alt="LinkedIn profile"></a>
+  <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GitHub profile"></a>
+  <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=googlechrome" alt="Portfolio website"></a>
+  <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=youtube" alt="YouTube Channel"></a>
+</p>
 
 <a href="https://pasha-portfolio-v6.netlify.app/">
-  <img src="https://img.shields.io/badge/PORTFOLIO-pasha--portfolio--v6.netlify.app-F5AF00?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Live Portfolio Website"/>
+  <img src="assets/footer-signature-v2.svg" width="100%" alt="Muhammad Mubashar — Survival before abstraction. Precision before speed. Systems that endure.">
 </a>
-
-<br/><br/>
-
-<a href="https://github.com/pasha804">
-  <img src="https://img.shields.io/badge/GITHUB-pasha804-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
-</a>
-&nbsp;
-<a href="https://linkedin.com/in/pasha-dev">
-  <img src="https://img.shields.io/badge/LINKEDIN-pasha--dev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-&nbsp;
-<a href="https://instagram.com/@pasha_dev_">
-  <img src="https://img.shields.io/badge/INSTAGRAM-@pasha__dev__-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-</a>
-&nbsp;
-<a href="https://tiktok.com/@pasha_dev_">
-  <img src="https://img.shields.io/badge/TIKTOK-@pasha__dev__-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok"/>
-</a>
-&nbsp;
-<a href="https://youtube.com/@Pasha804a">
-  <img src="https://img.shields.io/badge/YOUTUBE-@Pasha804a-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
-</a>
-&nbsp;
-<a href="mailto:pashadev804@gmail.com">
-  <img src="https://img.shields.io/badge/EMAIL-pashadev804@gmail.com-54B948?style=for-the-badge&logo=gmail&logoColor=black" alt="Email Pasha"/>
-</a>
-
-</div>
-
-<br/>
-
----
-
-<div align="center">
-
-<img src="./assets/footer.svg" width="100%" alt="Build. Ship. Iterate."/>
-
-<br/><br/>
-
-### **Pasha Dev**
-**Muhammad Mubashar**  
-*The Mastermind // AI Full-Stack Developer • Systems Architect • Product Engineer*  
-`Lahore, Pakistan // 31.5204° N, 74.3587° E`
-
-<sub>Engineered with precision, curiosity, and an obsession with shipping durable software.</sub>
-
-<br/>
-
-<sub>📊 Stats are <b>LIVE</b> — refreshed every 6 hours via <a href="./.github/workflows/profile-dashboard.yml">GitHub Actions CI/CD</a> using real GitHub API data.</sub>
-
-</div>

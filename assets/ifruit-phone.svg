@@ -29,7 +29,7 @@
     <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">L</text>
     <text x="60" y="24" fill="#F5AF00" class="sans" font-size="13" font-weight="800">LESTER CREST</text>
     <text x="175" y="24" fill="#64748b" class="mono" font-size="9">14:02 // SECURE SATELLITE UPLINK</text>
-    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"Pasha, I've bypassed the enterprise firewalls. The Nexora server room is ready for extraction. Make sure your FastAPI endpoints don't leave any socket traces for LSPD cyber."</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="11.5">"Pasha, firewalls bypassed. Nexora extraction ready. Make sure your FastAPI endpoints leave zero socket traces."</text>
   </g>
 
   <!-- Message 2: Franklin Clinton (Showroom & WebGL) -->
@@ -39,7 +39,7 @@
     <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">F</text>
     <text x="60" y="24" fill="#54B948" class="sans" font-size="13" font-weight="800">FRANKLIN CLINTON</text>
     <text x="210" y="24" fill="#64748b" class="mono" font-size="9">14:15 // VINEWOOD HILLS</text>
-    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"Yo Pasha, that BMW 7-Series 3D configurator is pure artwork homie! Those GLSL raymarched clear-coat shaders look cleaner than anything at Los Santos Customs. Chop loves it too."</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="11.5">"Yo Pasha, that BMW 7-Series 3D configurator is pure artwork homie! GLSL shaders cleaner than LS Customs."</text>
   </g>
 
   <!-- Message 3: Lamar Davis (Pasha Tools & Hustle) -->
@@ -49,7 +49,7 @@
     <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">LD</text>
     <text x="60" y="24" fill="#f59e0b" class="sans" font-size="13" font-weight="800">LAMAR DAVIS</text>
     <text x="180" y="24" fill="#64748b" class="mono" font-size="9">14:21 // STRAWBERRY</text>
-    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"Can your underground utility Pasha Tools convert this 4K video for LD Organics? Need that in-memory FFmpeg engine cooking fast, man! You the real code gangster out here!"</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="11.5">"Can your Pasha Tools utility convert this 4K video for LD Organics? Need that in-memory FFmpeg engine fast, man!"</text>
   </g>
 
   <!-- Message 4: Trevor Philips (Unhinged Deployment) -->
@@ -59,7 +59,7 @@
     <text x="30" y="34" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="13" text-anchor="middle">T</text>
     <text x="60" y="24" fill="#ef4444" class="sans" font-size="13" font-weight="800">TREVOR PHILIPS</text>
     <text x="195" y="24" fill="#64748b" class="mono" font-size="9">14:29 // SANDY SHORES AIRFIELD</text>
-    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="12">"PASHA! DID YOU PUSH TO PRODUCTION YET?! IF A SINGLE DOCKER CONTAINER CRASHES I AM FLYING A DUSTER PLANE STRAIGHT INTO THE DATA CENTER! KEEP SHIPPING!"</text>
+    <text x="60" y="44" fill="#f8fafc" class="sans" font-size="11.5">"PASHA! DID YOU PUSH TO PROD YET?! IF A SINGLE DOCKER CONTAINER CRASHES I AM FLYING A PLANE INTO THE SERVER ROOM!"</text>
   </g>
 
   <!-- Phone Status Footer -->

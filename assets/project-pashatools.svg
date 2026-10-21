@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="p3-t">
+  <title id="p3-t">Pasha Tools: High-speed browser media suite for instant audio/video manipulation</title>
+  <defs>
+    <linearGradient id="p3-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+    </linearGradient>
+    <radialGradient id="p3-glow" cx="80%" cy="30%" r="55%">
+      <stop offset="0" stop-color="#0066FF" stop-opacity=".3"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="p3-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="p3-glowf" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="p3-clip"><rect width="1200" height="370" rx="18"/></clipPath>
+    <linearGradient id="p3-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .p3-serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+    .p3-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .p3-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .p3-in { animation: p3-in 1.2s cubic-bezier(.16,1,.3,1) both; }
+    .p3-draw { stroke-dasharray: 600; stroke-dashoffset: 600; animation: p3-draw 2s cubic-bezier(.65,0,.35,1) .5s forwards; }
+    @keyframes p3-in { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes p3-draw { to { stroke-dashoffset: 0; } }
+    .p3-trace { stroke-dasharray: 564 3136; stroke-dashoffset: 3700; animation: p3-trace 7s linear infinite; }
+    @keyframes p3-trace { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .p3-in { animation: none; } .p3-draw { animation: none; } .p3-trace { display: none; } }
+  </style>
+
+  <g clip-path="url(#p3-clip)">
+    <rect width="1200" height="370" fill="url(#p3-bg)"/>
+    <rect x="700" width="500" height="370" fill="url(#p3-grid)"/>
+    <rect width="1200" height="370" fill="url(#p3-glow)"/>
+
+    <!-- Left Details -->
+    <g class="p3-in" transform="translate(56, 48)">
+      <text class="p3-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">03 · UTILITY PLATFORM · MEDIA ENGINE · 2026</text>
+      <text class="p3-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">Pasha Tools</text>
+      <text class="p3-sans" y="94" font-size="16.5" fill="#94A3B8">High-speed browser media suite engineered for zero-friction workflows.</text>
+      <text class="p3-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> In-memory FFmpeg video converter, audio extraction, instant document suite</text>
+      <line class="p3-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+
+      <!-- Metrics -->
+      <g transform="translate(0, 186)">
+        <text class="p3-serif" font-size="32" font-weight="300" fill="#F0F9FF">0s</text>
+        <text class="p3-sans" y="22" font-size="12" fill="#94A3B8">Zero Signup Barrier</text>
+      </g>
+      <g transform="translate(200, 186)">
+        <text class="p3-serif" font-size="32" font-weight="300" fill="#F0F9FF">100%</text>
+        <text class="p3-sans" y="22" font-size="12" fill="#94A3B8">Client-Side Privacy</text>
+      </g>
+      <g transform="translate(400, 186)">
+        <text class="p3-serif" font-size="32" font-weight="300" fill="#34D399">Live</text>
+        <text class="p3-sans" y="22" font-size="12" fill="#94A3B8">Production Global Edge</text>
+      </g>
+
+      <!-- Tech Stack Chips -->
+      <g transform="translate(0, 246)">
+        <g transform="translate(0, 0)"><rect width="64" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p3-mono" x="32" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">React</text></g>
+        <g transform="translate(72, 0)"><rect width="70" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p3-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">FastAPI</text></g>
+        <g transform="translate(150, 0)"><rect width="66" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p3-mono" x="33" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Python</text></g>
+        <g transform="translate(224, 0)"><rect width="72" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p3-mono" x="36" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">FFmpeg</text></g>
+        <g transform="translate(304, 0)"><rect width="68" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p3-mono" x="34" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Docker</text></g>
+        <g transform="translate(380, 0)"><rect width="74" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p3-mono" x="37" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Railway</text></g>
+      </g>
+    </g>
+
+    <!-- Right Graphic Illustration: Audio Wave & Conversion Stream -->
+    <g transform="translate(740, 60)" class="p3-in">
+      <rect width="390" height="240" rx="12" fill="#071228" stroke="#1E3A8A" stroke-opacity=".6"/>
+      <rect width="390" height="34" rx="12" fill="#0A1838"/>
+      <text class="p3-mono" x="20" y="21" font-size="11" fill="#E0F2FE">FFMPEG // IN-MEMORY STREAM PIPELINE</text>
+
+      <!-- Conversion Flow Blocks -->
+      <g transform="translate(24, 52)">
+        <rect width="90" height="74" rx="8" fill="#0B1A3D" stroke="#0066FF"/>
+        <text class="p3-mono" x="45" y="34" text-anchor="middle" font-size="12" fill="#F0F9FF">.MP4</text>
+        <text class="p3-mono" x="45" y="52" text-anchor="middle" font-size="9" fill="#94A3B8">4K H.264</text>
+
+        <!-- Dynamic Arrow -->
+        <line x1="96" y1="37" x2="140" y2="37" stroke="#38BDF8" stroke-width="2" filter="url(#p3-glowf)"/>
+        <polygon points="144,37 136,33 136,41" fill="#38BDF8"/>
+
+        <rect x="150" width="90" height="74" rx="8" fill="#0B1A3D" stroke="#38BDF8"/>
+        <text class="p3-mono" x="195" y="34" text-anchor="middle" font-size="12" fill="#38BDF8">WASM</text>
+        <text class="p3-mono" x="195" y="52" text-anchor="middle" font-size="9" fill="#E0F2FE">FFMPEG</text>
+
+        <!-- Dynamic Arrow -->
+        <line x1="246" y1="37" x2="290" y2="37" stroke="#38BDF8" stroke-width="2" filter="url(#p3-glowf)"/>
+        <polygon points="294,37 286,33 286,41" fill="#38BDF8"/>
+
+        <rect x="300" width="40" height="74" rx="8" fill="#0B1A3D" stroke="#10B981"/>
+        <text class="p3-mono" x="320" y="34" text-anchor="middle" font-size="11" fill="#10B981">MP3</text>
+        <text class="p3-mono" x="320" y="52" text-anchor="middle" font-size="9" fill="#34D399">HQ</text>
+      </g>
+
+      <!-- Waveform Visualization -->
+      <g transform="translate(24, 146)">
+        <rect width="342" height="74" rx="8" fill="#040916" stroke="#1E3A8A" stroke-opacity=".5"/>
+        <g fill="#38BDF8" filter="url(#p3-glowf)">
+          <rect x="20" y="24" width="4" height="26" rx="2"><animate attributeName="height" values="26;12;26" dur="1.2s" repeatCount="indefinite"/></rect>
+          <rect x="32" y="16" width="4" height="42" rx="2"><animate attributeName="height" values="42;20;42" dur="1.5s" repeatCount="indefinite"/></rect>
+          <rect x="44" y="28" width="4" height="18" rx="2"><animate attributeName="height" values="18;35;18" dur="1.1s" repeatCount="indefinite"/></rect>
+          <rect x="56" y="12" width="4" height="50" rx="2"><animate attributeName="height" values="50;15;50" dur="1.8s" repeatCount="indefinite"/></rect>
+          <rect x="68" y="20" width="4" height="34" rx="2"><animate attributeName="height" values="34;48;34" dur="1.4s" repeatCount="indefinite"/></rect>
+          <rect x="80" y="14" width="4" height="46" rx="2"><animate attributeName="height" values="46;22;46" dur="1.3s" repeatCount="indefinite"/></rect>
+          <rect x="92" y="26" width="4" height="22" rx="2"><animate attributeName="height" values="22;40;22" dur="1.6s" repeatCount="indefinite"/></rect>
+          <rect x="104" y="10" width="4" height="54" rx="2"><animate attributeName="height" values="54;18;54" dur="1.7s" repeatCount="indefinite"/></rect>
+          <rect x="116" y="22" width="4" height="30" rx="2"/>
+          <rect x="128" y="14" width="4" height="46" rx="2"/>
+          <rect x="140" y="30" width="4" height="14" rx="2"/>
+        </g>
+        <text class="p3-mono" x="170" y="36" font-size="10.5" fill="#F0F9FF">AUDIO LOSSLESS RIP</text>
+        <text class="p3-mono" x="170" y="52" font-size="9" fill="#10B981">✓ Zero Memory Leak · 320 kbps</text>
+      </g>
+    </g>
+
+    <!-- Animated Border Tracing -->
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect class="p3-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#p3-trace)" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+</svg>
