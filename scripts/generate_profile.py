@@ -317,23 +317,23 @@ def fetch_github_data():
 # SVG GENERATION FUNCTIONS
 # ==========================================
 
-# Shared color palette
+# Shared color palette - Luxury Cyber Obsidian & Luminous Amethyst / Indigo / Cyan
 PALETTE = {
-    "bg_deep": "#030712",
-    "bg_mid": "#070E1E",
-    "bg_dark": "#02050E",
-    "bg_card": "#071228",
-    "border": "#1E3A8A",
-    "border_light": "#0284C7",
+    "bg_deep": "#06070B",
+    "bg_mid": "#0B0D15",
+    "bg_dark": "#040508",
+    "bg_card": "#0F121C",
+    "border": "#1F2436",
+    "border_light": "#2E3650",
     "cyan": "#38BDF8",
-    "indigo": "#0066FF",
-    "purple": "#818CF8",
+    "indigo": "#6366F1",
+    "purple": "#A855F7",
     "emerald": "#34D399",
     "green": "#10B981",
-    "yellow": "#38BDF8",
-    "amber": "#60A5FA",
-    "rose": "#EF4444",
-    "text_white": "#F0F9FF",
+    "yellow": "#FBBF24",
+    "amber": "#F59E0B",
+    "rose": "#F43F5E",
+    "text_white": "#F8FAFC",
     "text_secondary": "#94A3B8",
     "text_muted": "#64748B",
 }
@@ -346,18 +346,19 @@ SHARED_SVG_HEAD = f"""
       <stop offset="100%" stop-color="{PALETTE['bg_dark']}" />
     </linearGradient>
     <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{PALETTE['cyan']}" />
-      <stop offset="100%" stop-color="#0066FF" />
+      <stop offset="0%" stop-color="{PALETTE['purple']}" />
+      <stop offset="50%" stop-color="{PALETTE['indigo']}" />
+      <stop offset="100%" stop-color="{PALETTE['cyan']}" />
     </linearGradient>
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="{PALETTE['cyan']}" stop-opacity="0.6" />
+      <stop offset="0%" stop-color="{PALETTE['purple']}" stop-opacity="0.6" />
       <stop offset="50%" stop-color="{PALETTE['border_light']}" stop-opacity="0.3" />
       <stop offset="100%" stop-color="{PALETTE['indigo']}" stop-opacity="0.5" />
     </linearGradient>
     <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{PALETTE['cyan']}" />
+      <stop offset="0%" stop-color="{PALETTE['purple']}" />
       <stop offset="50%" stop-color="{PALETTE['indigo']}" />
-      <stop offset="100%" stop-color="{PALETTE['purple']}" />
+      <stop offset="100%" stop-color="{PALETTE['cyan']}" />
     </linearGradient>
     <filter id="glow-sm" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="2" result="blur" />
@@ -637,10 +638,10 @@ def generate_contributions_svg(data):
     start_y = 52
 
     def get_color(cnt):
-        if cnt == 0:    return "#071228"
-        elif cnt <= 2:  return "#0C2B5E"
-        elif cnt <= 5:  return "#0052CC"
-        elif cnt <= 9:  return "#0080FF"
+        if cnt == 0:    return "#0F121C"
+        elif cnt <= 2:  return "#3B1E6D"
+        elif cnt <= 5:  return "#6366F1"
+        elif cnt <= 9:  return "#8B5CF6"
         else:           return "#38BDF8"
 
     cells = []
@@ -681,10 +682,10 @@ def generate_contributions_svg(data):
 
     <g transform="translate(700, 0)" class="mono" font-size="9">
       <text x="-36" y="9" fill="{PALETTE['text_muted']}">LESS</text>
-      <rect x="0" y="0" width="10" height="10" rx="2" fill="#071228" />
-      <rect x="14" y="0" width="10" height="10" rx="2" fill="#0C2B5E" />
-      <rect x="28" y="0" width="10" height="10" rx="2" fill="#0052CC" />
-      <rect x="42" y="0" width="10" height="10" rx="2" fill="#0080FF" />
+      <rect x="0" y="0" width="10" height="10" rx="2" fill="#0F121C" />
+      <rect x="14" y="0" width="10" height="10" rx="2" fill="#3B1E6D" />
+      <rect x="28" y="0" width="10" height="10" rx="2" fill="#6366F1" />
+      <rect x="42" y="0" width="10" height="10" rx="2" fill="#8B5CF6" />
       <rect x="56" y="0" width="10" height="10" rx="2" fill="#38BDF8" />
       <text x="72" y="9" fill="{PALETTE['text_muted']}">MORE</text>
     </g>

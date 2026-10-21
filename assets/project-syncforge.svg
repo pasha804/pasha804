@@ -2,20 +2,20 @@
   <title id="psf-t">SyncForge: Real-Time Multi-Cursor Collaborative Code Editor and Mesh Voice Studio</title>
   <defs>
     <linearGradient id="psf-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/><stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <radialGradient id="psf-glow" cx="80%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0066FF" stop-opacity=".3"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#6366F1" stop-opacity=".25"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
     <pattern id="psf-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#1E2336" stroke-opacity=".12"/>
     </pattern>
     <filter id="psf-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="psf-clip"><rect width="1200" height="370" rx="18"/></clipPath>
     <linearGradient id="psf-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#6366F1"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
@@ -38,19 +38,19 @@
 
     <!-- Left Details -->
     <g class="psf-in" transform="translate(56, 48)">
-      <text class="psf-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">02 · REAL-TIME DISTRIBUTED SYSTEMS · WEBRTC · 2026</text>
-      <text class="psf-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">SyncForge</text>
+      <text class="psf-mono" font-size="12" letter-spacing="2.6" fill="#6366F1">02 · REAL-TIME DISTRIBUTED SYSTEMS · WEBRTC · 2026</text>
+      <text class="psf-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F8FAFC">SyncForge</text>
       <text class="psf-sans" y="94" font-size="16.5" fill="#94A3B8">Real-time multi-cursor collaboration, instant rooms &amp; peer-to-peer voice mesh.</text>
-      <text class="psf-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> Monaco Editor, delta-sync WebSockets, WebRTC mesh audio, FastAPI, React 19</text>
-      <line class="psf-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+      <text class="psf-mono" y="126" font-size="12" fill="#E2E8F0"><tspan fill="#6366F1">BUILT ›</tspan> Monaco Editor, delta-sync WebSockets, WebRTC mesh audio, FastAPI, React 19</text>
+      <line class="psf-draw" x1="0" y1="148" x2="620" y2="148" stroke="#6366F1" stroke-opacity=".35"/>
 
       <!-- Metrics -->
       <g transform="translate(0, 186)">
-        <text class="psf-serif" font-size="32" font-weight="300" fill="#F0F9FF">&lt; 10ms</text>
+        <text class="psf-serif" font-size="32" font-weight="300" fill="#F8FAFC">&lt; 10ms</text>
         <text class="psf-sans" y="22" font-size="12" fill="#94A3B8">Delta Sync Latency</text>
       </g>
       <g transform="translate(200, 186)">
-        <text class="psf-serif" font-size="32" font-weight="300" fill="#F0F9FF">10+ Langs</text>
+        <text class="psf-serif" font-size="32" font-weight="300" fill="#F8FAFC">10+ Langs</text>
         <text class="psf-sans" y="22" font-size="12" fill="#94A3B8">Monaco IntelliSense</text>
       </g>
       <g transform="translate(400, 186)">
@@ -60,35 +60,35 @@
 
       <!-- Tech Stack Chips -->
       <g transform="translate(0, 246)">
-        <g transform="translate(0, 0)"><rect width="84" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="psf-mono" x="42" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">React 19</text></g>
-        <g transform="translate(92, 0)"><rect width="70" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="psf-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Vite 6</text></g>
-        <g transform="translate(170, 0)"><rect width="114" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="psf-mono" x="57" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Monaco Editor</text></g>
-        <g transform="translate(292, 0)"><rect width="76" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="psf-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">FastAPI</text></g>
-        <g transform="translate(376, 0)"><rect width="98" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="psf-mono" x="49" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">WebSockets</text></g>
-        <g transform="translate(482, 0)"><rect width="76" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="psf-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">WebRTC</text></g>
+        <g transform="translate(0, 0)"><rect width="84" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="psf-mono" x="42" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">React 19</text></g>
+        <g transform="translate(92, 0)"><rect width="70" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="psf-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">Vite 6</text></g>
+        <g transform="translate(170, 0)"><rect width="114" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="psf-mono" x="57" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">Monaco Editor</text></g>
+        <g transform="translate(292, 0)"><rect width="76" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="psf-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">FastAPI</text></g>
+        <g transform="translate(376, 0)"><rect width="98" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="psf-mono" x="49" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">WebSockets</text></g>
+        <g transform="translate(482, 0)"><rect width="76" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="psf-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">WebRTC</text></g>
       </g>
     </g>
 
     <!-- Right Graphic Illustration: Monaco Multi-Cursor & WebRTC Mesh Room -->
     <g transform="translate(740, 60)" class="psf-in">
-      <rect width="390" height="240" rx="12" fill="#071228" stroke="#1E3A8A" stroke-opacity=".6"/>
-      <rect width="390" height="34" rx="12" fill="#0A1838"/>
-      <text class="psf-mono" x="20" y="21" font-size="11" fill="#E0F2FE">SYNCFORGE // ROOM #SYNC-992</text>
+      <rect width="390" height="240" rx="12" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <rect width="390" height="34" rx="12" fill="#121624"/>
+      <text class="psf-mono" x="20" y="21" font-size="11" fill="#E2E8F0">SYNCFORGE // ROOM #SYNC-992</text>
       <text class="psf-mono" x="370" y="21" text-anchor="end" font-size="10" fill="#10B981">● 3 PEERS LIVE</text>
 
       <!-- Monaco Editor Code View -->
       <g transform="translate(18, 48)">
-        <rect width="354" height="136" rx="8" fill="#030814" stroke="#1E3A8A" stroke-opacity=".5"/>
-        <text class="psf-mono" x="14" y="24" font-size="9.5" fill="#64748B">01  <tspan fill="#60A5FA">// Broadcast AST delta with sub-10ms lock</tspan></text>
-        <text class="psf-mono" x="14" y="44" font-size="9.5" fill="#64748B">02  <tspan fill="#38BDF8">export async function</tspan> <tspan fill="#F0F9FF">syncCode</tspan>(delta: <tspan fill="#34D399">Delta</tspan>) {</text>
-        <text class="psf-mono" x="14" y="64" font-size="9.5" fill="#64748B">03    <tspan fill="#38BDF8">await</tspan> ws.<tspan fill="#F0F9FF">broadcast</tspan>(<tspan fill="#34D399">"code-change"</tspan>, delta);</text>
-        <text class="psf-mono" x="14" y="84" font-size="9.5" fill="#64748B">04    webrtc.<tspan fill="#F0F9FF">relayVoiceMesh</tspan>(room.peers);</text>
+        <rect width="354" height="136" rx="8" fill="#060810" stroke="#1E2336" stroke-opacity=".6"/>
+        <text class="psf-mono" x="14" y="24" font-size="9.5" fill="#64748B">01  <tspan fill="#818CF8">// Broadcast AST delta with sub-10ms lock</tspan></text>
+        <text class="psf-mono" x="14" y="44" font-size="9.5" fill="#64748B">02  <tspan fill="#38BDF8">export async function</tspan> <tspan fill="#F8FAFC">syncCode</tspan>(delta: <tspan fill="#34D399">Delta</tspan>) {</text>
+        <text class="psf-mono" x="14" y="64" font-size="9.5" fill="#64748B">03    <tspan fill="#38BDF8">await</tspan> ws.<tspan fill="#F8FAFC">broadcast</tspan>(<tspan fill="#34D399">"code-change"</tspan>, delta);</text>
+        <text class="psf-mono" x="14" y="84" font-size="9.5" fill="#64748B">04    webrtc.<tspan fill="#F8FAFC">relayVoiceMesh</tspan>(room.peers);</text>
         <text class="psf-mono" x="14" y="104" font-size="9.5" fill="#64748B">05  }</text>
 
         <!-- Pasha Cursor Tag -->
         <g transform="translate(230, 52)">
           <line x1="0" y1="0" x2="0" y2="16" stroke="#38BDF8" stroke-width="2"/>
-          <rect x="0" y="-12" width="54" height="14" rx="3" fill="#0066FF"/>
+          <rect x="0" y="-12" width="54" height="14" rx="3" fill="#0284C7"/>
           <text class="psf-mono" x="27" y="-2" text-anchor="middle" font-size="8.5" fill="#FFFFFF">Pasha</text>
         </g>
 
@@ -102,13 +102,13 @@
 
       <!-- Bottom Status Pill -->
       <g transform="translate(18, 196)">
-        <rect width="354" height="32" rx="6" fill="#0A1838" stroke="#1E3A8A" stroke-opacity=".7"/>
+        <rect width="354" height="32" rx="6" fill="#121624" stroke="#1E2336"/>
         <text class="psf-mono" x="14" y="20" font-size="9.5" fill="#94A3B8">WS: <tspan fill="#38BDF8">DELTA SYNC</tspan> · AUDIO: <tspan fill="#34D399">WEBRTC MESH</tspan> · LATENCY: <tspan fill="#10B981">8ms</tspan></text>
       </g>
     </g>
 
     <!-- Animated Border Tracing -->
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
     <rect class="psf-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#psf-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>

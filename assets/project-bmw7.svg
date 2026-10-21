@@ -1,21 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="p4-t">
-  <title id="p4-t">BMW 7-Series 3D Experience: Photorealistic 3D automotive configurator engineered with custom GLSL raymarching shaders</title>
+  <title id="p4-t">BMW 7-Series 3D Experience: Photorealistic 3D automotive configurator</title>
   <defs>
     <linearGradient id="p4-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/><stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <radialGradient id="p4-glow" cx="80%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity=".25"/><stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0" stop-color="#6366F1" stop-opacity=".22"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
     <pattern id="p4-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#1E2336" stroke-opacity=".12"/>
     </pattern>
-    <filter id="p4-glowf" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="p4-clip"><rect width="1200" height="370" rx="18"/></clipPath>
     <linearGradient id="p4-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#818CF8"/><stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
@@ -38,71 +35,71 @@
 
     <!-- Left Details -->
     <g class="p4-in" transform="translate(56, 48)">
-      <text class="p4-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">04 · 3D COMPUTING · GLSL SHADERS · 2026</text>
-      <text class="p4-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">BMW 7-Series 3D</text>
-      <text class="p4-sans" y="94" font-size="16.5" fill="#94A3B8">Photorealistic automotive showroom running seamlessly in the browser.</text>
-      <text class="p4-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> Custom GLSL raymarching shaders, cinematic camera director orbits, Draco</text>
-      <line class="p4-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+      <text class="p4-mono" font-size="12" letter-spacing="2.6" fill="#818CF8">06 · EXPERIENTIAL GRAPHICS · 3D WEBGL · 2026</text>
+      <text class="p4-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F8FAFC">BMW 7-Series 3D</text>
+      <text class="p4-sans" y="94" font-size="16.5" fill="#94A3B8">Photorealistic 3D automotive configurator engineered with custom GLSL shaders.</text>
+      <text class="p4-mono" y="126" font-size="12" fill="#E2E8F0"><tspan fill="#818CF8">BUILT ›</tspan> Three.js, WebGL raymarching, Draco compression, React, TypeScript</text>
+      <line class="p4-draw" x1="0" y1="148" x2="620" y2="148" stroke="#818CF8" stroke-opacity=".35"/>
 
       <!-- Metrics -->
       <g transform="translate(0, 186)">
-        <text class="p4-serif" font-size="32" font-weight="300" fill="#F0F9FF">60 FPS</text>
-        <text class="p4-sans" y="22" font-size="12" fill="#94A3B8">WebGL Raymarching</text>
+        <text class="p4-serif" font-size="32" font-weight="300" fill="#F8FAFC">60 FPS</text>
+        <text class="p4-sans" y="22" font-size="12" fill="#94A3B8">Hardware Render Speed</text>
       </g>
       <g transform="translate(200, 186)">
-        <text class="p4-serif" font-size="32" font-weight="300" fill="#F0F9FF">Draco</text>
-        <text class="p4-sans" y="22" font-size="12" fill="#94A3B8">Mesh Compression</text>
+        <text class="p4-serif" font-size="32" font-weight="300" fill="#F8FAFC">Draco GLTF</text>
+        <text class="p4-sans" y="22" font-size="12" fill="#94A3B8">Compressed Geometry</text>
       </g>
       <g transform="translate(400, 186)">
-        <text class="p4-serif" font-size="32" font-weight="300" fill="#34D399">Live</text>
-        <text class="p4-sans" y="22" font-size="12" fill="#94A3B8">Interactive 3D Showroom</text>
+        <text class="p4-serif" font-size="32" font-weight="300" fill="#34D399">Custom GLSL</text>
+        <text class="p4-sans" y="22" font-size="12" fill="#94A3B8">Metallic Clear-Coat</text>
       </g>
 
       <!-- Tech Stack Chips -->
       <g transform="translate(0, 246)">
-        <g transform="translate(0, 0)"><rect width="76" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p4-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Three.js</text></g>
-        <g transform="translate(84, 0)"><rect width="70" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p4-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">WebGL</text></g>
-        <g transform="translate(162, 0)"><rect width="98" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p4-mono" x="49" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">GLSL Shaders</text></g>
-        <g transform="translate(268, 0)"><rect width="64" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p4-mono" x="32" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">React</text></g>
-        <g transform="translate(340, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p4-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">TypeScript</text></g>
+        <g transform="translate(0, 0)"><rect width="84" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p4-mono" x="42" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">Three.js</text></g>
+        <g transform="translate(92, 0)"><rect width="76" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p4-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">WebGL</text></g>
+        <g transform="translate(176, 0)"><rect width="102" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p4-mono" x="51" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">GLSL Shaders</text></g>
+        <g transform="translate(286, 0)"><rect width="76" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p4-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">React</text></g>
+        <g transform="translate(370, 0)"><rect width="90" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p4-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#818CF8">TypeScript</text></g>
       </g>
     </g>
 
-    <!-- Right Graphic Illustration: 3D Wireframe Car & Orbital Orbit -->
+    <!-- Right Graphic Illustration: 3D Wireframe Viewport & Shader Telemetry -->
     <g transform="translate(740, 60)" class="p4-in">
-      <rect width="390" height="240" rx="12" fill="#071228" stroke="#1E3A8A" stroke-opacity=".6"/>
-      <rect width="390" height="34" rx="12" fill="#0A1838"/>
-      <text class="p4-mono" x="20" y="21" font-size="11" fill="#E0F2FE">GLSL SHADER // 3D AUTOMOTIVE VIEWPORT</text>
+      <rect width="390" height="240" rx="12" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <rect width="390" height="34" rx="12" fill="#121624"/>
+      <text class="p4-mono" x="20" y="21" font-size="11" fill="#E2E8F0">GLSL_VIEWPORT // RAYMARCHING ENGINE</text>
+      <text class="p4-mono" x="370" y="21" text-anchor="end" font-size="10" fill="#10B981">● 60 FPS</text>
 
-      <!-- 3D Car Wireframe Silhouette -->
-      <g transform="translate(45, 60)">
-        <ellipse cx="150" cy="80" rx="140" ry="25" fill="none" stroke="#1E3A8A" stroke-dasharray="4 6"/>
-        <ellipse cx="150" cy="80" rx="110" ry="18" fill="none" stroke="#38BDF8" stroke-opacity=".3"/>
+      <!-- 3D Car Wireframe Grid Representation -->
+      <g transform="translate(20, 52)">
+        <rect width="350" height="114" rx="6" fill="#060810" stroke="#1E2336" stroke-opacity=".6"/>
+        <!-- Perspective Grid -->
+        <line x1="20" y1="90" x2="330" y2="90" stroke="#1E2336"/>
+        <line x1="40" y1="104" x2="310" y2="104" stroke="#1E2336"/>
+        <line x1="175" y1="20" x2="50" y2="114" stroke="#1E2336" stroke-opacity=".4"/>
+        <line x1="175" y1="20" x2="300" y2="114" stroke="#1E2336" stroke-opacity=".4"/>
 
-        <!-- Streamlined Vehicle Silhouette -->
-        <path d="M 20 80 Q 45 40, 95 38 Q 145 20, 205 28 Q 260 38, 280 80 Z" fill="#071536" stroke="#38BDF8" stroke-width="1.8" filter="url(#p4-glowf)"/>
-        <!-- Cockpit Glass -->
-        <path d="M 95 38 Q 135 24, 185 28 Q 215 36, 225 48 L 85 48 Z" fill="#38BDF8" fill-opacity=".25" stroke="#60A5FA"/>
-        <!-- Wheel Wells -->
-        <circle cx="70" cy="80" r="16" fill="#030712" stroke="#38BDF8" stroke-width="1.5"/>
-        <circle cx="230" cy="80" r="16" fill="#030712" stroke="#38BDF8" stroke-width="1.5"/>
-
-        <!-- Orbiting Camera Marker -->
-        <circle cx="270" cy="65" r="4.5" fill="#38BDF8" filter="url(#p4-glowf)">
-          <animate attributeName="cx" values="270;30;270" dur="6s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
-        </circle>
+        <!-- Car Silhouette Path -->
+        <path d="M 60 82 C 90 82, 110 56, 150 54 C 180 52, 220 54, 250 64 C 275 72, 290 82, 305 82 L 310 90 L 50 90 Z" fill="#151A2B" stroke="#6366F1" stroke-width="1.8"/>
+        <!-- Wheels -->
+        <circle cx="100" cy="88" r="14" fill="#0D101A" stroke="#38BDF8" stroke-width="2"/>
+        <circle cx="265" cy="88" r="14" fill="#0D101A" stroke="#38BDF8" stroke-width="2"/>
+        <!-- Headlight Beam -->
+        <polygon points="310,80 345,70 345,95 310,88" fill="#38BDF8" fill-opacity=".25"/>
       </g>
 
-      <!-- Shaders HUD Details -->
-      <g transform="translate(24, 174)">
-        <rect width="342" height="46" rx="8" fill="#0B1A3D" stroke="#0066FF" stroke-width="1.2"/>
-        <text class="p4-mono" x="16" y="20" font-size="10.5" fill="#F0F9FF">CLEAR-COAT GLSL RAYMARCHING</text>
-        <text class="p4-mono" x="16" y="36" font-size="9.5" fill="#38BDF8">Metallic Flake: 0.85 · Roughness: 0.12 · Draco Compressed</text>
+      <!-- Shader Stats -->
+      <g transform="translate(20, 180)">
+        <rect width="350" height="38" rx="6" fill="#121624" stroke="#1E2336"/>
+        <text class="p4-mono" x="14" y="16" font-size="9" fill="#94A3B8">METALLIC_CLEARCOAT.FRAG // COMPILED</text>
+        <text class="p4-mono" x="14" y="29" font-size="8.5" fill="#34D399">Roughness: 0.12 · Transmission: 0.94 · IOR: 1.52 · Samples: 64</text>
       </g>
     </g>
 
     <!-- Animated Border Tracing -->
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
     <rect class="p4-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#p4-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>

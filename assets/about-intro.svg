@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="About Muhammad Mubashar">
   <defs>
     <linearGradient id="ai-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/>
-      <stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/>
+      <stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <pattern id="ai-grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 H 0 V 24" fill="none" stroke="#1E3A8A" stroke-opacity=".18"/>
+      <path d="M 24 0 H 0 V 24" fill="none" stroke="#1E2336" stroke-opacity=".15"/>
     </pattern>
     <radialGradient id="ai-glow" cx="15%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0066FF" stop-opacity=".22"/>
-      <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#6366F1" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <style>
@@ -24,10 +24,10 @@
 
   <g transform="translate(56, 44)">
     <!-- Header Monospace -->
-    <text class="ai-mono" font-size="11.5" letter-spacing="2.5" fill="#38BDF8">DISCIPLINE BUILDS FREEDOM  //  ZERO FRICTION  //  SURVIVAL BEFORE ABSTRACTION</text>
+    <text class="ai-mono" font-size="11.5" letter-spacing="2.5" fill="#A855F7">DISCIPLINE BUILDS FREEDOM  //  ZERO FRICTION  //  SURVIVAL BEFORE ABSTRACTION</text>
 
     <!-- Main Editorial Bio -->
-    <text class="ai-sans" y="44" font-size="18" fill="#F0F9FF" font-weight="300" line-height="1.6">
+    <text class="ai-sans" y="44" font-size="18" fill="#F8FAFC" font-weight="300" line-height="1.6">
       <tspan x="0" dy="0">I am an AI Systems Architect &amp; Full-Stack Engineer based in Lahore, Pakistan, focused on building enduring,</tspan>
       <tspan x="0" dy="30">high-velocity software. My work lives at the intersection of autonomous multi-agent intelligence, resilient</tspan>
       <tspan x="0" dy="30">distributed microservices, and immersive 3D computing.</tspan>
@@ -35,31 +35,31 @@
 
     <!-- Ethos Quote Box -->
     <g transform="translate(0, 126)">
-      <rect width="1088" height="54" rx="8" fill="#071126" stroke="#0066FF" stroke-opacity=".35"/>
-      <line x1="0" y1="0" x2="0" y2="54" stroke="#38BDF8" stroke-width="4"/>
-      <text class="ai-serif" x="24" y="33" font-size="16" font-style="italic" fill="#E0F2FE">"Survival before abstraction. Precision before shortcuts. Zero-friction execution. AI as the ultimate force multiplier."</text>
+      <rect width="1088" height="54" rx="8" fill="#0D101C" stroke="#6366F1" stroke-opacity=".3"/>
+      <line x1="0" y1="0" x2="0" y2="54" stroke="#A855F7" stroke-width="4"/>
+      <text class="ai-serif" x="24" y="33" font-size="16" font-style="italic" fill="#E2E8F0">"Survival before abstraction. Precision before shortcuts. Zero-friction execution. AI as the ultimate force multiplier."</text>
     </g>
 
     <!-- Three Technical Pillars -->
     <g transform="translate(0, 206)" class="ai-mono" font-size="11.5" fill="#94A3B8">
       <g transform="translate(0, 0)">
-        <circle cx="5" cy="4" r="3.5" fill="#38BDF8"/>
-        <text x="16" y="8" fill="#F0F9FF" font-weight="700">AUTONOMOUS AI</text>
+        <circle cx="5" cy="4" r="3.5" fill="#A855F7"/>
+        <text x="16" y="8" fill="#F8FAFC" font-weight="700">AUTONOMOUS AI</text>
         <text x="16" y="24" fill="#64748B">LLM pipelines · Vision OCR · Whisper STT · Live referees</text>
       </g>
       <g transform="translate(370, 0)">
-        <circle cx="5" cy="4" r="3.5" fill="#38BDF8"/>
-        <text x="16" y="8" fill="#F0F9FF" font-weight="700">SYSTEMS &amp; BACKENDS</text>
+        <circle cx="5" cy="4" r="3.5" fill="#6366F1"/>
+        <text x="16" y="8" fill="#F8FAFC" font-weight="700">SYSTEMS &amp; BACKENDS</text>
         <text x="16" y="24" fill="#64748B">FastAPI · Node.js · PostgreSQL · Redis · Docker · Rust</text>
       </g>
       <g transform="translate(740, 0)">
         <circle cx="5" cy="4" r="3.5" fill="#38BDF8"/>
-        <text x="16" y="8" fill="#F0F9FF" font-weight="700">EXPERIENTIAL 3D &amp; WEB</text>
+        <text x="16" y="8" fill="#F8FAFC" font-weight="700">EXPERIENTIAL 3D &amp; WEB</text>
         <text x="16" y="24" fill="#64748B">Next.js 15 · Three.js · GLSL Shaders · Framer Motion</text>
       </g>
     </g>
   </g>
 
   <!-- Card Border -->
-  <rect x=".5" y=".5" width="1199" height="299" rx="15.5" fill="none" stroke="#38BDF8" stroke-opacity=".22"/>
+  <rect x=".5" y=".5" width="1199" height="299" rx="15.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
 </svg>

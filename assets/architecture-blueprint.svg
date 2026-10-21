@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="System Architecture Blueprint">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="System Architecture Blueprint">
   <defs>
     <linearGradient id="ab-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/><stop offset="100%" stop-color="#040508"/>
     </linearGradient>
-    <radialGradient id="ab-glow" cx="50%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0066FF" stop-opacity=".2"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+    <radialGradient id="ab-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".2"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
     <pattern id="ab-grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 H 0 V 30" fill="none" stroke="#1E3A8A" stroke-opacity=".15"/>
+      <path d="M 30 0 H 0 V 30" fill="none" stroke="#1E2336" stroke-opacity=".15"/>
     </pattern>
-    <filter id="ab-glowf" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="ab-glowf">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
@@ -17,118 +17,164 @@
     .ab-serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
     .ab-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
     .ab-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .ab-pulse { animation: ab-pulse 3s ease-in-out infinite alternate; }
+    @keyframes ab-pulse { from { opacity: .4; } to { opacity: 1; } }
   </style>
 
-  <rect width="1200" height="360" rx="16" fill="url(#ab-bg)"/>
-  <rect width="1200" height="360" rx="16" fill="url(#ab-grid)"/>
-  <rect width="1200" height="360" rx="16" fill="url(#ab-glow)"/>
+  <rect width="1200" height="500" rx="16" fill="url(#ab-bg)"/>
+  <rect width="1200" height="500" rx="16" fill="url(#ab-grid)"/>
+  <rect width="1200" height="500" rx="16" fill="url(#ab-glow)"/>
 
-  <!-- Multi-Tier Pipeline Architecture -->
-  <g transform="translate(48, 45)">
-    <!-- Node 1: Client Surface -->
-    <g transform="translate(0, 40)">
-      <rect width="180" height="190" rx="10" fill="#071228" stroke="#1E3A8A" stroke-width="1.2"/>
-      <rect width="180" height="30" rx="10" fill="#0A1838"/>
-      <text class="ab-mono" x="14" y="20" font-size="11" fill="#38BDF8">01 // CLIENT TIER</text>
-      <g transform="translate(14, 52)" class="ab-mono" font-size="11" fill="#E0F2FE">
-        <text y="0">Next.js 15 Web</text>
-        <text y="24">React Single Page</text>
-        <text y="48">Tauri Windows HUD</text>
-        <text y="72">Three.js 3D Viewport</text>
-        <text y="96">Canvas 2D Engine</text>
+  <!-- Architecture Header Strip -->
+  <g transform="translate(56, 36)">
+    <text class="ab-mono" font-size="11.5" letter-spacing="2.5" fill="#A855F7">END-TO-END RESILIENT PIPELINE // MULTI-TIER ARCHITECTURE BLUEPRINT</text>
+  </g>
+
+  <!-- Multi-Tier Architecture Blocks -->
+  <g transform="translate(56, 75)">
+    <!-- Tier 1: Client Ingress -->
+    <g transform="translate(0, 0)">
+      <rect width="190" height="350" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="190" y2="0" stroke="#A855F7" stroke-width="2.5"/>
+      <text class="ab-mono" x="18" y="28" font-size="11" letter-spacing="1.5" fill="#A855F7">01 // CLIENT TIER</text>
+      <text class="ab-serif" x="18" y="54" font-size="18" fill="#F8FAFC">Touchpoints</text>
+
+      <g transform="translate(16, 75)">
+        <rect width="158" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">Web SPA / PWA</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">React 19 · Next.js 15</text>
+      </g>
+      <g transform="translate(16, 138)">
+        <rect width="158" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">Desktop AI</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">Tauri Rust · Stealth HUD</text>
+      </g>
+      <g transform="translate(16, 201)">
+        <rect width="158" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">On-Device Android</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">Compose · CameraX · Room</text>
+      </g>
+      <g transform="translate(16, 264)">
+        <rect width="158" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">3D WebGL Canvas</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">Three.js · GLSL Raymarching</text>
       </g>
     </g>
 
-    <!-- Bus 1 -> 2 -->
-    <line x1="180" y1="135" x2="250" y2="135" stroke="#38BDF8" stroke-width="2" filter="url(#ab-glowf)"/>
-    <circle cx="215" cy="135" r="3.5" fill="#F0F9FF">
-      <animate attributeName="cx" values="180;250" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <!-- Conduit 1 -> 2 -->
+    <path d="M 190 175 H 225" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 4"/>
 
-    <!-- Node 2: Gateway & Edge -->
-    <g transform="translate(250, 40)">
-      <rect width="180" height="190" rx="10" fill="#071228" stroke="#0066FF" stroke-width="1.2"/>
-      <rect width="180" height="30" rx="10" fill="#0A1838"/>
-      <text class="ab-mono" x="14" y="20" font-size="11" fill="#38BDF8">02 // EDGE ROUTER</text>
-      <g transform="translate(14, 52)" class="ab-mono" font-size="11" fill="#E0F2FE">
-        <text y="0">Global CDN / Edge</text>
-        <text y="24">Rate Limiting Guard</text>
-        <text y="48">JWT Authentication</text>
-        <text y="72">WebSocket Gateway</text>
-        <text y="96">CORS &amp; SSL Proxy</text>
+    <!-- Tier 2: Edge & Ingress -->
+    <g transform="translate(225, 0)">
+      <rect width="180" height="350" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="180" y2="0" stroke="#8B5CF6" stroke-width="2.5"/>
+      <text class="ab-mono" x="18" y="28" font-size="11" letter-spacing="1.5" fill="#8B5CF6">02 // EDGE GATEWAY</text>
+      <text class="ab-serif" x="18" y="54" font-size="18" fill="#F8FAFC">Routing &amp; Auth</text>
+
+      <g transform="translate(16, 85)">
+        <rect width="148" height="65" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="22" font-size="10" fill="#E2E8F0">Vercel Edge Proxy</text>
+        <text class="ab-mono" x="12" y="40" font-size="8.5" fill="#94A3B8">SSL · Geo-DNS · WAF</text>
+      </g>
+      <g transform="translate(16, 175)">
+        <rect width="148" height="65" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="22" font-size="10" fill="#E2E8F0">JWT &amp; Rate Limits</text>
+        <text class="ab-mono" x="12" y="40" font-size="8.5" fill="#94A3B8">Redis Sliding Window</text>
       </g>
     </g>
 
-    <!-- Bus 2 -> 3 -->
-    <line x1="430" y1="135" x2="500" y2="135" stroke="#38BDF8" stroke-width="2" filter="url(#ab-glowf)"/>
-    <circle cx="465" cy="135" r="3.5" fill="#F0F9FF">
-      <animate attributeName="cx" values="430;500" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <!-- Conduit 2 -> 3 -->
+    <path d="M 405 175 H 440" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 4"/>
 
-    <!-- Node 3: AI Inference Core -->
-    <g transform="translate(500, 20)">
-      <rect width="210" height="230" rx="10" fill="#0B1A3D" stroke="#38BDF8" stroke-width="1.8"/>
-      <rect width="210" height="34" rx="10" fill="#0F2454"/>
-      <text class="ab-mono" x="14" y="22" font-size="11.5" font-weight="700" fill="#F0F9FF">03 // AI INFERENCE CORE</text>
-      <g transform="translate(14, 56)" class="ab-mono" font-size="11" fill="#E0F2FE">
-        <text y="0" fill="#38BDF8">★ Autonomous Referee</text>
-        <text y="24">LLM Reasoning Chains</text>
-        <text y="48">Vision OCR Pipeline</text>
-        <text y="72">Whisper Audio Stream</text>
-        <text y="96">Algorithmic Verification</text>
-        <text y="120">Async FastAPI Workers</text>
-        <text y="144" fill="#34D399">&lt;80ms Low Latency</text>
+    <!-- Tier 3: Autonomous AI Inference Engine -->
+    <g transform="translate(440, 0)">
+      <rect width="210" height="350" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="210" y2="0" stroke="#38BDF8" stroke-width="2.5"/>
+      <text class="ab-mono" x="18" y="28" font-size="11" letter-spacing="1.5" fill="#38BDF8">03 // AI INFERENCE</text>
+      <text class="ab-serif" x="18" y="54" font-size="18" fill="#F8FAFC">Autonomous Core</text>
+
+      <g transform="translate(16, 75)">
+        <rect width="178" height="50" rx="6" fill="#121624" stroke="#A855F7" stroke-width="1.2"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#A855F7">IBM Bob 2.0 SDLC</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#E2E8F0">7-State Auto Engineer</text>
+      </g>
+      <g transform="translate(16, 138)">
+        <rect width="178" height="50" rx="6" fill="#121624" stroke="#38BDF8" stroke-width="1.2"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#38BDF8">ExecuTorch Llama 3.2</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#E2E8F0">On-Device Air-Gap SLM</text>
+      </g>
+      <g transform="translate(16, 201)">
+        <rect width="178" height="50" rx="6" fill="#121624" stroke="#6366F1" stroke-width="1.2"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#6366F1">Groq LLM LPU</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#E2E8F0">Sub-300ms AST Review</text>
+      </g>
+      <g transform="translate(16, 264)">
+        <rect width="178" height="50" rx="6" fill="#121624" stroke="#10B981" stroke-width="1.2"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#10B981">AI Referee Arena</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#E2E8F0">Sub-80ms Code Judging</text>
       </g>
     </g>
 
-    <!-- Bus 3 -> 4 -->
-    <line x1="710" y1="135" x2="780" y2="135" stroke="#38BDF8" stroke-width="2" filter="url(#ab-glowf)"/>
-    <circle cx="745" cy="135" r="3.5" fill="#F0F9FF">
-      <animate attributeName="cx" values="710;780" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <!-- Conduit 3 -> 4 -->
+    <path d="M 650 175 H 685" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4"/>
 
-    <!-- Node 4: Services & Cache -->
-    <g transform="translate(780, 40)">
-      <rect width="180" height="190" rx="10" fill="#071228" stroke="#0066FF" stroke-width="1.2"/>
-      <rect width="180" height="30" rx="10" fill="#0A1838"/>
-      <text class="ab-mono" x="14" y="20" font-size="11" fill="#38BDF8">04 // MICROSERVICES</text>
-      <g transform="translate(14, 52)" class="ab-mono" font-size="11" fill="#E0F2FE">
-        <text y="0">Redis Pub/Sub Bus</text>
-        <text y="24">Job Task Queue</text>
-        <text y="48">FFmpeg In-Memory</text>
-        <text y="72">Docker Container</text>
-        <text y="96">Health Checks</text>
+    <!-- Tier 4: Microservices & Real-Time Mesh -->
+    <g transform="translate(685, 0)">
+      <rect width="200" height="350" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="200" y2="0" stroke="#6366F1" stroke-width="2.5"/>
+      <text class="ab-mono" x="18" y="28" font-size="11" letter-spacing="1.5" fill="#6366F1">04 // MICROSERVICES</text>
+      <text class="ab-serif" x="18" y="54" font-size="18" fill="#F8FAFC">Real-Time Mesh</text>
+
+      <g transform="translate(16, 75)">
+        <rect width="168" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">FastAPI Async Core</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">Pydantic v2 · Uvicorn</text>
+      </g>
+      <g transform="translate(16, 138)">
+        <rect width="168" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">WebSockets Delta</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">&lt; 10ms Multi-Cursor Sync</text>
+      </g>
+      <g transform="translate(16, 201)">
+        <rect width="168" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">WebRTC Voice Mesh</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">Peer-to-Peer 48kHz Audio</text>
+      </g>
+      <g transform="translate(16, 264)">
+        <rect width="168" height="50" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="20" font-size="10" fill="#E2E8F0">Celery Task Queue</text>
+        <text class="ab-mono" x="12" y="36" font-size="8.5" fill="#94A3B8">Async Job Workers</text>
       </g>
     </g>
 
-    <!-- Bus 4 -> 5 -->
-    <line x1="960" y1="135" x2="1010" y2="135" stroke="#38BDF8" stroke-width="2" filter="url(#ab-glowf)"/>
-    <circle cx="985" cy="135" r="3.5" fill="#F0F9FF">
-      <animate attributeName="cx" values="960;1010" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <!-- Conduit 4 -> 5 -->
+    <path d="M 885 175 H 920" stroke="#6366F1" stroke-width="2" stroke-dasharray="4 4"/>
 
-    <!-- Node 5: Storage Layer -->
-    <g transform="translate(1010, 40)">
-      <rect width="94" height="190" rx="10" fill="#071228" stroke="#1E3A8A" stroke-width="1.2"/>
-      <rect width="94" height="30" rx="10" fill="#0A1838"/>
-      <text class="ab-mono" x="8" y="20" font-size="10.5" fill="#38BDF8">05 // DATA</text>
-      <g transform="translate(10, 52)" class="ab-mono" font-size="10.5" fill="#E0F2FE">
-        <text y="0">Postgres</text>
-        <text y="24">Redis</text>
-        <text y="48">Vectors</text>
-        <text y="72">S3 Media</text>
-        <text y="96">Git Log</text>
+    <!-- Tier 5: Persistence & Edge State -->
+    <g transform="translate(920, 0)">
+      <rect width="168" height="350" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="168" y2="0" stroke="#10B981" stroke-width="2.5"/>
+      <text class="ab-mono" x="18" y="28" font-size="11" letter-spacing="1.5" fill="#34D399">05 // PERSISTENCE</text>
+      <text class="ab-serif" x="18" y="54" font-size="18" fill="#F8FAFC">Data Stores</text>
+
+      <g transform="translate(14, 85)">
+        <rect width="140" height="65" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="22" font-size="10" fill="#E2E8F0">PostgreSQL</text>
+        <text class="ab-mono" x="12" y="40" font-size="8.5" fill="#94A3B8">ACID · Relational</text>
+      </g>
+      <g transform="translate(14, 175)">
+        <rect width="140" height="65" rx="6" fill="#151A2B" stroke="#252B42"/>
+        <text class="ab-mono" x="12" y="22" font-size="10" fill="#E2E8F0">Redis In-Memory</text>
+        <text class="ab-mono" x="12" y="40" font-size="8.5" fill="#94A3B8">Pub/Sub · Caching</text>
       </g>
     </g>
   </g>
 
-  <!-- Bottom Legend -->
-  <g transform="translate(56, 318)" class="ab-mono" font-size="11" fill="#94A3B8">
-    <circle cx="6" cy="4" r="3.5" fill="#38BDF8"/>
-    <text x="18" y="8" fill="#F0F9FF">HIGH-THROUGHPUT PIPELINE</text>
-    <text x="210" y="8" fill="#64748B">Zero bottleneck design · Strict state isolation · End-to-end type safety</text>
-  </g>
+  <!-- Animated Data Packet -->
+  <circle r="4" fill="#38BDF8" filter="url(#ab-glowf)">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M 246 250 H 1108"/>
+  </circle>
 
   <!-- Border -->
-  <rect x=".5" y=".5" width="1199" height="359" rx="15.5" fill="none" stroke="#38BDF8" stroke-opacity=".22"/>
+  <rect x=".5" y=".5" width="1199" height="499" rx="15.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
 </svg>

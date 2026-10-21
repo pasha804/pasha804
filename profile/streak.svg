@@ -2,23 +2,24 @@
   
   <defs>
     <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712" />
-      <stop offset="50%" stop-color="#070E1E" />
-      <stop offset="100%" stop-color="#02050E" />
+      <stop offset="0%" stop-color="#06070B" />
+      <stop offset="50%" stop-color="#0B0D15" />
+      <stop offset="100%" stop-color="#040508" />
     </linearGradient>
     <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0066FF" />
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#0066FF" stop-opacity="0.5" />
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#2E3650" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.5" />
     </linearGradient>
     <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#0066FF" />
-      <stop offset="100%" stop-color="#818CF8" />
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
     <filter id="glow-sm" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="2" result="blur" />
@@ -41,8 +42,8 @@
 
   <!-- Top bar with Wanted Stars -->
   <g transform="translate(24, 18)">
-    <rect width="6" height="18" fill="#EF4444" rx="2" />
-    <text x="16" y="14" fill="#F0F9FF" class="gta-title" font-size="14" font-weight="800">LSPD WANTED STATUS // ACTIVE HEIST STREAK</text>
+    <rect width="6" height="18" fill="#F43F5E" rx="2" />
+    <text x="16" y="14" fill="#F8FAFC" class="gta-title" font-size="14" font-weight="800">LSPD WANTED STATUS // ACTIVE HEIST STREAK</text>
     <g transform="translate(710, -3)">
       
         <g transform="translate(0, 0)" class="pulse">
@@ -67,29 +68,29 @@
         </g>
     </g>
   </g>
-  <line x1="24" y1="42" x2="896" y2="42" stroke="#1E3A8A" stroke-width="1" />
+  <line x1="24" y1="42" x2="896" y2="42" stroke="#1F2436" stroke-width="1" />
 
   <g transform="translate(24, 52)">
     
     <g transform="translate(0, 0)">
-      <rect width="272" height="96" rx="8" fill="#071228" stroke="#1E3A8A" stroke-width="1" />
-      <rect width="272" height="3" rx="1.5" fill="#EF4444" />
+      <rect width="272" height="96" rx="8" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
+      <rect width="272" height="3" rx="1.5" fill="#F43F5E" />
       <text x="16" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">WANTED LEVEL</text>
       <text x="16" y="58" fill="#EF4444" class="gta-mission" font-size="24" font-weight="900">1-STAR PRIORITY</text>
       <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">2 DAYS CONSECUTIVE</text>
     </g>
     <g transform="translate(296, 0)">
-      <rect width="272" height="96" rx="8" fill="#071228" stroke="#1E3A8A" stroke-width="1" />
+      <rect width="272" height="96" rx="8" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
       <rect width="272" height="3" rx="1.5" fill="#38BDF8" />
       <text x="16" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">TOTAL MISSIONS</text>
       <text x="16" y="58" fill="#38BDF8" class="gta-mission" font-size="24" font-weight="900">290</text>
       <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">VERIFIED PASSED</text>
     </g>
     <g transform="translate(592, 0)">
-      <rect width="272" height="96" rx="8" fill="#071228" stroke="#1E3A8A" stroke-width="1" />
-      <rect width="272" height="3" rx="1.5" fill="#38BDF8" />
+      <rect width="272" height="96" rx="8" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
+      <rect width="272" height="3" rx="1.5" fill="#FBBF24" />
       <text x="16" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">MAX EVASION</text>
-      <text x="16" y="58" fill="#38BDF8" class="gta-mission" font-size="24" font-weight="900">4 DAYS</text>
+      <text x="16" y="58" fill="#FBBF24" class="gta-mission" font-size="24" font-weight="900">4 DAYS</text>
       <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">LONGEST STREAK</text>
     </g>
   </g>

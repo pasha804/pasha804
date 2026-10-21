@@ -2,23 +2,24 @@
   
   <defs>
     <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712" />
-      <stop offset="50%" stop-color="#070E1E" />
-      <stop offset="100%" stop-color="#02050E" />
+      <stop offset="0%" stop-color="#06070B" />
+      <stop offset="50%" stop-color="#0B0D15" />
+      <stop offset="100%" stop-color="#040508" />
     </linearGradient>
     <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#0066FF" />
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
     <linearGradient id="border-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#0066FF" stop-opacity="0.5" />
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#2E3650" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.5" />
     </linearGradient>
     <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#0066FF" />
-      <stop offset="100%" stop-color="#818CF8" />
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
     <filter id="glow-sm" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="2" result="blur" />

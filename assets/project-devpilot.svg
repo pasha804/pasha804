@@ -2,20 +2,20 @@
   <title id="pdp-t">Pasha DevPilot: Autonomous AI Software Engineer built for IBM Bob 2.0 Hackathon</title>
   <defs>
     <linearGradient id="pdp-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/><stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <radialGradient id="pdp-glow" cx="80%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0066FF" stop-opacity=".3"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".25"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
     <pattern id="pdp-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#1E2336" stroke-opacity=".12"/>
     </pattern>
     <filter id="pdp-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="pdp-clip"><rect width="1200" height="370" rx="18"/></clipPath>
     <linearGradient id="pdp-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#A855F7"/><stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
@@ -38,19 +38,19 @@
 
     <!-- Left Details -->
     <g class="pdp-in" transform="translate(56, 48)">
-      <text class="pdp-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">🏆 HACKATHON FLAGSHIP · AUTONOMOUS SDLC · 2026</text>
-      <text class="pdp-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">Pasha DevPilot</text>
+      <text class="pdp-mono" font-size="12" letter-spacing="2.6" fill="#A855F7">🏆 HACKATHON FLAGSHIP · AUTONOMOUS SDLC · 2026</text>
+      <text class="pdp-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F8FAFC">Pasha DevPilot</text>
       <text class="pdp-sans" y="94" font-size="16.5" fill="#94A3B8">Your autonomous AI software engineer — Understand, Plan, Build, Verify, Ship.</text>
-      <text class="pdp-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> 7-state automated SDLC pipeline, AST defect scanner, pytest auto-healing, IBM Bob 2.0</text>
-      <line class="pdp-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+      <text class="pdp-mono" y="126" font-size="12" fill="#E2E8F0"><tspan fill="#A855F7">BUILT ›</tspan> 7-state automated SDLC pipeline, AST defect scanner, pytest auto-healing, IBM Bob 2.0</text>
+      <line class="pdp-draw" x1="0" y1="148" x2="620" y2="148" stroke="#8B5CF6" stroke-opacity=".35"/>
 
       <!-- Metrics -->
       <g transform="translate(0, 186)">
-        <text class="pdp-serif" font-size="32" font-weight="300" fill="#F0F9FF">7 States</text>
+        <text class="pdp-serif" font-size="32" font-weight="300" fill="#F8FAFC">7 States</text>
         <text class="pdp-sans" y="22" font-size="12" fill="#94A3B8">Autonomous Pipeline</text>
       </g>
       <g transform="translate(200, 186)">
-        <text class="pdp-serif" font-size="32" font-weight="300" fill="#F0F9FF">11/11</text>
+        <text class="pdp-serif" font-size="32" font-weight="300" fill="#F8FAFC">11/11</text>
         <text class="pdp-sans" y="22" font-size="12" fill="#94A3B8">Pytest Auto-Healed</text>
       </g>
       <g transform="translate(400, 186)">
@@ -60,47 +60,47 @@
 
       <!-- Tech Stack Chips -->
       <g transform="translate(0, 246)">
-        <g transform="translate(0, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="pdp-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Next.js 15</text></g>
-        <g transform="translate(98, 0)"><rect width="70" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="pdp-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">FastAPI</text></g>
-        <g transform="translate(176, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="pdp-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">IBM Bob 2.0</text></g>
-        <g transform="translate(274, 0)"><rect width="80" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="pdp-mono" x="40" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Python</text></g>
-        <g transform="translate(362, 0)"><rect width="68" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="pdp-mono" x="34" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Docker</text></g>
-        <g transform="translate(438, 0)"><rect width="74" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="pdp-mono" x="37" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Railway</text></g>
+        <g transform="translate(0, 0)"><rect width="90" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="pdp-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">Next.js 15</text></g>
+        <g transform="translate(98, 0)"><rect width="70" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="pdp-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">FastAPI</text></g>
+        <g transform="translate(176, 0)"><rect width="90" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="pdp-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">IBM Bob 2.0</text></g>
+        <g transform="translate(274, 0)"><rect width="80" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="pdp-mono" x="40" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">Python</text></g>
+        <g transform="translate(362, 0)"><rect width="68" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="pdp-mono" x="34" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">Docker</text></g>
+        <g transform="translate(438, 0)"><rect width="74" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="pdp-mono" x="37" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">Railway</text></g>
       </g>
     </g>
 
     <!-- Right Graphic Illustration: 7-State SDLC Autonomous Agent Pipeline -->
     <g transform="translate(740, 60)" class="pdp-in">
-      <rect width="390" height="240" rx="12" fill="#071228" stroke="#1E3A8A" stroke-opacity=".6"/>
-      <rect width="390" height="34" rx="12" fill="#0A1838"/>
-      <text class="pdp-mono" x="20" y="21" font-size="11" fill="#E0F2FE">AUTONOMOUS SDLC // 7-STATE ENGINE</text>
+      <rect width="390" height="240" rx="12" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <rect width="390" height="34" rx="12" fill="#121624"/>
+      <text class="pdp-mono" x="20" y="21" font-size="11" fill="#E2E8F0">AUTONOMOUS SDLC // 7-STATE ENGINE</text>
       <text class="pdp-mono" x="370" y="21" text-anchor="end" font-size="10" fill="#10B981">● SHIPPED</text>
 
       <!-- Pipeline Steps Row 1 -->
       <g transform="translate(20, 52)">
         <g transform="translate(0, 0)">
-          <rect width="76" height="50" rx="6" fill="#0B1A3D" stroke="#38BDF8" stroke-width="1.2"/>
+          <rect width="76" height="50" rx="6" fill="#151A2B" stroke="#38BDF8" stroke-width="1.2"/>
           <text class="pdp-mono" x="38" y="22" text-anchor="middle" font-size="10" fill="#38BDF8">01 SCAN</text>
           <text class="pdp-mono" x="38" y="38" text-anchor="middle" font-size="8.5" fill="#94A3B8">AST Tree</text>
         </g>
         <line x1="76" y1="25" x2="92" y2="25" stroke="#38BDF8" stroke-width="1.5"/>
 
         <g transform="translate(92, 0)">
-          <rect width="76" height="50" rx="6" fill="#0B1A3D" stroke="#0066FF" stroke-width="1.2"/>
-          <text class="pdp-mono" x="38" y="22" text-anchor="middle" font-size="10" fill="#E0F2FE">02 REASON</text>
-          <text class="pdp-mono" x="38" y="38" text-anchor="middle" font-size="8.5" fill="#38BDF8">IBM Bob</text>
+          <rect width="76" height="50" rx="6" fill="#151A2B" stroke="#8B5CF6" stroke-width="1.2"/>
+          <text class="pdp-mono" x="38" y="22" text-anchor="middle" font-size="10" fill="#E2E8F0">02 REASON</text>
+          <text class="pdp-mono" x="38" y="38" text-anchor="middle" font-size="8.5" fill="#A855F7">IBM Bob</text>
         </g>
-        <line x1="168" y1="25" x2="184" y2="25" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="168" y1="25" x2="184" y2="25" stroke="#8B5CF6" stroke-width="1.5"/>
 
         <g transform="translate(184, 0)">
-          <rect width="76" height="50" rx="6" fill="#0B1A3D" stroke="#0066FF" stroke-width="1.2"/>
-          <text class="pdp-mono" x="38" y="22" text-anchor="middle" font-size="10" fill="#E0F2FE">03 PLAN</text>
+          <rect width="76" height="50" rx="6" fill="#151A2B" stroke="#6366F1" stroke-width="1.2"/>
+          <text class="pdp-mono" x="38" y="22" text-anchor="middle" font-size="10" fill="#E2E8F0">03 PLAN</text>
           <text class="pdp-mono" x="38" y="38" text-anchor="middle" font-size="8.5" fill="#94A3B8">Patch Graph</text>
         </g>
-        <line x1="260" y1="25" x2="276" y2="25" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="260" y1="25" x2="276" y2="25" stroke="#6366F1" stroke-width="1.5"/>
 
         <g transform="translate(276, 0)">
-          <rect width="74" height="50" rx="6" fill="#0B1A3D" stroke="#10B981" stroke-width="1.2"/>
+          <rect width="74" height="50" rx="6" fill="#151A2B" stroke="#10B981" stroke-width="1.2"/>
           <text class="pdp-mono" x="37" y="22" text-anchor="middle" font-size="10" fill="#10B981">04 BUILD</text>
           <text class="pdp-mono" x="37" y="38" text-anchor="middle" font-size="8.5" fill="#34D399">Auto-Code</text>
         </g>
@@ -109,36 +109,36 @@
       <!-- Pipeline Steps Row 2 -->
       <g transform="translate(20, 114)">
         <g transform="translate(0, 0)">
-          <rect width="108" height="46" rx="6" fill="#0B1A3D" stroke="#38BDF8" stroke-width="1.2"/>
-          <text class="pdp-mono" x="54" y="20" text-anchor="middle" font-size="10" fill="#38BDF8">05 SANDBOX</text>
-          <text class="pdp-mono" x="54" y="35" text-anchor="middle" font-size="8.5" fill="#94A3B8">Isolated Exec</text>
+          <rect width="90" height="42" rx="6" fill="#151A2B" stroke="#1E2336"/>
+          <text class="pdp-mono" x="45" y="19" text-anchor="middle" font-size="9.5" fill="#94A3B8">05 SANDBOX</text>
+          <text class="pdp-mono" x="45" y="32" text-anchor="middle" font-size="8" fill="#64748B">Isolated Exec</text>
         </g>
-        <line x1="108" y1="23" x2="124" y2="23" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="90" y1="21" x2="104" y2="21" stroke="#252B42" stroke-width="1.5"/>
 
-        <g transform="translate(124, 0)">
-          <rect width="112" height="46" rx="6" fill="#0B1A3D" stroke="#10B981" stroke-width="1.2"/>
-          <text class="pdp-mono" x="56" y="20" text-anchor="middle" font-size="10" fill="#10B981">06 VERIFY</text>
-          <text class="pdp-mono" x="56" y="35" text-anchor="middle" font-size="8.5" fill="#34D399">11/11 Passed</text>
+        <g transform="translate(104, 0)">
+          <rect width="94" height="42" rx="6" fill="#151A2B" stroke="#10B981" stroke-width="1.2"/>
+          <text class="pdp-mono" x="47" y="19" text-anchor="middle" font-size="9.5" fill="#10B981">06 VERIFY</text>
+          <text class="pdp-mono" x="47" y="32" text-anchor="middle" font-size="8" fill="#34D399">11/11 Passed</text>
         </g>
-        <line x1="236" y1="23" x2="252" y2="23" stroke="#38BDF8" stroke-width="1.5"/>
+        <line x1="198" y1="21" x2="212" y2="21" stroke="#10B981" stroke-width="1.5"/>
 
-        <g transform="translate(252, 0)">
-          <rect width="98" height="46" rx="6" fill="#0B1A3D" stroke="#34D399" stroke-width="1.5"/>
-          <text class="pdp-mono" x="49" y="20" text-anchor="middle" font-size="10" fill="#34D399">07 SHIP</text>
-          <text class="pdp-mono" x="49" y="35" text-anchor="middle" font-size="8.5" fill="#E0F2FE">1-Click Push</text>
+        <g transform="translate(212, 0)">
+          <rect width="138" height="42" rx="6" fill="#151A2B" stroke="#A855F7" stroke-width="1.2"/>
+          <text class="pdp-mono" x="69" y="19" text-anchor="middle" font-size="9.5" fill="#A855F7">07 SHIP</text>
+          <text class="pdp-mono" x="69" y="32" text-anchor="middle" font-size="8" fill="#F8FAFC">1-Click Push</text>
         </g>
       </g>
 
-      <!-- Bottom Status Pill -->
-      <g transform="translate(20, 172)">
-        <rect width="350" height="50" rx="8" fill="#040916" stroke="#0066FF" stroke-width="1.2"/>
-        <text class="pdp-mono" x="16" y="22" font-size="10.5" fill="#F0F9FF">DEFECTS RESOLVED &amp; VERIFIED</text>
-        <text class="pdp-mono" x="16" y="38" font-size="9.5" fill="#34D399">✓ 9 AST defects resolved · Zero-PAT OAuth · Production Live</text>
+      <!-- Verification Badge -->
+      <g transform="translate(20, 170)">
+        <rect width="350" height="38" rx="6" fill="#121624" stroke="#252B42"/>
+        <text class="pdp-mono" x="14" y="16" font-size="9" fill="#94A3B8">DEFECTS RESOLVED &amp; VERIFIED</text>
+        <text class="pdp-mono" x="14" y="29" font-size="8.5" fill="#34D399">✓ 9 AST defects resolved · Zero-PAT OAuth · Production Live</text>
       </g>
     </g>
 
     <!-- Animated Border Tracing -->
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
     <rect class="pdp-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#pdp-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>

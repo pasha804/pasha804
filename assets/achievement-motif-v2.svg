@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Proof and Highlights">
   <defs>
     <linearGradient id="rec-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/>
-      <stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/>
+      <stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <radialGradient id="rec-glow" cx="85%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0066FF" stop-opacity=".22"/>
-      <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
     <pattern id="rec-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 H 0 V 28" fill="none" stroke="#1E3A8A" stroke-opacity=".15"/>
+      <path d="M 28 0 H 0 V 28" fill="none" stroke="#1E2336" stroke-opacity=".15"/>
     </pattern>
   </defs>
   <style>
-    .rec-serif {{ font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }}
-    .rec-mono {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }}
-    .rec-sans {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }}
+    .rec-serif { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif; }
+    .rec-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .rec-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
   </style>
 
   <rect width="1200" height="280" rx="16" fill="url(#rec-bg)"/>
@@ -26,45 +26,45 @@
   <g transform="translate(48, 40)">
     <!-- Card 1 -->
     <g transform="translate(0, 0)">
-      <rect width="258" height="198" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
-      <line x1="0" y1="0" x2="258" y2="0" stroke="#38BDF8" stroke-width="2"/>
-      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#38BDF8">TELEMETRY // RECORD</text>
-      <text class="rec-serif" x="20" y="88" font-size="44" font-weight="300" fill="#F0F9FF">50+</text>
-      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E0F2FE">Repositories Shipped</text>
+      <rect width="258" height="198" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="258" y2="0" stroke="#A855F7" stroke-width="2.5"/>
+      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#A855F7">TELEMETRY // RECORD</text>
+      <text class="rec-serif" x="20" y="88" font-size="44" font-weight="300" fill="#F8FAFC">50+</text>
+      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E2E8F0">Repositories Shipped</text>
       <text class="rec-mono" x="20" y="146" font-size="10.5" fill="#64748B">Web platforms, AI tools, 3D engines &amp; desktop assistants</text>
     </g>
 
     <!-- Card 2 -->
     <g transform="translate(282, 0)">
-      <rect width="258" height="198" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
-      <line x1="0" y1="0" x2="258" y2="0" stroke="#0066FF" stroke-width="2"/>
-      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#38BDF8">🏆 HACKATHON // FLAGSHIP</text>
-      <text class="rec-serif" x="20" y="88" font-size="36" font-weight="300" fill="#F0F9FF">IBM Bob</text>
-      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E0F2FE">Pasha DevPilot SDLC</text>
+      <rect width="258" height="198" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="258" y2="0" stroke="#6366F1" stroke-width="2.5"/>
+      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#818CF8">🏆 HACKATHON // FLAGSHIP</text>
+      <text class="rec-serif" x="20" y="88" font-size="36" font-weight="300" fill="#F8FAFC">IBM Bob</text>
+      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E2E8F0">Pasha DevPilot SDLC</text>
       <text class="rec-mono" x="20" y="146" font-size="10.5" fill="#64748B">7-state autonomous AI software engineer, AST scanner &amp; sandbox</text>
     </g>
 
     <!-- Card 3 -->
     <g transform="translate(564, 0)">
-      <rect width="258" height="198" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
-      <line x1="0" y1="0" x2="258" y2="0" stroke="#60A5FA" stroke-width="2"/>
-      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#38BDF8">GRAPHICS // SHADERS</text>
-      <text class="rec-serif" x="20" y="88" font-size="44" font-weight="300" fill="#F0F9FF">60 FPS</text>
-      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E0F2FE">Raymarching WebGL</text>
-      <text class="rec-mono" x="20" y="146" font-size="10.5" fill="#64748B">Draco-compressed metallic clear-coat reflections in 3D showroom</text>
+      <rect width="258" height="198" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="258" y2="0" stroke="#38BDF8" stroke-width="2.5"/>
+      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#38BDF8">REAL-TIME // WEBRTC</text>
+      <text class="rec-serif" x="20" y="88" font-size="44" font-weight="300" fill="#F8FAFC">&lt; 10ms</text>
+      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E2E8F0">SyncForge Delta Sync</text>
+      <text class="rec-mono" x="20" y="146" font-size="10.5" fill="#64748B">Sub-10ms multi-cursor Monaco lock &amp; mesh voice audio</text>
     </g>
 
     <!-- Card 4 -->
     <g transform="translate(846, 0)">
-      <rect width="258" height="198" rx="10" fill="#071228" stroke="#1E3A8A" stroke-opacity=".5"/>
-      <line x1="0" y1="0" x2="258" y2="0" stroke="#34D399" stroke-width="2"/>
-      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#34D399">PRODUCTION // UPTIME</text>
-      <text class="rec-serif" x="20" y="88" font-size="44" font-weight="300" fill="#F0F9FF">100%</text>
-      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E0F2FE">Shipping Focus</text>
-      <text class="rec-mono" x="20" y="146" font-size="10.5" fill="#64748B">Active user traffic across Pasha Tools, Wishora &amp; live apps</text>
+      <rect width="258" height="198" rx="10" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <line x1="0" y1="0" x2="258" y2="0" stroke="#10B981" stroke-width="2.5"/>
+      <text class="rec-mono" x="20" y="34" font-size="11" letter-spacing="1.5" fill="#34D399">ON-DEVICE // PRIVACY</text>
+      <text class="rec-serif" x="20" y="88" font-size="44" font-weight="300" fill="#F8FAFC">100%</text>
+      <text class="rec-sans" x="20" y="118" font-size="15" font-weight="600" fill="#E2E8F0">PrivateDoc Air-Gap</text>
+      <text class="rec-mono" x="20" y="146" font-size="10.5" fill="#64748B">Zero cloud telemetry, on-device Llama 3.2 1B via ExecuTorch</text>
     </g>
   </g>
 
   <!-- Border -->
-  <rect x=".5" y=".5" width="1199" height="279" rx="15.5" fill="none" stroke="#38BDF8" stroke-opacity=".22"/>
+  <rect x=".5" y=".5" width="1199" height="279" rx="15.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
 </svg>

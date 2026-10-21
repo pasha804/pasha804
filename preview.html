@@ -9,14 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,500;1,6..72,300;1,6..72,500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #030712;
-      --card-bg: #071228;
-      --border: #1e3a8a;
-      --border-accent: #0284c7;
+      --bg: #06070B;
+      --card-bg: #0F121C;
+      --border: #1F2436;
+      --border-accent: #2E3650;
       --text: #94a3b8;
-      --text-bright: #f0f9ff;
-      --primary: #0066FF;
+      --text-bright: #f8fafc;
+      --primary: #8B5CF6;
+      --amethyst: #A855F7;
+      --indigo: #6366F1;
       --cyan: #38BDF8;
+      --emerald: #10B981;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -38,7 +41,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(7, 18, 40, 0.85);
+      background: rgba(11, 13, 21, 0.88);
       border: 1px solid var(--border);
       padding: 14px 24px;
       border-radius: 14px;
@@ -47,11 +50,11 @@
       top: 16px;
       z-index: 100;
       backdrop-filter: blur(20px);
-      box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);
+      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.12);
     }
     .badge {
-      background: linear-gradient(135deg, #0066FF, #38BDF8);
-      color: #030712;
+      background: linear-gradient(135deg, #8B5CF6, #38BDF8);
+      color: #06070B;
       padding: 5px 12px;
       border-radius: 9999px;
       font-size: 11px;
@@ -66,7 +69,7 @@
       color: var(--cyan);
     }
     .btn {
-      background: linear-gradient(135deg, #0066FF, #0284c7);
+      background: linear-gradient(135deg, #6366F1, #8B5CF6);
       color: #fff;
       border: none;
       padding: 8px 18px;
@@ -80,7 +83,7 @@
     }
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
     }
     .content-stream {
       display: flex;
@@ -96,7 +99,7 @@
     }
     .content-stream a img:hover {
       transform: translateY(-3px);
-      box-shadow: 0 12px 36px rgba(0, 102, 255, 0.25);
+      box-shadow: 0 12px 36px rgba(139, 92, 246, 0.22);
     }
     .badges-row {
       display: flex;
@@ -135,7 +138,7 @@
     <header class="top-bar">
       <div style="display: flex; align-items: center; gap: 14px;">
         <span class="badge">LIVE PREVIEW</span>
-        <span class="status-text">MUHAMMAD MUBASHAR // BLACK &amp; ELECTRIC BLUE EDITION</span>
+        <span class="status-text">MUHAMMAD MUBASHAR // LUXURY CYBER OBSIDIAN &amp; AMETHYST</span>
       </div>
       <div>
         <a href="https://github.com/pasha804" target="_blank" class="btn">View on GitHub ↗</a>
@@ -151,11 +154,11 @@
 
       <!-- Quick Social Badges -->
       <div class="badges-row">
-        <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=googlechrome" alt="Portfolio website"></a>
-        <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=linkedin" alt="LinkedIn profile"></a>
-        <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GitHub profile"></a>
-        <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=youtube" alt="YouTube Channel"></a>
-        <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=gmail" alt="Email pashadev804@gmail.com"></a>
+        <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=googlechrome" alt="Portfolio website"></a>
+        <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-6366F1?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=linkedin" alt="LinkedIn profile"></a>
+        <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="GitHub profile"></a>
+        <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-F43F5E?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=youtube" alt="YouTube Channel"></a>
+        <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-10B981?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=gmail" alt="Email pashadev804@gmail.com"></a>
       </div>
 
       <!-- 01 About -->
@@ -174,9 +177,9 @@
         <img src="assets/project-devpilot.svg" alt="Pasha DevPilot: Autonomous AI Software Engineer built for IBM Bob 2.0 Hackathon">
       </a>
       <div class="badges-row">
-        <a href="https://web-production-787ab.up.railway.app"><img src="https://img.shields.io/badge/Live_Production-web--production--787ab.up.railway.app-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=railway" alt="Pasha DevPilot Live"></a>
-        <a href="https://github.com/pasha804/pasha-devpilot"><img src="https://img.shields.io/badge/Repository-pasha--devpilot-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="Pasha DevPilot Repository"></a>
-        <a href="https://bob.ibm.com"><img src="https://img.shields.io/badge/AI_Backbone-IBM_Bob_2.0-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=ibm" alt="IBM Bob 2.0"></a>
+        <a href="https://web-production-787ab.up.railway.app"><img src="https://img.shields.io/badge/Live_Production-web--production--787ab.up.railway.app-10B981?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=railway" alt="Pasha DevPilot Live"></a>
+        <a href="https://github.com/pasha804/pasha-devpilot"><img src="https://img.shields.io/badge/Repository-pasha--devpilot-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="Pasha DevPilot Repository"></a>
+        <a href="https://bob.ibm.com"><img src="https://img.shields.io/badge/AI_Backbone-IBM_Bob_2.0-6366F1?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=ibm" alt="IBM Bob 2.0"></a>
       </div>
 
       <!-- Project 2: SyncForge -->
@@ -184,9 +187,9 @@
         <img src="assets/project-syncforge.svg" alt="SyncForge: Real-Time Multi-Cursor Collaborative Code Editor and Mesh Voice Studio">
       </a>
       <div class="badges-row">
-        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Repository-SyncForge-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="SyncForge Repository"></a>
-        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Engine-Monaco_&_WebRTC_Mesh-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=webrtc" alt="Monaco & WebRTC Mesh"></a>
-        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Sync-Sub--10ms_Delta-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=fastapi" alt="Sub-10ms Delta Sync"></a>
+        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Repository-SyncForge-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="SyncForge Repository"></a>
+        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Engine-Monaco_&_WebRTC_Mesh-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=webrtc" alt="Monaco & WebRTC Mesh"></a>
+        <a href="https://github.com/pasha804/Real-Time-Collaborative-Code-Snippet"><img src="https://img.shields.io/badge/Sync-Sub--10ms_Delta-10B981?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=fastapi" alt="Sub-10ms Delta Sync"></a>
       </div>
 
       <!-- Project 3: PrivateDoc -->
@@ -194,9 +197,9 @@
         <img src="assets/project-privatedoc.svg" alt="PrivateDoc: On-Device Private AI Document Intelligence with Local Llama 3.2">
       </a>
       <div class="badges-row">
-        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Repository-PrivateDoc-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="PrivateDoc Repository"></a>
-        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Edge_AI-ExecuTorch_&_Llama_3.2-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=pytorch" alt="ExecuTorch & Llama 3.2"></a>
-        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Privacy-100%25_Air--Gapped_Offline-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=android" alt="100% Air-Gapped Offline"></a>
+        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Repository-PrivateDoc-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="PrivateDoc Repository"></a>
+        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Edge_AI-ExecuTorch_&_Llama_3.2-6366F1?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=pytorch" alt="ExecuTorch & Llama 3.2"></a>
+        <a href="https://github.com/pasha804/Private_DOC"><img src="https://img.shields.io/badge/Privacy-100%25_Air--Gapped_Offline-10B981?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=android" alt="100% Air-Gapped Offline"></a>
       </div>
 
       <!-- Project 4: GhostReview -->
@@ -204,9 +207,9 @@
         <img src="assets/project-ghostreview.svg" alt="GhostReview: AI-Powered Code Intelligence and Autonomous PR Review Engine">
       </a>
       <div class="badges-row">
-        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Repository-GhostReview-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GhostReview Repository"></a>
-        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Inference-Groq_LPU_Sub--300ms-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=speedtest" alt="Groq LPU Sub-300ms"></a>
-        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Testing-24%20pytest%20Passed-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=pytest" alt="24 pytest Passed"></a>
+        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Repository-GhostReview-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="GhostReview Repository"></a>
+        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Inference-Groq_LPU_Sub--300ms-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=speedtest" alt="Groq LPU Sub-300ms"></a>
+        <a href="https://github.com/pasha804/gost-review-github"><img src="https://img.shields.io/badge/Testing-24%20pytest%20Passed-10B981?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=pytest" alt="24 pytest Passed"></a>
       </div>
 
       <!-- Project 5: OpenCluely -->
@@ -214,8 +217,9 @@
         <img src="assets/project-opencluely.svg" alt="OpenCluely: Undetectable desktop AI assistant">
       </a>
       <div class="badges-row">
-        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/Repository-OpenCluely-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="OpenCluely Repository"></a>
-        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/License-MIT_Open_Source-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=opensourceinitiative" alt="MIT Open Source"></a>
+        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/Repository-OpenCluely-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="OpenCluely Repository"></a>
+        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/Stack-Tauri_Rust_&_TypeScript-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=rust" alt="Tauri Rust & TypeScript"></a>
+        <a href="https://github.com/pasha804/OpenCluely"><img src="https://img.shields.io/badge/License-MIT_Open_Source-A855F7?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=opensourceinitiative" alt="MIT Open Source"></a>
       </div>
 
       <!-- Project 6: BMW 7-Series 3D -->
@@ -223,8 +227,9 @@
         <img src="assets/project-bmw7.svg" alt="BMW 7-Series 3D Showroom">
       </a>
       <div class="badges-row">
-        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Repository-BMW_7--Series_3D-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="BMW 7-Series Repository"></a>
-        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Graphics-WebGL_60FPS-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=three.js" alt="Three.js WebGL"></a>
+        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Repository-BMW_7--Series_3D-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="BMW 7-Series Repository"></a>
+        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Graphics-WebGL_60FPS_Raymarching-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=three.js" alt="Three.js WebGL"></a>
+        <a href="https://github.com/pasha804/bmw-7-series-3d-experience"><img src="https://img.shields.io/badge/Engine-GLSL_Shaders-6366F1?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=webgl" alt="GLSL Shaders"></a>
       </div>
 
       <!-- Project 7: Nexora -->
@@ -232,8 +237,9 @@
         <img src="assets/project-nexora.svg" alt="Nexora: AI-powered skill social platform">
       </a>
       <div class="badges-row">
-        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Repository-NEXORA-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="NEXORA Repository"></a>
-        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Status-Private_Alpha-0052CC?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=git" alt="Private Alpha"></a>
+        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Repository-NEXORA-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="NEXORA Repository"></a>
+        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Architecture-AI_Referee_&_FastAPI-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=fastapi" alt="AI Referee & FastAPI"></a>
+        <a href="https://github.com/pasha804/NEXORA"><img src="https://img.shields.io/badge/Status-Private_Alpha-A855F7?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=git" alt="Private Alpha"></a>
       </div>
 
       <!-- 04 Toolkit -->
@@ -258,11 +264,11 @@
       <img src="assets/title-connect.svg" alt="07 Connect — Let's build something extraordinary.">
 
       <div class="badges-row">
-        <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=gmail" alt="Email Pasha"></a>
-        <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=linkedin" alt="LinkedIn profile"></a>
-        <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=github" alt="GitHub profile"></a>
-        <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=googlechrome" alt="Portfolio website"></a>
-        <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-0066FF?style=for-the-badge&labelColor=060D1A&logoColor=E0F2FE&logo=youtube" alt="YouTube Channel"></a>
+        <a href="mailto:pashadev804@gmail.com"><img src="https://img.shields.io/badge/Email-pashadev804@gmail.com-10B981?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=gmail" alt="Email Pasha"></a>
+        <a href="https://linkedin.com/in/pasha-dev"><img src="https://img.shields.io/badge/LinkedIn-pasha--dev-6366F1?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=linkedin" alt="LinkedIn profile"></a>
+        <a href="https://github.com/pasha804"><img src="https://img.shields.io/badge/GitHub-pasha804-38BDF8?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=github" alt="GitHub profile"></a>
+        <a href="https://pasha-portfolio-v6.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-pasha--portfolio--v6.netlify.app-8B5CF6?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=googlechrome" alt="Portfolio website"></a>
+        <a href="https://youtube.com/@Pasha804a"><img src="https://img.shields.io/badge/YouTube-@Pasha804a-F43F5E?style=for-the-badge&labelColor=08090E&logoColor=F8FAFC&logo=youtube" alt="YouTube Channel"></a>
       </div>
 
       <a href="https://pasha-portfolio-v6.netlify.app/">
@@ -273,7 +279,7 @@
 
     <footer class="footer-note">
       <p>Muhammad Mubashar (Pasha Dev) · Editorial Profile README System · Lahore, Pakistan</p>
-      <p style="margin-top: 6px; color: var(--cyan);">Designed with precision in Black &amp; Electric Blue</p>
+      <p style="margin-top: 6px; color: var(--cyan);">Designed with precision in Cyber Obsidian, Amethyst &amp; Ice Cyan</p>
     </footer>
   </div>
 

@@ -2,20 +2,17 @@
   <title id="p1-t">Nexora: AI-powered skill social platform with live coding challenges &amp; autonomous referee</title>
   <defs>
     <linearGradient id="p1-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/><stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <radialGradient id="p1-glow" cx="80%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#0066FF" stop-opacity=".3"/><stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#A855F7" stop-opacity=".22"/><stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
     </radialGradient>
     <pattern id="p1-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#1E2336" stroke-opacity=".12"/>
     </pattern>
-    <filter id="p1-glowf" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="p1-clip"><rect width="1200" height="370" rx="18"/></clipPath>
     <linearGradient id="p1-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#A855F7"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
@@ -38,76 +35,76 @@
 
     <!-- Left Details -->
     <g class="p1-in" transform="translate(56, 48)">
-      <text class="p1-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">01 · FLAGSHIP · AI SOCIAL ARENA · 2026</text>
-      <text class="p1-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">NEXORA</text>
+      <text class="p1-mono" font-size="12" letter-spacing="2.6" fill="#A855F7">07 · COMPETITIVE ARENA · DISTRIBUTED ENGINE · 2026</text>
+      <text class="p1-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F8FAFC">NEXORA</text>
       <text class="p1-sans" y="94" font-size="16.5" fill="#94A3B8">Gamified social identity, guild communities, and peer coding battles.</text>
-      <text class="p1-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> Autonomous AI Referee, real-time code evaluation, Redis queuing, FastAPI</text>
-      <line class="p1-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+      <text class="p1-mono" y="126" font-size="12" fill="#E2E8F0"><tspan fill="#A855F7">BUILT ›</tspan> Autonomous AI Referee, real-time code evaluation, Redis queuing, FastAPI</text>
+      <line class="p1-draw" x1="0" y1="148" x2="620" y2="148" stroke="#A855F7" stroke-opacity=".35"/>
 
       <!-- Metrics -->
       <g transform="translate(0, 186)">
-        <text class="p1-serif" font-size="32" font-weight="300" fill="#F0F9FF">100%</text>
+        <text class="p1-serif" font-size="32" font-weight="300" fill="#F8FAFC">100%</text>
         <text class="p1-sans" y="22" font-size="12" fill="#94A3B8">Autonomous AI Referee</text>
       </g>
       <g transform="translate(200, 186)">
-        <text class="p1-serif" font-size="32" font-weight="300" fill="#F0F9FF">&lt;80ms</text>
-        <text class="p1-sans" y="22" font-size="12" fill="#94A3B8">Evaluation Latency</text>
+        <text class="p1-serif" font-size="32" font-weight="300" fill="#F8FAFC">Sub-80ms</text>
+        <text class="p1-sans" y="22" font-size="12" fill="#94A3B8">Judging Latency</text>
       </g>
       <g transform="translate(400, 186)">
-        <text class="p1-serif" font-size="32" font-weight="300" fill="#34D399">v1.0</text>
+        <text class="p1-serif" font-size="32" font-weight="300" fill="#34D399">V1.0</text>
         <text class="p1-sans" y="22" font-size="12" fill="#94A3B8">Private Alpha Live</text>
       </g>
 
       <!-- Tech Stack Chips -->
       <g transform="translate(0, 246)">
-        <g transform="translate(0, 0)"><rect width="64" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p1-mono" x="32" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">React</text></g>
-        <g transform="translate(72, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p1-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">TypeScript</text></g>
-        <g transform="translate(170, 0)"><rect width="70" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p1-mono" x="35" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">FastAPI</text></g>
-        <g transform="translate(248, 0)"><rect width="94" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p1-mono" x="47" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">PostgreSQL</text></g>
-        <g transform="translate(350, 0)"><rect width="60" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p1-mono" x="30" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Redis</text></g>
-        <g transform="translate(418, 0)"><rect width="68" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p1-mono" x="34" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Docker</text></g>
+        <g transform="translate(0, 0)"><rect width="68" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p1-mono" x="34" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">React</text></g>
+        <g transform="translate(76, 0)"><rect width="90" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p1-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">TypeScript</text></g>
+        <g transform="translate(174, 0)"><rect width="76" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p1-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">FastAPI</text></g>
+        <g transform="translate(258, 0)"><rect width="92" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p1-mono" x="46" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">PostgreSQL</text></g>
+        <g transform="translate(358, 0)"><rect width="68" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p1-mono" x="34" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">Redis</text></g>
+        <g transform="translate(434, 0)"><rect width="74" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p1-mono" x="37" y="17" text-anchor="middle" font-size="11.5" fill="#A855F7">Docker</text></g>
       </g>
     </g>
 
     <!-- Right Graphic Illustration: Arena Battle Board & AI Referee -->
     <g transform="translate(740, 60)" class="p1-in">
-      <!-- Arena Dual Panel -->
-      <rect width="390" height="240" rx="12" fill="#071228" stroke="#1E3A8A" stroke-opacity=".6"/>
-      <!-- Header Bar -->
-      <rect width="390" height="34" rx="12" fill="#0A1838"/>
-      <circle cx="20" cy="17" r="4" fill="#EF4444"/>
-      <circle cx="34" cy="17" r="4" fill="#F59E0B"/>
-      <circle cx="48" cy="17" r="4" fill="#10B981"/>
-      <text class="p1-mono" x="70" y="21" font-size="11" fill="#E0F2FE">NEXORA // LIVE ARENA CODE REF</text>
+      <rect width="390" height="240" rx="12" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <rect width="390" height="34" rx="12" fill="#121624"/>
+      <circle cx="24" cy="17" r="4" fill="#EF4444"/>
+      <circle cx="38" cy="17" r="4" fill="#F59E0B"/>
+      <circle cx="52" cy="17" r="4" fill="#10B981"/>
+      <text class="p1-mono" x="72" y="21" font-size="11" fill="#E2E8F0">NEXORA // LIVE ARENA CODE REF</text>
 
-      <!-- Live Comparison Windows -->
-      <rect x="20" y="50" width="165" height="110" rx="6" fill="#040916" stroke="#1E3A8A" stroke-opacity=".4"/>
-      <text class="p1-mono" x="30" y="68" font-size="9.5" fill="#60A5FA">PLAYER_01 (O(N))</text>
-      <rect x="30" y="80" width="120" height="4" rx="2" fill="#38BDF8" fill-opacity=".3"/>
-      <rect x="30" y="92" width="90" height="4" rx="2" fill="#38BDF8" fill-opacity=".3"/>
-      <rect x="30" y="104" width="135" height="4" rx="2" fill="#10B981" filter="url(#p1-glowf)"/>
-      <text class="p1-mono" x="30" y="132" font-size="9" fill="#10B981">✓ PASSED 28/28 TESTS</text>
+      <!-- Player 1 & 2 Cards -->
+      <g transform="translate(20, 50)">
+        <rect width="165" height="100" rx="8" fill="#151A2B" stroke="#252B42"/>
+        <text class="p1-mono" x="12" y="20" font-size="9.5" fill="#A855F7">PLAYER_01 (O(N))</text>
+        <line x1="12" y1="36" x2="153" y2="36" stroke="#10B981" stroke-width="2.5"/>
+        <line x1="12" y1="46" x2="135" y2="46" stroke="#10B981" stroke-width="2.5"/>
+        <line x1="12" y1="56" x2="110" y2="56" stroke="#10B981" stroke-width="2.5"/>
+        <text class="p1-mono" x="12" y="82" font-size="8.5" fill="#34D399">✓ PASSED 28/28 TESTS</text>
+      </g>
 
-      <rect x="205" y="50" width="165" height="110" rx="6" fill="#040916" stroke="#1E3A8A" stroke-opacity=".4"/>
-      <text class="p1-mono" x="215" y="68" font-size="9.5" fill="#94A3B8">PLAYER_02 (O(N²))</text>
-      <rect x="215" y="80" width="110" height="4" rx="2" fill="#94A3B8" fill-opacity=".2"/>
-      <rect x="215" y="92" width="130" height="4" rx="2" fill="#94A3B8" fill-opacity=".2"/>
-      <rect x="215" y="104" width="80" height="4" rx="2" fill="#F59E0B" filter="url(#p1-glowf)"/>
-      <text class="p1-mono" x="215" y="132" font-size="9" fill="#F59E0B">⏱ 142ms LATENCY</text>
+      <g transform="translate(205, 50)">
+        <rect width="165" height="100" rx="8" fill="#151A2B" stroke="#252B42"/>
+        <text class="p1-mono" x="12" y="20" font-size="9.5" fill="#EF4444">PLAYER_02 (O(N²))</text>
+        <line x1="12" y1="36" x2="153" y2="36" stroke="#64748B" stroke-width="2.5"/>
+        <line x1="12" y1="46" x2="153" y2="46" stroke="#64748B" stroke-width="2.5"/>
+        <line x1="12" y1="56" x2="90" y2="56" stroke="#F59E0B" stroke-width="2.5"/>
+        <text class="p1-mono" x="12" y="82" font-size="8.5" fill="#F59E0B">⏱ 142ms LATENCY</text>
+      </g>
 
-      <!-- Autonomous AI Referee Center Pill -->
-      <g transform="translate(45, 175)">
-        <rect width="300" height="44" rx="8" fill="#0B1A3D" stroke="#0066FF" stroke-width="1.2"/>
-        <circle cx="22" cy="22" r="6" fill="#38BDF8" filter="url(#p1-glowf)">
-          <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <text class="p1-mono" x="38" y="20" font-size="10.5" fill="#F0F9FF">AI REFEREE: VERDICT DECLARED</text>
-        <text class="p1-mono" x="38" y="34" font-size="9.5" fill="#38BDF8">P1 WINNER · TIME O(N) · ELO +34</text>
+      <!-- Autonomous Referee Verdict Banner -->
+      <g transform="translate(20, 162)">
+        <rect width="350" height="54" rx="8" fill="#121624" stroke="#A855F7" stroke-width="1.2"/>
+        <circle cx="22" cy="27" r="5" fill="#38BDF8"/>
+        <text class="p1-mono" x="36" y="24" font-size="10" fill="#F8FAFC" font-weight="700">AI REFEREE: VERDICT DECLARED</text>
+        <text class="p1-mono" x="36" y="40" font-size="9" fill="#34D399">P1 WINNER · TIME O(N) · ELO +34</text>
       </g>
     </g>
 
     <!-- Animated Border Tracing -->
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
     <rect class="p1-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#p1-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>

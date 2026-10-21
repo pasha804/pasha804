@@ -2,20 +2,20 @@
   <title id="p2-t">OpenCluely: Undetectable desktop AI assistant for technical interviews and algorithmic mastery</title>
   <defs>
     <linearGradient id="p2-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#040916"/><stop offset="100%" stop-color="#02050E"/>
+      <stop offset="0" stop-color="#08090E"/><stop offset="100%" stop-color="#040508"/>
     </linearGradient>
     <radialGradient id="p2-glow" cx="80%" cy="30%" r="55%">
-      <stop offset="0" stop-color="#00D2FF" stop-opacity=".25"/><stop offset="100%" stop-color="#00D2FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#38BDF8" stop-opacity=".22"/><stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
     <pattern id="p2-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#38BDF8" stroke-opacity=".08"/>
+      <path d="M28 0H0V28" fill="none" stroke="#1E2336" stroke-opacity=".12"/>
     </pattern>
     <filter id="p2-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="p2-clip"><rect width="1200" height="370" rx="18"/></clipPath>
     <linearGradient id="p2-trace" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F0F9FF"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#F8FAFC"/><stop offset=".45" stop-color="#38BDF8"/><stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
@@ -38,19 +38,19 @@
 
     <!-- Left Details -->
     <g class="p2-in" transform="translate(56, 48)">
-      <text class="p2-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">02 · DESKTOP AI · STEALTH OCR · 2026</text>
-      <text class="p2-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F0F9FF">OpenCluely</text>
+      <text class="p2-mono" font-size="12" letter-spacing="2.6" fill="#38BDF8">05 · DESKTOP AI · STEALTH OCR · 2026</text>
+      <text class="p2-serif" y="58" font-size="48" font-weight="300" letter-spacing="-1.5" fill="#F8FAFC">OpenCluely</text>
       <text class="p2-sans" y="94" font-size="16.5" fill="#94A3B8">Undetectable frameless desktop AI overlay for technical interviews.</text>
-      <text class="p2-mono" y="126" font-size="12" fill="#E0F2FE"><tspan fill="#38BDF8">BUILT ›</tspan> Transparent Tauri canvas, Vision OCR stream, Whisper audio, Gemini AI</text>
-      <line class="p2-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".3"/>
+      <text class="p2-mono" y="126" font-size="12" fill="#E2E8F0"><tspan fill="#38BDF8">BUILT ›</tspan> Transparent Tauri canvas, Vision OCR stream, Whisper audio, Gemini AI</text>
+      <line class="p2-draw" x1="0" y1="148" x2="620" y2="148" stroke="#38BDF8" stroke-opacity=".35"/>
 
       <!-- Metrics -->
       <g transform="translate(0, 186)">
-        <text class="p2-serif" font-size="32" font-weight="300" fill="#F0F9FF">0-Footprint</text>
+        <text class="p2-serif" font-size="32" font-weight="300" fill="#F8FAFC">0-Footprint</text>
         <text class="p2-sans" y="22" font-size="12" fill="#94A3B8">Invisible Screen Capture</text>
       </g>
       <g transform="translate(200, 186)">
-        <text class="p2-serif" font-size="32" font-weight="300" fill="#F0F9FF">O(N)</text>
+        <text class="p2-serif" font-size="32" font-weight="300" fill="#F8FAFC">O(N)</text>
         <text class="p2-sans" y="22" font-size="12" fill="#94A3B8">Optimal Proof Engine</text>
       </g>
       <g transform="translate(400, 186)">
@@ -60,23 +60,23 @@
 
       <!-- Tech Stack Chips -->
       <g transform="translate(0, 246)">
-        <g transform="translate(0, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p2-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Tauri (Rust)</text></g>
-        <g transform="translate(98, 0)"><rect width="90" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p2-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">TypeScript</text></g>
-        <g transform="translate(196, 0)"><rect width="84" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p2-mono" x="42" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Gemini AI</text></g>
-        <g transform="translate(288, 0)"><rect width="88" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p2-mono" x="44" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Vision OCR</text></g>
-        <g transform="translate(384, 0)"><rect width="76" height="26" rx="13" fill="#071228" stroke="#1E3A8A"/><text class="p2-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Whisper</text></g>
+        <g transform="translate(0, 0)"><rect width="90" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p2-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Tauri (Rust)</text></g>
+        <g transform="translate(98, 0)"><rect width="90" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p2-mono" x="45" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">TypeScript</text></g>
+        <g transform="translate(196, 0)"><rect width="84" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p2-mono" x="42" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Gemini AI</text></g>
+        <g transform="translate(288, 0)"><rect width="88" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p2-mono" x="44" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Vision OCR</text></g>
+        <g transform="translate(384, 0)"><rect width="76" height="26" rx="13" fill="#0D101A" stroke="#1E2336"/><text class="p2-mono" x="38" y="17" text-anchor="middle" font-size="11.5" fill="#38BDF8">Whisper</text></g>
       </g>
     </g>
 
     <!-- Right Graphic Illustration: Stealth HUD & OCR Scan Beam -->
     <g transform="translate(740, 60)" class="p2-in">
-      <rect width="390" height="240" rx="12" fill="#050C1F" stroke="#00D2FF" stroke-opacity=".4"/>
-      <rect width="390" height="34" rx="12" fill="#081534"/>
+      <rect width="390" height="240" rx="12" fill="#0D101A" stroke="#1E2336" stroke-opacity=".8"/>
+      <rect width="390" height="34" rx="12" fill="#121624"/>
       <text class="p2-mono" x="20" y="22" font-size="11" fill="#38BDF8">STEALTH_OVERLAY // INVISIBLE HUD</text>
       <text class="p2-mono" x="370" y="22" text-anchor="end" font-size="10" fill="#10B981">● ACTIVE</text>
 
       <!-- Screen Scanner Visualizer -->
-      <rect x="24" y="52" width="342" height="110" rx="6" fill="#020713" stroke="#1E3A8A" stroke-opacity=".4"/>
+      <rect x="24" y="52" width="342" height="110" rx="6" fill="#060810" stroke="#1E2336" stroke-opacity=".6"/>
       <!-- Scanning Line Animation -->
       <line x1="24" y1="75" x2="366" y2="75" stroke="#38BDF8" stroke-width="1.8" filter="url(#p2-glowf)">
         <animate attributeName="y1" values="55;155;55" dur="4s" repeatCount="indefinite"/>
@@ -84,19 +84,19 @@
       </line>
       <text class="p2-mono" x="36" y="74" font-size="10" fill="#64748B">int maxSubArray(vector&lt;int&gt;&amp; nums) {</text>
       <text class="p2-mono" x="56" y="94" font-size="10" fill="#38BDF8">int cur = 0, best = INT_MIN;</text>
-      <text class="p2-mono" x="56" y="114" font-size="10" fill="#60A5FA">for(int x : nums) { cur = max(x, cur+x); ... }</text>
+      <text class="p2-mono" x="56" y="114" font-size="10" fill="#818CF8">for(int x : nums) { cur = max(x, cur+x); ... }</text>
       <text class="p2-mono" x="36" y="134" font-size="10" fill="#64748B">}</text>
 
       <!-- Proof Pill -->
       <g transform="translate(24, 176)">
-        <rect width="342" height="46" rx="8" fill="#0A1838" stroke="#38BDF8" stroke-width="1"/>
-        <text class="p2-mono" x="16" y="20" font-size="10.5" fill="#F0F9FF">ALGORITHMIC PROOF: Kadane's Dynamic DP</text>
+        <rect width="342" height="46" rx="8" fill="#121624" stroke="#1E2336"/>
+        <text class="p2-mono" x="16" y="20" font-size="10.5" fill="#F8FAFC">ALGORITHMIC PROOF: Kadane's Dynamic DP</text>
         <text class="p2-mono" x="16" y="36" font-size="9.5" fill="#34D399">✓ Time: O(N) · Space: O(1) · Optimal Verification Passed</text>
       </g>
     </g>
 
     <!-- Animated Border Tracing -->
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#1E3A8A" stroke-opacity=".4"/>
+    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#252B42" stroke-opacity=".6"/>
     <rect class="p2-trace" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#p2-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>
