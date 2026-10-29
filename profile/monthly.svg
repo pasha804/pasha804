@@ -52,7 +52,7 @@
     <g transform="translate(0, 0)">
       <rect width="200" height="95" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
       <text x="14" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">MONTHLY PAYOUT</text>
-      <text x="14" y="62" fill="#38BDF8" class="mono" font-size="30" font-weight="900">39</text>
+      <text x="14" y="62" fill="#38BDF8" class="mono" font-size="30" font-weight="900">42</text>
       <text x="14" y="82" fill="#94A3B8" class="mono" font-size="9">THIS MONTH</text>
     </g>
     <g transform="translate(222, 0)">
@@ -70,7 +70,7 @@
     <g transform="translate(666, 0)">
       <rect width="200" height="95" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
       <text x="14" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">CADENCE RATIO</text>
-      <text x="14" y="62" fill="#FBBF24" class="mono" font-size="30" font-weight="900">3.2</text>
+      <text x="14" y="62" fill="#FBBF24" class="mono" font-size="30" font-weight="900">3.5</text>
       <text x="14" y="82" fill="#94A3B8" class="mono" font-size="9">COMMITS / ACTIVE DAY</text>
     </g>
   </g>

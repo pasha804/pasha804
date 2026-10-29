@@ -49,15 +49,15 @@
   
         <g transform="translate(24, 68)">
           <text x="0" y="14" fill="#F8FAFC" class="mono" font-size="11" font-weight="700">TypeScript</text>
-          <text x="395" y="14" fill="#3178c6" class="mono" font-size="11" font-weight="800" text-anchor="end">53.9%</text>
+          <text x="395" y="14" fill="#3178c6" class="mono" font-size="11" font-weight="800" text-anchor="end">54.2%</text>
           <rect x="130" y="4" width="220" height="12" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
-          <rect x="130" y="4" width="118" height="12" rx="6" fill="#3178c6" />
+          <rect x="130" y="4" width="119" height="12" rx="6" fill="#3178c6" />
         </g>
         <g transform="translate(24, 107)">
           <text x="0" y="14" fill="#F8FAFC" class="mono" font-size="11" font-weight="700">Python</text>
-          <text x="395" y="14" fill="#3572A5" class="mono" font-size="11" font-weight="800" text-anchor="end">34.2%</text>
+          <text x="395" y="14" fill="#3572A5" class="mono" font-size="11" font-weight="800" text-anchor="end">33.9%</text>
           <rect x="130" y="4" width="220" height="12" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
-          <rect x="130" y="4" width="75" height="12" rx="6" fill="#3572A5" />
+          <rect x="130" y="4" width="74" height="12" rx="6" fill="#3572A5" />
         </g>
         <g transform="translate(24, 146)">
           <text x="0" y="14" fill="#F8FAFC" class="mono" font-size="11" font-weight="700">HTML</text>
