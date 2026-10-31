@@ -51,7 +51,7 @@
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
         <text x="16" y="18" fill="#94A3B8" class="mono" font-size="10">TOTAL CONTRIBUTIONS</text>
         <text x="16" y="33" fill="#64748B" class="mono" font-size="8">VERIFIED COMMIT &amp; CODE CADENCE</text>
-        <text x="386" y="27" fill="#38BDF8" class="mono" font-size="16" font-weight="900" text-anchor="end">315</text>
+        <text x="386" y="27" fill="#38BDF8" class="mono" font-size="16" font-weight="900" text-anchor="end">319</text>
       </g>
       <g transform="translate(0, 50)">
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
@@ -75,7 +75,7 @@
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
         <text x="16" y="18" fill="#94A3B8" class="mono" font-size="10">ACTIVE SHIPPING STREAK</text>
         <text x="16" y="33" fill="#64748B" class="mono" font-size="8">CONSECUTIVE DAYS BUILDING</text>
-        <text x="386" y="27" fill="#38BDF8" class="mono" font-size="16" font-weight="900" text-anchor="end">2 DAYS</text>
+        <text x="386" y="27" fill="#38BDF8" class="mono" font-size="16" font-weight="900" text-anchor="end">3 DAYS</text>
       </g>
   </g>
 
