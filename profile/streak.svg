@@ -77,20 +77,20 @@
       <rect width="272" height="3" rx="1.5" fill="#F43F5E" />
       <text x="16" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">WANTED LEVEL</text>
       <text x="16" y="58" fill="#F43F5E" class="gta-mission" font-size="24" font-weight="900">3-STAR PRIORITY</text>
-      <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">7 DAYS CONSECUTIVE</text>
+      <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">8 DAYS CONSECUTIVE</text>
     </g>
     <g transform="translate(296, 0)">
       <rect width="272" height="96" rx="8" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
       <rect width="272" height="3" rx="1.5" fill="#38BDF8" />
       <text x="16" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">TOTAL MISSIONS</text>
-      <text x="16" y="58" fill="#38BDF8" class="gta-mission" font-size="24" font-weight="900">462</text>
+      <text x="16" y="58" fill="#38BDF8" class="gta-mission" font-size="24" font-weight="900">465</text>
       <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">VERIFIED PASSED</text>
     </g>
     <g transform="translate(592, 0)">
       <rect width="272" height="96" rx="8" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
       <rect width="272" height="3" rx="1.5" fill="#FBBF24" />
       <text x="16" y="24" fill="#64748B" class="mono" font-size="9" font-weight="700">MAX EVASION</text>
-      <text x="16" y="58" fill="#FBBF24" class="gta-mission" font-size="24" font-weight="900">7 DAYS</text>
+      <text x="16" y="58" fill="#FBBF24" class="gta-mission" font-size="24" font-weight="900">8 DAYS</text>
       <text x="16" y="80" fill="#94A3B8" class="mono" font-size="10">LONGEST STREAK</text>
     </g>
   </g>
