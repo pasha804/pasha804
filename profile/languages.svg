@@ -49,7 +49,7 @@
   
         <g transform="translate(24, 68)">
           <text x="0" y="14" fill="#F8FAFC" class="mono" font-size="11" font-weight="700">Python</text>
-          <text x="395" y="14" fill="#3572A5" class="mono" font-size="11" font-weight="800" text-anchor="end">48.5%</text>
+          <text x="395" y="14" fill="#3572A5" class="mono" font-size="11" font-weight="800" text-anchor="end">48.6%</text>
           <rect x="130" y="4" width="220" height="12" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
           <rect x="130" y="4" width="106" height="12" rx="6" fill="#3572A5" />
         </g>
@@ -61,7 +61,7 @@
         </g>
         <g transform="translate(24, 146)">
           <text x="0" y="14" fill="#F8FAFC" class="mono" font-size="11" font-weight="700">TypeScript</text>
-          <text x="395" y="14" fill="#3178c6" class="mono" font-size="11" font-weight="800" text-anchor="end">15.3%</text>
+          <text x="395" y="14" fill="#3178c6" class="mono" font-size="11" font-weight="800" text-anchor="end">15.2%</text>
           <rect x="130" y="4" width="220" height="12" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
           <rect x="130" y="4" width="33" height="12" rx="6" fill="#3178c6" />
         </g>
