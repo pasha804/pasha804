@@ -69,7 +69,7 @@
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
         <text x="16" y="18" fill="#94A3B8" class="mono" font-size="10">STARS EARNED</text>
         <text x="16" y="33" fill="#64748B" class="mono" font-size="8">ECOSYSTEM RECOGNITION</text>
-        <text x="386" y="27" fill="#FBBF24" class="mono" font-size="16" font-weight="900" text-anchor="end">52</text>
+        <text x="386" y="27" fill="#FBBF24" class="mono" font-size="16" font-weight="900" text-anchor="end">53</text>
       </g>
       <g transform="translate(0, 200)">
         <rect width="402" height="42" rx="6" fill="#0F121C" stroke="#1F2436" stroke-width="1" />
